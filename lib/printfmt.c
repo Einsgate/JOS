@@ -78,6 +78,7 @@ getint(va_list *ap, int lflag)
 
 // Main function to format and print a string.
 void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);
+int color;
 
 void
 vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)
@@ -88,10 +89,14 @@ vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)
 	int base, lflag, width, precision, altflag;
 	char padc;
 
+	int clrflag;
+
 	while (1) {
 		while ((ch = *(unsigned char *) fmt++) != '%') {
-			if (ch == '\0')
+			if (ch == '\0'){
+				color = 0;
 				return;
+			}
 			putch(ch, putdat);
 		}
 
@@ -101,8 +106,15 @@ vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)
 		precision = -1;
 		lflag = 0;
 		altflag = 0;
+
+		clrflag = 0;
 	reswitch:
 		switch (ch = *(unsigned char *) fmt++) {
+
+		// set color
+		case 'C':
+			color = 0;
+			goto colorswitch;
 
 		// flag to pad on the right
 		case '-':
@@ -238,6 +250,59 @@ vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)
 			for (fmt--; fmt[-1] != '%'; fmt--)
 				/* do nothing */;
 			break;
+		}
+		continue;
+
+	colorswitch:
+		switch(ch = *(unsigned char *) fmt++){
+			case 'a':
+			case 'b':
+			case 'c':
+			case 'd':
+			case 'e':
+			case 'f':
+				if(clrflag == 0)
+					color |= (ch - 'a' + 10) << 12;
+				else if(clrflag == 1){
+					color |= (ch - 'a' + 10) << 8;
+					break;
+				}
+				clrflag++;
+				goto colorswitch;
+
+			case 'A':
+			case 'B':
+			case 'C':
+			case 'D':
+			case 'E':
+			case 'F':
+				if(clrflag == 0)
+					color |= (ch - 'A' + 10) << 12;
+				else if(clrflag == 1){
+					color |= (ch - 'A' + 10) << 8;
+					break;
+				}
+				clrflag++;
+				goto colorswitch;
+
+			case '0':
+			case '1':
+			case '2':
+			case '3':
+			case '4':
+			case '5':
+			case '6':
+			case '7':
+			case '8':
+			case '9':
+				if(clrflag == 0)
+					color |= (ch - '0') << 12;
+				else if(clrflag == 1){
+					color |= (ch - '0') << 8;
+					break;
+				}
+				clrflag++;
+				goto colorswitch;
 		}
 	}
 }
