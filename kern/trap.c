@@ -85,7 +85,7 @@ trap_init(void)
 	extern void handler18();
 	extern void handler19();
 
-	extern void fuck();
+	extern void handler48();
 
 	// LAB 3: Your code here.
 	//cprintf("%Ca5handler0 = %x, fuck = %x, idt[0] = %08x%08x\n", handler0, fuck, *((uint32_t *)idt + 1), *(uint32_t *)idt);
@@ -110,6 +110,8 @@ trap_init(void)
 	SETGATE(idt[T_ALIGN], 1, GD_KT, handler17, 0);
 	SETGATE(idt[T_MCHK], 1, GD_KT, handler18, 0);
 	SETGATE(idt[T_SIMDERR], 1, GD_KT, handler19, 0);
+
+	SETGATE(idt[T_SYSCALL], 1, GD_KT, handler48, 3);
 
 
 	// Per-CPU setup 
@@ -190,7 +192,22 @@ trap_dispatch(struct Trapframe *tf)
 	// Handle processor exceptions.
 	// LAB 3: Your code here.
 	switch(tf->tf_trapno){
-		case T_PGFLT: page_fault_handler(tf);return;
+		case T_BRKPT: monitor(tf); return;
+		case T_PGFLT: page_fault_handler(tf); return;
+		case T_SYSCALL: {
+			int ret;
+			//cprintf("%Ca5trapno = %x\n", tf->tf_regs.reg_eax);
+			if((ret = syscall(	
+						tf->tf_regs.reg_eax, 
+						tf->tf_regs.reg_edx,
+						tf->tf_regs.reg_ecx,
+						tf->tf_regs.reg_ebx,
+						tf->tf_regs.reg_edi,
+						tf->tf_regs.reg_esi)) < 0)
+				panic("syscall failed: %x\n", ret);
+			tf->tf_regs.reg_eax = ret;
+			return;
+		}
 	}
 	// Unexpected trap: The user process or the kernel has a bug.
 	print_trapframe(tf);
