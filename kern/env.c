@@ -283,7 +283,7 @@ region_alloc(struct Env *e, void *va, size_t len)
 	char *base;
 	struct PageInfo *newPage = NULL;
 
-	n = PTX(ROUNDUP(len, PGSIZE));
+	n = PGNUM(ROUNDUP(len, PGSIZE));
 	base = (char *)ROUNDDOWN(va, PGSIZE);
 	for(i = 0; i < n; i++){
 		newPage = page_alloc(0);
