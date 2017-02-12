@@ -1,105 +1,142 @@
-!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 -format	GNUmakefile	/^	git archive --format=tar HEAD | gzip > lab$(LAB)-handin.tar.gz$/;"	m
-ALLOC_ZERO	kern/pmap.h	/^	ALLOC_ZERO = 1<<0,$/;"	e	enum:__anon2
-ALT	kern/console.c	219;"	d	file:
 AR	GNUmakefile	/^AR	:= $(GCCPREFIX)ar$/;"	m
-ARRAYSIZE	user/testbss.c	5;"	d	file:
 AS	GNUmakefile	/^AS	:= $(GCCPREFIX)as$/;"	m
-ASM	lib/string.c	9;"	d	file:
-ASM	obj/kern/kernel.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/badsegment.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/breakpoint.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/buggyhello.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/buggyhello2.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/divzero.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/evilhello.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/faultread.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/faultreadkernel.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/faultwrite.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/faultwritekernel.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/hello.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/softint.asm	/^#define ASM 1$/;"	d
-ASM	obj/user/testbss.asm	/^#define ASM 1$/;"	d
-BACKTRACE_RE	grade-lab1	/^BACKTRACE_RE = r"^ *ebp +f01[0-9a-z]{5} +eip +f0100[0-9a-z]{3} +args +([0-9a-z]+)"$/;"	v
-BUFLEN	lib/readline.c	4;"	d	file:
-BUFLEN	obj/kern/kernel.asm	/^#define BUFLEN 1024$/;"	d
-C	kern/console.c	286;"	d	file:
-CAPSLOCK	kern/console.c	221;"	d	file:
 CC	GNUmakefile	/^CC	:= $(GCCPREFIX)gcc -pipe$/;"	m
 CFLAGS	GNUmakefile	/^CFLAGS := $(CFLAGS) $(DEFS) $(LABDEFS) -O1 -fno-builtin -I$(TOP) -MD$/;"	m
-CGA_BASE	kern/console.h	13;"	d
-CGA_BUF	kern/console.h	14;"	d
-CHECKSUM	kern/entry.S	/^#define CHECKSUM (-(MULTIBOOT_HEADER_MAGIC + MULTIBOOT_HEADER_FLAGS))$/;"	d
-CMDBUF_SIZE	kern/monitor.c	15;"	d	file:
-CMDBYTE	inc/kbdreg.h	60;"	d
-COLORS	gradelib.py	/^COLORS = {"default": "\\033[0m", "red": "\\033[31m", "green": "\\033[32m"}$/;"	v
-COM1	kern/console.c	26;"	d	file:
-COM_DLL	kern/console.c	30;"	d	file:
-COM_DLM	kern/console.c	31;"	d	file:
-COM_FCR	kern/console.c	35;"	d	file:
-COM_IER	kern/console.c	32;"	d	file:
-COM_IER_RDI	kern/console.c	33;"	d	file:
-COM_IIR	kern/console.c	34;"	d	file:
-COM_LCR	kern/console.c	36;"	d	file:
-COM_LCR_DLAB	kern/console.c	37;"	d	file:
-COM_LCR_WLEN8	kern/console.c	38;"	d	file:
-COM_LSR	kern/console.c	43;"	d	file:
-COM_LSR_DATA	kern/console.c	44;"	d	file:
-COM_LSR_TSRE	kern/console.c	46;"	d	file:
-COM_LSR_TXRDY	kern/console.c	45;"	d	file:
-COM_MCR	kern/console.c	39;"	d	file:
-COM_MCR_DTR	kern/console.c	41;"	d	file:
-COM_MCR_OUT2	kern/console.c	42;"	d	file:
-COM_MCR_RTS	kern/console.c	40;"	d	file:
-COM_RX	kern/console.c	28;"	d	file:
-COM_TX	kern/console.c	29;"	d	file:
-CONSBUFSIZE	kern/console.c	382;"	d	file:
-CR0_AM	inc/mmu.h	86;"	d
-CR0_CD	inc/mmu.h	88;"	d
-CR0_EM	inc/mmu.h	81;"	d
-CR0_ET	inc/mmu.h	83;"	d
-CR0_MP	inc/mmu.h	80;"	d
-CR0_NE	inc/mmu.h	84;"	d
-CR0_NW	inc/mmu.h	87;"	d
-CR0_PE	inc/mmu.h	79;"	d
-CR0_PG	inc/mmu.h	89;"	d
-CR0_TS	inc/mmu.h	82;"	d
-CR0_WP	inc/mmu.h	85;"	d
-CR4_DE	inc/mmu.h	94;"	d
-CR4_MCE	inc/mmu.h	92;"	d
-CR4_PCE	inc/mmu.h	91;"	d
-CR4_PSE	inc/mmu.h	93;"	d
-CR4_PVI	inc/mmu.h	96;"	d
-CR4_TSD	inc/mmu.h	95;"	d
-CR4_VME	inc/mmu.h	97;"	d
-CRT_COLS	kern/console.h	17;"	d
-CRT_ROWS	kern/console.h	16;"	d
-CRT_SIZE	kern/console.h	18;"	d
-CTL	kern/console.c	218;"	d	file:
-CURRENT_TEST	gradelib.py	/^CURRENT_TEST = None$/;"	v
-Command	kern/monitor.c	/^struct Command {$/;"	s	file:
-Disassembly	obj/boot/boot.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/kern/kernel.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/badsegment.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/breakpoint.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/buggyhello.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/buggyhello2.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/divzero.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/evilhello.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/faultread.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/faultreadkernel.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/faultwrite.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/faultwritekernel.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/hello.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/softint.asm	/^Disassembly of section .text:$/;"	l
-Disassembly	obj/user/testbss.asm	/^Disassembly of section .text:$/;"	l
-E0ESC	kern/console.c	225;"	d	file:
+GCCPREFIX	GNUmakefile	/^GCCPREFIX := $(shell if i386-jos-elf-objdump -i 2>&1 | grep '^elf32-i386$$' >\/dev\/null 2>&1; \\$/;"	m
+GCC_LIB	GNUmakefile	/^GCC_LIB := $(shell $(CC) $(CFLAGS) -print-libgcc-file-name)$/;"	m
+GDBPORT	GNUmakefile	/^GDBPORT	:= $(shell expr `id -u` % 5000 + 25000)$/;"	m
+IMAGES	GNUmakefile	/^IMAGES = $(OBJDIR)\/kern\/kernel.img$/;"	m
+KERN_CFLAGS	GNUmakefile	/^KERN_CFLAGS := $(CFLAGS) -DJOS_KERNEL -gstabs$/;"	m
+LABSETUP	GNUmakefile	/^LABSETUP ?= .\/$/;"	m
+LD	GNUmakefile	/^LD	:= $(GCCPREFIX)ld$/;"	m
+LDFLAGS	GNUmakefile	/^LDFLAGS := -m elf_i386$/;"	m
+NATIVE_CFLAGS	GNUmakefile	/^NATIVE_CFLAGS := $(CFLAGS) $(DEFS) $(LABDEFS) -I$(TOP) -MD -Wall$/;"	m
+NCC	GNUmakefile	/^NCC	:= gcc $(CC_VER) -pipe$/;"	m
+NM	GNUmakefile	/^NM	:= $(GCCPREFIX)nm$/;"	m
+OBJCOPY	GNUmakefile	/^OBJCOPY	:= $(GCCPREFIX)objcopy$/;"	m
+OBJDIR	GNUmakefile	/^OBJDIR := obj$/;"	m
+OBJDIRS	GNUmakefile	/^OBJDIRS :=$/;"	m
+OBJDUMP	GNUmakefile	/^OBJDUMP	:= $(GCCPREFIX)objdump$/;"	m
+PERL	GNUmakefile	/^PERL	:= perl$/;"	m
+QEMU	GNUmakefile	/^QEMU := $(shell if which qemu > \/dev\/null; \\$/;"	m
+QEMUOPTS	GNUmakefile	/^QEMUOPTS = -hda $(OBJDIR)\/kern\/kernel.img -serial mon:stdio -gdb tcp::$(GDBPORT)$/;"	m
+TAR	GNUmakefile	/^TAR	:= gtar$/;"	m
+TOP	GNUmakefile	/^TOP = .$/;"	m
+ULDFLAGS	GNUmakefile	/^ULDFLAGS := -T user\/user.ld$/;"	m
+USER_CFLAGS	GNUmakefile	/^USER_CFLAGS := $(CFLAGS) -DJOS_USER -gstabs$/;"	m
+WEBSUB	GNUmakefile	/^WEBSUB = https:\/\/ccutler.scripts.mit.edu\/6.828\/handin.py$/;"	m
+gdt	boot/boot.S	/^gdt:$/;"	l
+gdtdesc	boot/boot.S	/^gdtdesc:$/;"	l
+protcseg	boot/boot.S	/^protcseg:$/;"	l
+spin	boot/boot.S	/^spin:$/;"	l
+start	boot/boot.S	/^start:$/;"	l
 ELFHDR	boot/main.c	33;"	d	file:
+SECTSIZE	boot/main.c	32;"	d	file:
+bootmain	boot/main.c	/^bootmain(void)$/;"	f
+readsect	boot/main.c	/^readsect(void *dst, uint32_t offset)$/;"	f
+readseg	boot/main.c	/^readseg(uint32_t pa, uint32_t count, uint32_t offset)$/;"	f
+waitdisk	boot/main.c	/^waitdisk(void)$/;"	f
+V	conf/env.mk	/^V = @$/;"	m
+LAB	conf/lab.mk	/^LAB=3$/;"	m
+PACKAGEDATE	conf/lab.mk	/^PACKAGEDATE=Wed Sep 3 09:38:39 EDT 2014$/;"	m
+BACKTRACE_RE	grade-lab1	/^BACKTRACE_RE = r"^ *ebp +f01[0-9a-z]{5} +eip +f0100[0-9a-z]{3} +args +([0-9a-z]+)"$/;"	v
+r	grade-lab1	/^r = Runner(save("jos.out"),$/;"	v
+test_backtrace_arguments	grade-lab1	/^def test_backtrace_arguments():$/;"	f
+test_backtrace_count	grade-lab1	/^def test_backtrace_count():$/;"	f
+test_backtrace_lines	grade-lab1	/^def test_backtrace_lines():$/;"	f
+test_backtrace_symbols	grade-lab1	/^def test_backtrace_symbols():$/;"	f
+test_jos	grade-lab1	/^def test_jos():$/;"	f
+test_printf	grade-lab1	/^def test_printf():$/;"	f
+r	grade-lab2	/^r = Runner(save("jos.out"),$/;"	v
+test_check_kern_pgdir	grade-lab2	/^def test_check_kern_pgdir():$/;"	f
+test_check_page	grade-lab2	/^def test_check_page():$/;"	f
+test_check_page_alloc	grade-lab2	/^def test_check_page_alloc():$/;"	f
+test_check_page_installed_pgdir	grade-lab2	/^def test_check_page_installed_pgdir():$/;"	f
+test_jos	grade-lab2	/^def test_jos():$/;"	f
+r	grade-lab3	/^r = Runner(save("jos.out"),$/;"	v
+test_badsegment	grade-lab3	/^def test_badsegment():$/;"	f
+test_breakpoint	grade-lab3	/^def test_breakpoint():$/;"	f
+test_buggyhello	grade-lab3	/^def test_buggyhello():$/;"	f
+test_buggyhello2	grade-lab3	/^def test_buggyhello2():$/;"	f
+test_divzero	grade-lab3	/^def test_divzero():$/;"	f
+test_evilhello	grade-lab3	/^def test_evilhello():$/;"	f
+test_faultread	grade-lab3	/^def test_faultread():$/;"	f
+test_faultreadkernel	grade-lab3	/^def test_faultreadkernel():$/;"	f
+test_faultwrite	grade-lab3	/^def test_faultwrite():$/;"	f
+test_faultwritekernel	grade-lab3	/^def test_faultwritekernel():$/;"	f
+test_hello	grade-lab3	/^def test_hello():$/;"	f
+test_softint	grade-lab3	/^def test_softint():$/;"	f
+test_testbss	grade-lab3	/^def test_testbss():$/;"	f
+COLORS	gradelib.py	/^COLORS = {"default": "\\033[0m", "red": "\\033[31m", "green": "\\033[32m"}$/;"	v
+CURRENT_TEST	gradelib.py	/^CURRENT_TEST = None$/;"	v
+GDBClient	gradelib.py	/^class GDBClient(object):$/;"	c
+MAKE_TIMESTAMP	gradelib.py	/^MAKE_TIMESTAMP = 0$/;"	v
+QEMU	gradelib.py	/^class QEMU(object):$/;"	c
+Runner	gradelib.py	/^class Runner():$/;"	c
+TESTS	gradelib.py	/^TESTS = []$/;"	v
+TerminateTest	gradelib.py	/^class TerminateTest(Exception):$/;"	c
+_GDBPORT	gradelib.py	/^    _GDBPORT = None$/;"	v	class:QEMU
+__all__	gradelib.py	/^__all__ = []$/;"	v
+__init__	gradelib.py	/^    def __init__(self, *default_monitors):$/;"	m	class:Runner
+__init__	gradelib.py	/^    def __init__(self, *make_args):$/;"	m	class:QEMU
+__init__	gradelib.py	/^    def __init__(self, port, timeout=15):$/;"	m	class:GDBClient
+__monitor_start	gradelib.py	/^    def __monitor_start(self, output):$/;"	m	class:Runner	file:
+__react	gradelib.py	/^    def __react(self, reactors, timeout):$/;"	m	class:Runner	file:
+__send	gradelib.py	/^    def __send(self, cmd):$/;"	m	class:GDBClient	file:
+__send_break	gradelib.py	/^    def __send_break(self):$/;"	m	class:GDBClient	file:
+assert_equal	gradelib.py	/^def assert_equal(got, expect, msg=""):$/;"	f
+assert_lines_match	gradelib.py	/^def assert_lines_match(text, *regexps, **kw):$/;"	f
+assert_lines_match_kw	gradelib.py	/^    def assert_lines_match_kw(no=[]):$/;"	f	function:assert_lines_match
+breakpoint	gradelib.py	/^    def breakpoint(self, addr):$/;"	m	class:GDBClient
+call_on_line	gradelib.py	/^def call_on_line(regexp, callback):$/;"	f
+close	gradelib.py	/^    def close(self):$/;"	m	class:GDBClient
+color	gradelib.py	/^def color(name, text):$/;"	f
+cont	gradelib.py	/^    def cont(self):$/;"	m	class:GDBClient
+end_part	gradelib.py	/^def end_part(name):$/;"	f
+fileno	gradelib.py	/^    def fileno(self):$/;"	f
+fileno	gradelib.py	/^    def fileno(self):$/;"	m	class:GDBClient
+get_current_test	gradelib.py	/^def get_current_test():$/;"	f
+get_gdb_port	gradelib.py	/^    def get_gdb_port():$/;"	f
+handle_output	gradelib.py	/^        def handle_output(output):$/;"	f	function:call_on_line.setup_call_on_line
+handle_read	gradelib.py	/^    def handle_read(self):$/;"	f
+handle_read	gradelib.py	/^    def handle_read(self):$/;"	m	class:GDBClient
+kill	gradelib.py	/^    def kill(self):$/;"	f
+make	gradelib.py	/^def make(*target):$/;"	f
+match	gradelib.py	/^    def match(self, *args, **kwargs):$/;"	m	class:Runner
+maybe_unlink	gradelib.py	/^def maybe_unlink(*paths):$/;"	f
+post_make	gradelib.py	/^def post_make():$/;"	f
+pre_make	gradelib.py	/^def pre_make():$/;"	f
+register_test	gradelib.py	/^    def register_test(fn, title=title):$/;"	f	function:test
+reset_fs	gradelib.py	/^def reset_fs():$/;"	f
+run_qemu	gradelib.py	/^    def run_qemu(self, *monitors, **kw):$/;"	m	class:Runner
+run_qemu_kw	gradelib.py	/^        def run_qemu_kw(target_base="qemu", make_args=[], timeout=30):$/;"	f	function:Runner.run_qemu
+run_test	gradelib.py	/^        def run_test():$/;"	f	function:test.register_test
+run_tests	gradelib.py	/^def run_tests():$/;"	f
+save	gradelib.py	/^def save(path):$/;"	f
+save_on_finish	gradelib.py	/^    def save_on_finish(fail):$/;"	f	function:save
+setup_breakpoint	gradelib.py	/^    def setup_breakpoint(runner):$/;"	f	function:stop_breakpoint
+setup_call_on_line	gradelib.py	/^    def setup_call_on_line(runner):$/;"	f	function:call_on_line
+setup_save	gradelib.py	/^    def setup_save(runner):$/;"	f	function:save
+show_command	gradelib.py	/^def show_command(cmd):$/;"	f
+show_part	gradelib.py	/^    def show_part():$/;"	f	function:end_part
+stop	gradelib.py	/^    def stop(line):$/;"	f	function:stop_on_line
+stop_breakpoint	gradelib.py	/^def stop_breakpoint(addr):$/;"	f
+stop_on_line	gradelib.py	/^def stop_on_line(regexp):$/;"	f
+test	gradelib.py	/^def test(points, title=None, parent=None):$/;"	f
+user_test	gradelib.py	/^    def user_test(self, binary, *monitors, **kw):$/;"	m	class:Runner
+wait	gradelib.py	/^    def wait(self):$/;"	f
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+JOS_INC_ASSERT_H	inc/assert.h	4;"	d
+assert	inc/assert.h	14;"	d
+panic	inc/assert.h	12;"	d
+static_assert	inc/assert.h	18;"	d
+warn	inc/assert.h	11;"	d
 ELF_MAGIC	inc/elf.h	4;"	d
 ELF_PROG_FLAG_EXEC	inc/elf.h	52;"	d
 ELF_PROG_FLAG_READ	inc/elf.h	54;"	d
@@ -110,17 +147,64 @@ ELF_SHT_NULL	inc/elf.h	57;"	d
 ELF_SHT_PROGBITS	inc/elf.h	58;"	d
 ELF_SHT_STRTAB	inc/elf.h	60;"	d
 ELF_SHT_SYMTAB	inc/elf.h	59;"	d
-ENVGENSHIFT	kern/env.c	20;"	d	file:
+Elf	inc/elf.h	/^struct Elf {$/;"	s
+JOS_INC_ELF_H	inc/elf.h	2;"	d
+Proghdr	inc/elf.h	/^struct Proghdr {$/;"	s
+Secthdr	inc/elf.h	/^struct Secthdr {$/;"	s
+e_ehsize	inc/elf.h	/^	uint16_t e_ehsize;$/;"	m	struct:Elf
+e_elf	inc/elf.h	/^	uint8_t e_elf[12];$/;"	m	struct:Elf
+e_entry	inc/elf.h	/^	uint32_t e_entry;$/;"	m	struct:Elf
+e_flags	inc/elf.h	/^	uint32_t e_flags;$/;"	m	struct:Elf
+e_machine	inc/elf.h	/^	uint16_t e_machine;$/;"	m	struct:Elf
+e_magic	inc/elf.h	/^	uint32_t e_magic;	\/\/ must equal ELF_MAGIC$/;"	m	struct:Elf
+e_phentsize	inc/elf.h	/^	uint16_t e_phentsize;$/;"	m	struct:Elf
+e_phnum	inc/elf.h	/^	uint16_t e_phnum;$/;"	m	struct:Elf
+e_phoff	inc/elf.h	/^	uint32_t e_phoff;$/;"	m	struct:Elf
+e_shentsize	inc/elf.h	/^	uint16_t e_shentsize;$/;"	m	struct:Elf
+e_shnum	inc/elf.h	/^	uint16_t e_shnum;$/;"	m	struct:Elf
+e_shoff	inc/elf.h	/^	uint32_t e_shoff;$/;"	m	struct:Elf
+e_shstrndx	inc/elf.h	/^	uint16_t e_shstrndx;$/;"	m	struct:Elf
+e_type	inc/elf.h	/^	uint16_t e_type;$/;"	m	struct:Elf
+e_version	inc/elf.h	/^	uint32_t e_version;$/;"	m	struct:Elf
+p_align	inc/elf.h	/^	uint32_t p_align;$/;"	m	struct:Proghdr
+p_filesz	inc/elf.h	/^	uint32_t p_filesz;$/;"	m	struct:Proghdr
+p_flags	inc/elf.h	/^	uint32_t p_flags;$/;"	m	struct:Proghdr
+p_memsz	inc/elf.h	/^	uint32_t p_memsz;$/;"	m	struct:Proghdr
+p_offset	inc/elf.h	/^	uint32_t p_offset;$/;"	m	struct:Proghdr
+p_pa	inc/elf.h	/^	uint32_t p_pa;$/;"	m	struct:Proghdr
+p_type	inc/elf.h	/^	uint32_t p_type;$/;"	m	struct:Proghdr
+p_va	inc/elf.h	/^	uint32_t p_va;$/;"	m	struct:Proghdr
+sh_addr	inc/elf.h	/^	uint32_t sh_addr;$/;"	m	struct:Secthdr
+sh_addralign	inc/elf.h	/^	uint32_t sh_addralign;$/;"	m	struct:Secthdr
+sh_entsize	inc/elf.h	/^	uint32_t sh_entsize;$/;"	m	struct:Secthdr
+sh_flags	inc/elf.h	/^	uint32_t sh_flags;$/;"	m	struct:Secthdr
+sh_info	inc/elf.h	/^	uint32_t sh_info;$/;"	m	struct:Secthdr
+sh_link	inc/elf.h	/^	uint32_t sh_link;$/;"	m	struct:Secthdr
+sh_name	inc/elf.h	/^	uint32_t sh_name;$/;"	m	struct:Secthdr
+sh_offset	inc/elf.h	/^	uint32_t sh_offset;$/;"	m	struct:Secthdr
+sh_size	inc/elf.h	/^	uint32_t sh_size;$/;"	m	struct:Secthdr
+sh_type	inc/elf.h	/^	uint32_t sh_type;$/;"	m	struct:Secthdr
 ENVX	inc/env.h	30;"	d
-ENV_CREATE	kern/env.h	28;"	d
 ENV_DYING	inc/env.h	/^	ENV_DYING,$/;"	e	enum:__anon3
 ENV_FREE	inc/env.h	/^	ENV_FREE = 0,$/;"	e	enum:__anon3
 ENV_NOT_RUNNABLE	inc/env.h	/^	ENV_NOT_RUNNABLE$/;"	e	enum:__anon3
-ENV_PASTE3	kern/env.h	26;"	d
 ENV_RUNNABLE	inc/env.h	/^	ENV_RUNNABLE,$/;"	e	enum:__anon3
 ENV_RUNNING	inc/env.h	/^	ENV_RUNNING,$/;"	e	enum:__anon3
 ENV_TYPE_USER	inc/env.h	/^	ENV_TYPE_USER = 0,$/;"	e	enum:EnvType
-EXTPHYSMEM	inc/memlayout.h	93;"	d
+Env	inc/env.h	/^struct Env {$/;"	s
+EnvType	inc/env.h	/^enum EnvType {$/;"	g
+JOS_INC_ENV_H	inc/env.h	4;"	d
+LOG2NENV	inc/env.h	28;"	d
+NENV	inc/env.h	29;"	d
+env_id	inc/env.h	/^	envid_t env_id;			\/\/ Unique environment identifier$/;"	m	struct:Env
+env_link	inc/env.h	/^	struct Env *env_link;		\/\/ Next free Env$/;"	m	struct:Env	typeref:struct:Env::Env
+env_parent_id	inc/env.h	/^	envid_t env_parent_id;		\/\/ env_id of this env's parent$/;"	m	struct:Env
+env_pgdir	inc/env.h	/^	pde_t *env_pgdir;		\/\/ Kernel virtual address of page dir$/;"	m	struct:Env
+env_runs	inc/env.h	/^	uint32_t env_runs;		\/\/ Number of times environment has run$/;"	m	struct:Env
+env_status	inc/env.h	/^	unsigned env_status;		\/\/ Status of the environment$/;"	m	struct:Env
+env_tf	inc/env.h	/^	struct Trapframe env_tf;	\/\/ Saved registers$/;"	m	struct:Env	typeref:struct:Env::Trapframe
+env_type	inc/env.h	/^	enum EnvType env_type;		\/\/ Indicates special system environments$/;"	m	struct:Env	typeref:enum:Env::EnvType
+envid_t	inc/env.h	/^typedef int32_t envid_t;$/;"	t
 E_BAD_ENV	inc/error.h	/^	E_BAD_ENV	= 2,	\/\/ Environment doesn't exist or otherwise$/;"	e	enum:__anon4
 E_FAULT	inc/error.h	/^	E_FAULT		= 6,	\/\/ Memory fault$/;"	e	enum:__anon4
 E_INVAL	inc/error.h	/^	E_INVAL		= 3,	\/\/ Invalid parameter$/;"	e	enum:__anon4
@@ -128,79 +212,10 @@ E_NO_FREE_ENV	inc/error.h	/^	E_NO_FREE_ENV	= 5,	\/\/ Attempt to create a new env
 E_NO_MEM	inc/error.h	/^	E_NO_MEM	= 4,	\/\/ Request failed due to memory shortage$/;"	e	enum:__anon4
 E_NO_SYS	inc/error.h	/^	E_NO_SYS	= 7,	\/\/ Unimplemented system call$/;"	e	enum:__anon4
 E_UNSPECIFIED	inc/error.h	/^	E_UNSPECIFIED	= 1,	\/\/ Unspecified or unknown problem$/;"	e	enum:__anon4
-Eipdebuginfo	kern/kdebug.h	/^struct Eipdebuginfo {$/;"	s
-Elf	inc/elf.h	/^struct Elf {$/;"	s
-Env	inc/env.h	/^struct Env {$/;"	s
-EnvType	inc/env.h	/^enum EnvType {$/;"	g
-FEC_PR	inc/mmu.h	123;"	d
-FEC_U	inc/mmu.h	125;"	d
-FEC_WR	inc/mmu.h	124;"	d
-FL_AC	inc/mmu.h	117;"	d
-FL_AF	inc/mmu.h	102;"	d
-FL_CF	inc/mmu.h	100;"	d
-FL_DF	inc/mmu.h	107;"	d
-FL_ID	inc/mmu.h	120;"	d
-FL_IF	inc/mmu.h	106;"	d
-FL_IOPL_0	inc/mmu.h	110;"	d
-FL_IOPL_1	inc/mmu.h	111;"	d
-FL_IOPL_2	inc/mmu.h	112;"	d
-FL_IOPL_3	inc/mmu.h	113;"	d
-FL_IOPL_MASK	inc/mmu.h	109;"	d
-FL_NT	inc/mmu.h	114;"	d
-FL_OF	inc/mmu.h	108;"	d
-FL_PF	inc/mmu.h	101;"	d
-FL_RF	inc/mmu.h	115;"	d
-FL_SF	inc/mmu.h	104;"	d
-FL_TF	inc/mmu.h	105;"	d
-FL_VIF	inc/mmu.h	118;"	d
-FL_VIP	inc/mmu.h	119;"	d
-FL_VM	inc/mmu.h	116;"	d
-FL_ZF	inc/mmu.h	103;"	d
-GCCPREFIX	GNUmakefile	/^GCCPREFIX := $(shell if i386-jos-elf-objdump -i 2>&1 | grep '^elf32-i386$$' >\/dev\/null 2>&1; \\$/;"	m
-GCC_LIB	GNUmakefile	/^GCC_LIB := $(shell $(CC) $(CFLAGS) -print-libgcc-file-name)$/;"	m
-GDBClient	gradelib.py	/^class GDBClient(object):$/;"	c
-GDBPORT	GNUmakefile	/^GDBPORT	:= $(shell expr `id -u` % 5000 + 25000)$/;"	m
-GD_KD	inc/memlayout.h	16;"	d
-GD_KT	inc/memlayout.h	15;"	d
-GD_TSS0	inc/memlayout.h	19;"	d
-GD_UD	inc/memlayout.h	18;"	d
-GD_UT	inc/memlayout.h	17;"	d
-Gatedesc	inc/mmu.h	/^struct Gatedesc {$/;"	s
-IMAGES	GNUmakefile	/^IMAGES = $(OBJDIR)\/kern\/kernel.img$/;"	m
-IOPHYSMEM	inc/memlayout.h	92;"	d
-IO_RTC	kern/kclock.h	9;"	d
-IRQ_ERROR	inc/trap.h	40;"	d
-IRQ_IDE	inc/trap.h	39;"	d
-IRQ_KBD	inc/trap.h	36;"	d
-IRQ_OFFSET	inc/trap.h	32;"	d
-IRQ_SERIAL	inc/trap.h	37;"	d
-IRQ_SPURIOUS	inc/trap.h	38;"	d
-IRQ_TIMER	inc/trap.h	35;"	d
-JOS_INC_ASSERT_H	inc/assert.h	4;"	d
-JOS_INC_ELF_H	inc/elf.h	2;"	d
-JOS_INC_ENV_H	inc/env.h	4;"	d
 JOS_INC_ERROR_H	inc/error.h	4;"	d
-JOS_INC_LIB_H	inc/lib.h	8;"	d
-JOS_INC_MEMLAYOUT_H	inc/memlayout.h	2;"	d
-JOS_INC_MMU_H	inc/mmu.h	2;"	d
-JOS_INC_STDARG_H	inc/stdarg.h	4;"	d
-JOS_INC_STDIO_H	inc/stdio.h	2;"	d
-JOS_INC_STRING_H	inc/string.h	2;"	d
-JOS_INC_SYSCALL_H	inc/syscall.h	2;"	d
-JOS_INC_TRAP_H	inc/trap.h	2;"	d
-JOS_INC_TYPES_H	inc/types.h	2;"	d
-JOS_INC_X86_H	inc/x86.h	2;"	d
+MAXERROR	inc/error.h	/^	MAXERROR$/;"	e	enum:__anon4
+CMDBYTE	inc/kbdreg.h	60;"	d
 JOS_KBDREG_H	inc/kbdreg.h	2;"	d
-JOS_KERN_ENV_H	kern/env.h	4;"	d
-JOS_KERN_KCLOCK_H	kern/kclock.h	4;"	d
-JOS_KERN_KDEBUG_H	kern/kdebug.h	2;"	d
-JOS_KERN_MONITOR_H	kern/monitor.h	2;"	d
-JOS_KERN_PMAP_H	kern/pmap.h	4;"	d
-JOS_KERN_SYSCALL_H	kern/syscall.h	2;"	d
-JOS_KERN_TRAP_H	kern/trap.h	4;"	d
-JOS_STAB_H	inc/stab.h	2;"	d
-KADDR	kern/pmap.h	38;"	d
-KADDR	obj/kern/kernel.asm	/^#define KADDR(pa) _kaddr(__FILE__, __LINE__, pa)$/;"	d
 KBCMDP	inc/kbdreg.h	29;"	d
 KBC_AUXDISABLE	inc/kbdreg.h	32;"	d
 KBC_AUXECHO	inc/kbdreg.h	36;"	d
@@ -253,8 +268,6 @@ KC8_KENABLE	inc/kbdreg.h	59;"	d
 KC8_MDISABLE	inc/kbdreg.h	54;"	d
 KC8_MENABLE	inc/kbdreg.h	58;"	d
 KC8_TRANS	inc/kbdreg.h	53;"	d
-KERNBASE	inc/memlayout.h	87;"	d
-KERN_CFLAGS	GNUmakefile	/^KERN_CFLAGS := $(CFLAGS) -DJOS_KERNEL -gstabs$/;"	m
 KEY_DEL	inc/kbdreg.h	14;"	d
 KEY_DN	inc/kbdreg.h	8;"	d
 KEY_END	inc/kbdreg.h	6;"	d
@@ -265,48 +278,208 @@ KEY_PGDN	inc/kbdreg.h	12;"	d
 KEY_PGUP	inc/kbdreg.h	11;"	d
 KEY_RT	inc/kbdreg.h	10;"	d
 KEY_UP	inc/kbdreg.h	7;"	d
+K_LDCMDBYTE	inc/kbdreg.h	51;"	d
+K_RDCMDBYTE	inc/kbdreg.h	50;"	d
+JOS_INC_LIB_H	inc/lib.h	8;"	d
+O_ACCMODE	inc/lib.h	49;"	d
+O_CREAT	inc/lib.h	51;"	d
+O_EXCL	inc/lib.h	53;"	d
+O_MKDIR	inc/lib.h	54;"	d
+O_RDONLY	inc/lib.h	46;"	d
+O_RDWR	inc/lib.h	48;"	d
+O_TRUNC	inc/lib.h	52;"	d
+O_WRONLY	inc/lib.h	47;"	d
+USED	inc/lib.h	20;"	d
+EXTPHYSMEM	inc/memlayout.h	93;"	d
+GD_KD	inc/memlayout.h	16;"	d
+GD_KT	inc/memlayout.h	15;"	d
+GD_TSS0	inc/memlayout.h	19;"	d
+GD_UD	inc/memlayout.h	18;"	d
+GD_UT	inc/memlayout.h	17;"	d
+IOPHYSMEM	inc/memlayout.h	92;"	d
+JOS_INC_MEMLAYOUT_H	inc/memlayout.h	2;"	d
+KERNBASE	inc/memlayout.h	87;"	d
 KSTACKTOP	inc/memlayout.h	96;"	d
 KSTKGAP	inc/memlayout.h	98;"	d
 KSTKSIZE	inc/memlayout.h	97;"	d
-K_LDCMDBYTE	inc/kbdreg.h	51;"	d
-K_RDCMDBYTE	inc/kbdreg.h	50;"	d
-LAB	conf/lab.mk	/^LAB=3$/;"	m
-LABSETUP	GNUmakefile	/^LABSETUP ?= .\/$/;"	m
-LD	GNUmakefile	/^LD	:= $(GCCPREFIX)ld$/;"	m
-LDFLAGS	GNUmakefile	/^LDFLAGS := -m elf_i386$/;"	m
-LOG2NENV	inc/env.h	28;"	d
-MAKE_TIMESTAMP	gradelib.py	/^MAKE_TIMESTAMP = 0$/;"	v
-MAX	inc/types.h	49;"	d
-MAXARGS	kern/monitor.c	90;"	d	file:
-MAXERROR	inc/error.h	/^	MAXERROR$/;"	e	enum:__anon4
-MC_NVRAM_SIZE	kern/kclock.h	12;"	d
-MC_NVRAM_START	kern/kclock.h	11;"	d
-MIN	inc/types.h	43;"	d
 MMIOBASE	inc/memlayout.h	102;"	d
 MMIOLIM	inc/memlayout.h	101;"	d
-MONO_BASE	kern/console.h	11;"	d
-MONO_BUF	kern/console.h	12;"	d
-MULTIBOOT_HEADER_FLAGS	kern/entry.S	/^#define MULTIBOOT_HEADER_FLAGS (0)$/;"	d
-MULTIBOOT_HEADER_MAGIC	kern/entry.S	/^#define MULTIBOOT_HEADER_MAGIC (0x1BADB002)$/;"	d
-NATIVE_CFLAGS	GNUmakefile	/^NATIVE_CFLAGS := $(CFLAGS) $(DEFS) $(LABDEFS) -I$(TOP) -MD -Wall$/;"	m
-NCC	GNUmakefile	/^NCC	:= gcc $(CC_VER) -pipe$/;"	m
-NCOMMANDS	kern/monitor.c	30;"	d	file:
-NENV	inc/env.h	29;"	d
-NM	GNUmakefile	/^NM	:= $(GCCPREFIX)nm$/;"	m
-NO	kern/console.c	215;"	d	file:
+PFTEMP	inc/memlayout.h	137;"	d
+PageInfo	inc/memlayout.h	/^struct PageInfo {$/;"	s
+UENVS	inc/memlayout.h	116;"	d
+ULIM	inc/memlayout.h	104;"	d
+UPAGES	inc/memlayout.h	114;"	d
+USTABDATA	inc/memlayout.h	139;"	d
+USTACKTOP	inc/memlayout.h	128;"	d
+UTEMP	inc/memlayout.h	134;"	d
+UTEXT	inc/memlayout.h	131;"	d
+UTOP	inc/memlayout.h	123;"	d
+UVPT	inc/memlayout.h	112;"	d
+UXSTACKTOP	inc/memlayout.h	125;"	d
+pde_t	inc/memlayout.h	/^typedef uint32_t pde_t;$/;"	t
+pp_link	inc/memlayout.h	/^	struct PageInfo *pp_link;$/;"	m	struct:PageInfo	typeref:struct:PageInfo::PageInfo
+pp_ref	inc/memlayout.h	/^	uint16_t pp_ref;$/;"	m	struct:PageInfo
+pte_t	inc/memlayout.h	/^typedef uint32_t pte_t;$/;"	t
+CR0_AM	inc/mmu.h	86;"	d
+CR0_CD	inc/mmu.h	88;"	d
+CR0_EM	inc/mmu.h	81;"	d
+CR0_ET	inc/mmu.h	83;"	d
+CR0_MP	inc/mmu.h	80;"	d
+CR0_NE	inc/mmu.h	84;"	d
+CR0_NW	inc/mmu.h	87;"	d
+CR0_PE	inc/mmu.h	79;"	d
+CR0_PG	inc/mmu.h	89;"	d
+CR0_TS	inc/mmu.h	82;"	d
+CR0_WP	inc/mmu.h	85;"	d
+CR4_DE	inc/mmu.h	94;"	d
+CR4_MCE	inc/mmu.h	92;"	d
+CR4_PCE	inc/mmu.h	91;"	d
+CR4_PSE	inc/mmu.h	93;"	d
+CR4_PVI	inc/mmu.h	96;"	d
+CR4_TSD	inc/mmu.h	95;"	d
+CR4_VME	inc/mmu.h	97;"	d
+FEC_PR	inc/mmu.h	123;"	d
+FEC_U	inc/mmu.h	125;"	d
+FEC_WR	inc/mmu.h	124;"	d
+FL_AC	inc/mmu.h	117;"	d
+FL_AF	inc/mmu.h	102;"	d
+FL_CF	inc/mmu.h	100;"	d
+FL_DF	inc/mmu.h	107;"	d
+FL_ID	inc/mmu.h	120;"	d
+FL_IF	inc/mmu.h	106;"	d
+FL_IOPL_0	inc/mmu.h	110;"	d
+FL_IOPL_1	inc/mmu.h	111;"	d
+FL_IOPL_2	inc/mmu.h	112;"	d
+FL_IOPL_3	inc/mmu.h	113;"	d
+FL_IOPL_MASK	inc/mmu.h	109;"	d
+FL_NT	inc/mmu.h	114;"	d
+FL_OF	inc/mmu.h	108;"	d
+FL_PF	inc/mmu.h	101;"	d
+FL_RF	inc/mmu.h	115;"	d
+FL_SF	inc/mmu.h	104;"	d
+FL_TF	inc/mmu.h	105;"	d
+FL_VIF	inc/mmu.h	118;"	d
+FL_VIP	inc/mmu.h	119;"	d
+FL_VM	inc/mmu.h	116;"	d
+FL_ZF	inc/mmu.h	103;"	d
+Gatedesc	inc/mmu.h	/^struct Gatedesc {$/;"	s
+JOS_INC_MMU_H	inc/mmu.h	2;"	d
 NPDENTRIES	inc/mmu.h	45;"	d
 NPTENTRIES	inc/mmu.h	46;"	d
-NSYSCALLS	inc/syscall.h	/^	NSYSCALLS$/;"	e	enum:__anon5
-NULL	inc/stdio.h	7;"	d
-NULL	inc/types.h	5;"	d
-NUMLOCK	kern/console.c	222;"	d	file:
-NVRAM_BASEHI	kern/kclock.h	16;"	d
-NVRAM_BASELO	kern/kclock.h	15;"	d
-NVRAM_CENTURY	kern/kclock.h	27;"	d
-NVRAM_EXTHI	kern/kclock.h	20;"	d
-NVRAM_EXTLO	kern/kclock.h	19;"	d
-NVRAM_PEXTHI	kern/kclock.h	24;"	d
-NVRAM_PEXTLO	kern/kclock.h	23;"	d
+PDX	inc/mmu.h	33;"	d
+PDXSHIFT	inc/mmu.h	55;"	d
+PGADDR	inc/mmu.h	42;"	d
+PGNUM	inc/mmu.h	30;"	d
+PGOFF	inc/mmu.h	39;"	d
+PGSHIFT	inc/mmu.h	49;"	d
+PGSIZE	inc/mmu.h	48;"	d
+PTE_A	inc/mmu.h	63;"	d
+PTE_ADDR	inc/mmu.h	76;"	d
+PTE_AVAIL	inc/mmu.h	70;"	d
+PTE_D	inc/mmu.h	64;"	d
+PTE_G	inc/mmu.h	66;"	d
+PTE_P	inc/mmu.h	58;"	d
+PTE_PCD	inc/mmu.h	62;"	d
+PTE_PS	inc/mmu.h	65;"	d
+PTE_PWT	inc/mmu.h	61;"	d
+PTE_SYSCALL	inc/mmu.h	73;"	d
+PTE_U	inc/mmu.h	60;"	d
+PTE_W	inc/mmu.h	59;"	d
+PTSHIFT	inc/mmu.h	52;"	d
+PTSIZE	inc/mmu.h	51;"	d
+PTX	inc/mmu.h	36;"	d
+PTXSHIFT	inc/mmu.h	54;"	d
+Pseudodesc	inc/mmu.h	/^struct Pseudodesc {$/;"	s
+SEG	inc/mmu.h	142;"	d
+SEG	inc/mmu.h	172;"	d
+SEG16	inc/mmu.h	176;"	d
+SEG_FAULT	inc/mmu.h	170;"	d
+SEG_NULL	inc/mmu.h	139;"	d
+SEG_NULL	inc/mmu.h	168;"	d
+SETCALLGATE	inc/mmu.h	296;"	d
+SETGATE	inc/mmu.h	282;"	d
+STA_A	inc/mmu.h	189;"	d
+STA_C	inc/mmu.h	186;"	d
+STA_E	inc/mmu.h	185;"	d
+STA_R	inc/mmu.h	188;"	d
+STA_W	inc/mmu.h	187;"	d
+STA_X	inc/mmu.h	184;"	d
+STS_CG16	inc/mmu.h	195;"	d
+STS_CG32	inc/mmu.h	201;"	d
+STS_IG16	inc/mmu.h	197;"	d
+STS_IG32	inc/mmu.h	202;"	d
+STS_LDT	inc/mmu.h	193;"	d
+STS_T16A	inc/mmu.h	192;"	d
+STS_T16B	inc/mmu.h	194;"	d
+STS_T32A	inc/mmu.h	199;"	d
+STS_T32B	inc/mmu.h	200;"	d
+STS_TG	inc/mmu.h	196;"	d
+STS_TG16	inc/mmu.h	198;"	d
+STS_TG32	inc/mmu.h	203;"	d
+Segdesc	inc/mmu.h	/^struct Segdesc {$/;"	s
+Taskstate	inc/mmu.h	/^struct Taskstate {$/;"	s
+gd_args	inc/mmu.h	/^	unsigned gd_args : 5;        \/\/ # args, 0 for interrupt\/trap gates$/;"	m	struct:Gatedesc
+gd_dpl	inc/mmu.h	/^	unsigned gd_dpl : 2;         \/\/ descriptor(meaning new) privilege level$/;"	m	struct:Gatedesc
+gd_off_15_0	inc/mmu.h	/^	unsigned gd_off_15_0 : 16;   \/\/ low 16 bits of offset in segment$/;"	m	struct:Gatedesc
+gd_off_31_16	inc/mmu.h	/^	unsigned gd_off_31_16 : 16;  \/\/ high bits of offset in segment$/;"	m	struct:Gatedesc
+gd_p	inc/mmu.h	/^	unsigned gd_p : 1;           \/\/ Present$/;"	m	struct:Gatedesc
+gd_rsv1	inc/mmu.h	/^	unsigned gd_rsv1 : 3;        \/\/ reserved(should be zero I guess)$/;"	m	struct:Gatedesc
+gd_s	inc/mmu.h	/^	unsigned gd_s : 1;           \/\/ must be 0 (system)$/;"	m	struct:Gatedesc
+gd_sel	inc/mmu.h	/^	unsigned gd_sel : 16;        \/\/ segment selector$/;"	m	struct:Gatedesc
+gd_type	inc/mmu.h	/^	unsigned gd_type : 4;        \/\/ type(STS_{TG,IG32,TG32})$/;"	m	struct:Gatedesc
+pd_base	inc/mmu.h	/^	uint32_t pd_base;		\/\/ Base address$/;"	m	struct:Pseudodesc
+pd_lim	inc/mmu.h	/^	uint16_t pd_lim;		\/\/ Limit$/;"	m	struct:Pseudodesc
+sd_avl	inc/mmu.h	/^	unsigned sd_avl : 1;        \/\/ Unused (available for software use)$/;"	m	struct:Segdesc
+sd_base_15_0	inc/mmu.h	/^	unsigned sd_base_15_0 : 16; \/\/ Low bits of segment base address$/;"	m	struct:Segdesc
+sd_base_23_16	inc/mmu.h	/^	unsigned sd_base_23_16 : 8; \/\/ Middle bits of segment base address$/;"	m	struct:Segdesc
+sd_base_31_24	inc/mmu.h	/^	unsigned sd_base_31_24 : 8; \/\/ High bits of segment base address$/;"	m	struct:Segdesc
+sd_db	inc/mmu.h	/^	unsigned sd_db : 1;         \/\/ 0 = 16-bit segment, 1 = 32-bit segment$/;"	m	struct:Segdesc
+sd_dpl	inc/mmu.h	/^	unsigned sd_dpl : 2;        \/\/ Descriptor Privilege Level$/;"	m	struct:Segdesc
+sd_g	inc/mmu.h	/^	unsigned sd_g : 1;          \/\/ Granularity: limit scaled by 4K when set$/;"	m	struct:Segdesc
+sd_lim_15_0	inc/mmu.h	/^	unsigned sd_lim_15_0 : 16;  \/\/ Low bits of segment limit$/;"	m	struct:Segdesc
+sd_lim_19_16	inc/mmu.h	/^	unsigned sd_lim_19_16 : 4;  \/\/ High bits of segment limit$/;"	m	struct:Segdesc
+sd_p	inc/mmu.h	/^	unsigned sd_p : 1;          \/\/ Present$/;"	m	struct:Segdesc
+sd_rsv1	inc/mmu.h	/^	unsigned sd_rsv1 : 1;       \/\/ Reserved$/;"	m	struct:Segdesc
+sd_s	inc/mmu.h	/^	unsigned sd_s : 1;          \/\/ 0 = system, 1 = application$/;"	m	struct:Segdesc
+sd_type	inc/mmu.h	/^	unsigned sd_type : 4;       \/\/ Segment type (see STS_ constants)$/;"	m	struct:Segdesc
+ts_cr3	inc/mmu.h	/^	physaddr_t ts_cr3;	\/\/ Page directory base$/;"	m	struct:Taskstate
+ts_cs	inc/mmu.h	/^	uint16_t ts_cs;$/;"	m	struct:Taskstate
+ts_ds	inc/mmu.h	/^	uint16_t ts_ds;$/;"	m	struct:Taskstate
+ts_eax	inc/mmu.h	/^	uint32_t ts_eax;	\/\/ More saved state (registers)$/;"	m	struct:Taskstate
+ts_ebp	inc/mmu.h	/^	uintptr_t ts_ebp;$/;"	m	struct:Taskstate
+ts_ebx	inc/mmu.h	/^	uint32_t ts_ebx;$/;"	m	struct:Taskstate
+ts_ecx	inc/mmu.h	/^	uint32_t ts_ecx;$/;"	m	struct:Taskstate
+ts_edi	inc/mmu.h	/^	uint32_t ts_edi;$/;"	m	struct:Taskstate
+ts_edx	inc/mmu.h	/^	uint32_t ts_edx;$/;"	m	struct:Taskstate
+ts_eflags	inc/mmu.h	/^	uint32_t ts_eflags;$/;"	m	struct:Taskstate
+ts_eip	inc/mmu.h	/^	uintptr_t ts_eip;	\/\/ Saved state from last task switch$/;"	m	struct:Taskstate
+ts_es	inc/mmu.h	/^	uint16_t ts_es;		\/\/ Even more saved state (segment selectors)$/;"	m	struct:Taskstate
+ts_esi	inc/mmu.h	/^	uint32_t ts_esi;$/;"	m	struct:Taskstate
+ts_esp	inc/mmu.h	/^	uintptr_t ts_esp;$/;"	m	struct:Taskstate
+ts_esp0	inc/mmu.h	/^	uintptr_t ts_esp0;	\/\/ Stack pointers and segment selectors$/;"	m	struct:Taskstate
+ts_esp1	inc/mmu.h	/^	uintptr_t ts_esp1;$/;"	m	struct:Taskstate
+ts_esp2	inc/mmu.h	/^	uintptr_t ts_esp2;$/;"	m	struct:Taskstate
+ts_fs	inc/mmu.h	/^	uint16_t ts_fs;$/;"	m	struct:Taskstate
+ts_gs	inc/mmu.h	/^	uint16_t ts_gs;$/;"	m	struct:Taskstate
+ts_iomb	inc/mmu.h	/^	uint16_t ts_iomb;	\/\/ I\/O map base address$/;"	m	struct:Taskstate
+ts_ldt	inc/mmu.h	/^	uint16_t ts_ldt;$/;"	m	struct:Taskstate
+ts_link	inc/mmu.h	/^	uint32_t ts_link;	\/\/ Old ts selector$/;"	m	struct:Taskstate
+ts_padding1	inc/mmu.h	/^	uint16_t ts_padding1;$/;"	m	struct:Taskstate
+ts_padding10	inc/mmu.h	/^	uint16_t ts_padding10;$/;"	m	struct:Taskstate
+ts_padding2	inc/mmu.h	/^	uint16_t ts_padding2;$/;"	m	struct:Taskstate
+ts_padding3	inc/mmu.h	/^	uint16_t ts_padding3;$/;"	m	struct:Taskstate
+ts_padding4	inc/mmu.h	/^	uint16_t ts_padding4;$/;"	m	struct:Taskstate
+ts_padding5	inc/mmu.h	/^	uint16_t ts_padding5;$/;"	m	struct:Taskstate
+ts_padding6	inc/mmu.h	/^	uint16_t ts_padding6;$/;"	m	struct:Taskstate
+ts_padding7	inc/mmu.h	/^	uint16_t ts_padding7;$/;"	m	struct:Taskstate
+ts_padding8	inc/mmu.h	/^	uint16_t ts_padding8;$/;"	m	struct:Taskstate
+ts_padding9	inc/mmu.h	/^	uint16_t ts_padding9;$/;"	m	struct:Taskstate
+ts_ss	inc/mmu.h	/^	uint16_t ts_ss;$/;"	m	struct:Taskstate
+ts_ss0	inc/mmu.h	/^	uint16_t ts_ss0;	\/\/   after an increase in privilege level$/;"	m	struct:Taskstate
+ts_ss1	inc/mmu.h	/^	uint16_t ts_ss1;$/;"	m	struct:Taskstate
+ts_ss2	inc/mmu.h	/^	uint16_t ts_ss2;$/;"	m	struct:Taskstate
+ts_t	inc/mmu.h	/^	uint16_t ts_t;		\/\/ Trap on task switch$/;"	m	struct:Taskstate
+JOS_STAB_H	inc/stab.h	2;"	d
 N_BCOMM	inc/stab.h	37;"	d
 N_BINCL	inc/stab.h	29;"	d
 N_BSLINE	inc/stab.h	25;"	d
@@ -333,101 +506,35 @@ N_SO	inc/stab.h	27;"	d
 N_SOL	inc/stab.h	30;"	d
 N_SSYM	inc/stab.h	26;"	d
 N_STSYM	inc/stab.h	18;"	d
-OBJCOPY	GNUmakefile	/^OBJCOPY	:= $(GCCPREFIX)objcopy$/;"	m
-OBJDIR	GNUmakefile	/^OBJDIR := obj$/;"	m
-OBJDIRS	GNUmakefile	/^OBJDIRS :=$/;"	m
-OBJDUMP	GNUmakefile	/^OBJDUMP	:= $(GCCPREFIX)objdump$/;"	m
-O_ACCMODE	inc/lib.h	49;"	d
-O_CREAT	inc/lib.h	51;"	d
-O_EXCL	inc/lib.h	53;"	d
-O_MKDIR	inc/lib.h	54;"	d
-O_RDONLY	inc/lib.h	46;"	d
-O_RDWR	inc/lib.h	48;"	d
-O_TRUNC	inc/lib.h	52;"	d
-O_WRONLY	inc/lib.h	47;"	d
-PACKAGEDATE	conf/lab.mk	/^PACKAGEDATE=Wed Sep 3 09:38:39 EDT 2014$/;"	m
-PADDR	kern/pmap.h	26;"	d
-PADDR	obj/kern/kernel.asm	/^#define PADDR(kva) _paddr(__FILE__, __LINE__, kva)$/;"	d
-PDX	inc/mmu.h	33;"	d
-PDXSHIFT	inc/mmu.h	55;"	d
-PERL	GNUmakefile	/^PERL	:= perl$/;"	m
-PFTEMP	inc/memlayout.h	137;"	d
-PGADDR	inc/mmu.h	42;"	d
-PGNUM	inc/mmu.h	30;"	d
-PGOFF	inc/mmu.h	39;"	d
-PGSHIFT	inc/mmu.h	49;"	d
-PGSIZE	inc/mmu.h	48;"	d
-PTE_A	inc/mmu.h	63;"	d
-PTE_ADDR	inc/mmu.h	76;"	d
-PTE_AVAIL	inc/mmu.h	70;"	d
-PTE_D	inc/mmu.h	64;"	d
-PTE_G	inc/mmu.h	66;"	d
-PTE_P	inc/mmu.h	58;"	d
-PTE_PCD	inc/mmu.h	62;"	d
-PTE_PS	inc/mmu.h	65;"	d
-PTE_PWT	inc/mmu.h	61;"	d
-PTE_SYSCALL	inc/mmu.h	73;"	d
-PTE_U	inc/mmu.h	60;"	d
-PTE_W	inc/mmu.h	59;"	d
-PTSHIFT	inc/mmu.h	52;"	d
-PTSIZE	inc/mmu.h	51;"	d
-PTX	inc/mmu.h	36;"	d
-PTXSHIFT	inc/mmu.h	54;"	d
-PageInfo	inc/memlayout.h	/^struct PageInfo {$/;"	s
-Proghdr	inc/elf.h	/^struct Proghdr {$/;"	s
-Pseudodesc	inc/mmu.h	/^struct Pseudodesc {$/;"	s
-PushRegs	inc/trap.h	/^struct PushRegs {$/;"	s
-QEMU	GNUmakefile	/^QEMU := $(shell if which qemu > \/dev\/null; \\$/;"	m
-QEMU	gradelib.py	/^class QEMU(object):$/;"	c
-QEMUOPTS	GNUmakefile	/^QEMUOPTS = -hda $(OBJDIR)\/kern\/kernel.img -serial mon:stdio -gdb tcp::$(GDBPORT)$/;"	m
-RELOC	kern/entry.S	/^#define	RELOC(x) ((x) - KERNBASE)$/;"	d
-ROUNDDOWN	inc/types.h	58;"	d
-ROUNDUP	inc/types.h	64;"	d
-Runner	gradelib.py	/^class Runner():$/;"	c
-SCROLLLOCK	kern/console.c	223;"	d	file:
-SECTSIZE	boot/main.c	32;"	d	file:
-SEG	inc/mmu.h	142;"	d
-SEG	inc/mmu.h	172;"	d
-SEG16	inc/mmu.h	176;"	d
-SEG_FAULT	inc/mmu.h	170;"	d
-SEG_NULL	inc/mmu.h	139;"	d
-SEG_NULL	inc/mmu.h	168;"	d
-SETCALLGATE	inc/mmu.h	296;"	d
-SETGATE	inc/mmu.h	282;"	d
-SHIFT	kern/console.c	217;"	d	file:
-SRL	kern/entry.S	/^#define SRL(val, shamt)		(((val) >> (shamt)) & ~(-1 << (32 - (shamt))))$/;"	d
-STA_A	inc/mmu.h	189;"	d
-STA_C	inc/mmu.h	186;"	d
-STA_E	inc/mmu.h	185;"	d
-STA_R	inc/mmu.h	188;"	d
-STA_W	inc/mmu.h	187;"	d
-STA_X	inc/mmu.h	184;"	d
-STS_CG16	inc/mmu.h	195;"	d
-STS_CG32	inc/mmu.h	201;"	d
-STS_IG16	inc/mmu.h	197;"	d
-STS_IG32	inc/mmu.h	202;"	d
-STS_LDT	inc/mmu.h	193;"	d
-STS_T16A	inc/mmu.h	192;"	d
-STS_T16B	inc/mmu.h	194;"	d
-STS_T32A	inc/mmu.h	199;"	d
-STS_T32B	inc/mmu.h	200;"	d
-STS_TG	inc/mmu.h	196;"	d
-STS_TG16	inc/mmu.h	198;"	d
-STS_TG32	inc/mmu.h	203;"	d
+Stab	inc/stab.h	/^struct Stab {$/;"	s
+n_desc	inc/stab.h	/^	uint16_t n_desc;        \/\/ description field$/;"	m	struct:Stab
+n_other	inc/stab.h	/^	uint8_t n_other;        \/\/ misc info (usually empty)$/;"	m	struct:Stab
+n_strx	inc/stab.h	/^	uint32_t n_strx;	\/\/ index into string table of name$/;"	m	struct:Stab
+n_type	inc/stab.h	/^	uint8_t n_type;         \/\/ type of symbol$/;"	m	struct:Stab
+n_value	inc/stab.h	/^	uintptr_t n_value;	\/\/ value of symbol$/;"	m	struct:Stab
+JOS_INC_STDARG_H	inc/stdarg.h	4;"	d
+va_arg	inc/stdarg.h	10;"	d
+va_end	inc/stdarg.h	12;"	d
+va_list	inc/stdarg.h	/^typedef __builtin_va_list va_list;$/;"	t
+va_start	inc/stdarg.h	8;"	d
+JOS_INC_STDIO_H	inc/stdio.h	2;"	d
+NULL	inc/stdio.h	7;"	d
+JOS_INC_STRING_H	inc/string.h	2;"	d
+JOS_INC_SYSCALL_H	inc/syscall.h	2;"	d
+NSYSCALLS	inc/syscall.h	/^	NSYSCALLS$/;"	e	enum:__anon5
 SYS_cgetc	inc/syscall.h	/^	SYS_cgetc,$/;"	e	enum:__anon5
 SYS_cputs	inc/syscall.h	/^	SYS_cputs = 0,$/;"	e	enum:__anon5
 SYS_env_destroy	inc/syscall.h	/^	SYS_env_destroy,$/;"	e	enum:__anon5
 SYS_getenvid	inc/syscall.h	/^	SYS_getenvid,$/;"	e	enum:__anon5
-Secthdr	inc/elf.h	/^struct Secthdr {$/;"	s
-Segdesc	inc/mmu.h	/^struct Segdesc {$/;"	s
-Stab	inc/stab.h	/^struct Stab {$/;"	s
-TAR	GNUmakefile	/^TAR	:= gtar$/;"	m
-TEMP_ADDR	user/sendpage.c	9;"	d	file:
-TEMP_ADDR_CHILD	user/sendpage.c	10;"	d	file:
-TESTS	gradelib.py	/^TESTS = []$/;"	v
-TOP	GNUmakefile	/^TOP = .$/;"	m
-TRAPHANDLER	kern/trapentry.S	/^#define TRAPHANDLER(name, num)						\\$/;"	d
-TRAPHANDLER_NOEC	kern/trapentry.S	/^#define TRAPHANDLER_NOEC(name, num)					\\$/;"	d
+IRQ_ERROR	inc/trap.h	40;"	d
+IRQ_IDE	inc/trap.h	39;"	d
+IRQ_KBD	inc/trap.h	36;"	d
+IRQ_OFFSET	inc/trap.h	32;"	d
+IRQ_SERIAL	inc/trap.h	37;"	d
+IRQ_SPURIOUS	inc/trap.h	38;"	d
+IRQ_TIMER	inc/trap.h	35;"	d
+JOS_INC_TRAP_H	inc/trap.h	2;"	d
+PushRegs	inc/trap.h	/^struct PushRegs {$/;"	s
 T_ALIGN	inc/trap.h	23;"	d
 T_BOUND	inc/trap.h	11;"	d
 T_BRKPT	inc/trap.h	9;"	d
@@ -448,567 +555,432 @@ T_SIMDERR	inc/trap.h	25;"	d
 T_STACK	inc/trap.h	18;"	d
 T_SYSCALL	inc/trap.h	29;"	d
 T_TSS	inc/trap.h	16;"	d
-Taskstate	inc/mmu.h	/^struct Taskstate {$/;"	s
-TerminateTest	gradelib.py	/^class TerminateTest(Exception):$/;"	c
 Trapframe	inc/trap.h	/^struct Trapframe {$/;"	s
-UENVS	inc/memlayout.h	116;"	d
-ULDFLAGS	GNUmakefile	/^ULDFLAGS := -T user\/user.ld$/;"	m
-ULIM	inc/memlayout.h	104;"	d
-UPAGES	inc/memlayout.h	114;"	d
-USED	inc/lib.h	20;"	d
-USER_CFLAGS	GNUmakefile	/^USER_CFLAGS := $(CFLAGS) -DJOS_USER -gstabs$/;"	m
-USTABDATA	inc/memlayout.h	139;"	d
-USTACKTOP	inc/memlayout.h	128;"	d
-UTEMP	inc/memlayout.h	134;"	d
-UTEXT	inc/memlayout.h	131;"	d
-UTOP	inc/memlayout.h	123;"	d
-UVPT	inc/memlayout.h	112;"	d
-UXSTACKTOP	inc/memlayout.h	125;"	d
-UserStabData	kern/kdebug.c	/^struct UserStabData {$/;"	s	file:
-V	conf/env.mk	/^V = @$/;"	m
-WEBSUB	GNUmakefile	/^WEBSUB = https:\/\/ccutler.scripts.mit.edu\/6.828\/handin.py$/;"	m
-WHITESPACE	kern/monitor.c	89;"	d	file:
-_CONSOLE_H_	kern/console.h	4;"	d
-_GDBPORT	gradelib.py	/^    _GDBPORT = None$/;"	v	class:QEMU
-__all__	gradelib.py	/^__all__ = []$/;"	v
-__init__	gradelib.py	/^    def __init__(self, *default_monitors):$/;"	m	class:Runner
-__init__	gradelib.py	/^    def __init__(self, *make_args):$/;"	m	class:QEMU
-__init__	gradelib.py	/^    def __init__(self, port, timeout=15):$/;"	m	class:GDBClient
-__monitor_start	gradelib.py	/^    def __monitor_start(self, output):$/;"	m	class:Runner	file:
-__react	gradelib.py	/^    def __react(self, reactors, timeout):$/;"	m	class:Runner	file:
-__send	gradelib.py	/^    def __send(self, cmd):$/;"	m	class:GDBClient	file:
-__send_break	gradelib.py	/^    def __send_break(self):$/;"	m	class:GDBClient	file:
-_kaddr	kern/pmap.h	/^_kaddr(const char *file, int line, physaddr_t pa)$/;"	f
-_paddr	kern/pmap.h	/^_paddr(const char *file, int line, void *kva)$/;"	f
-_panic	init.s	/^_panic:$/;"	l
-_panic	kern/init.c	/^_panic(const char *file, int line, const char *fmt,...)$/;"	f
-_panic	lib/panic.c	/^_panic(const char *file, int line, const char *fmt, ...)$/;"	f
-_start	kern/entry.S	/^_start = RELOC(entry)$/;"	d
-_start	lib/entry.S	/^_start:$/;"	l
-_start	obj/kern/kernel.asm	/^_start = RELOC(entry)$/;"	d
-_start	obj/user/badsegment.asm	/^_start:$/;"	l
-_start	obj/user/breakpoint.asm	/^_start:$/;"	l
-_start	obj/user/buggyhello.asm	/^_start:$/;"	l
-_start	obj/user/buggyhello2.asm	/^_start:$/;"	l
-_start	obj/user/divzero.asm	/^_start:$/;"	l
-_start	obj/user/evilhello.asm	/^_start:$/;"	l
-_start	obj/user/faultread.asm	/^_start:$/;"	l
-_start	obj/user/faultreadkernel.asm	/^_start:$/;"	l
-_start	obj/user/faultwrite.asm	/^_start:$/;"	l
-_start	obj/user/faultwritekernel.asm	/^_start:$/;"	l
-_start	obj/user/hello.asm	/^_start:$/;"	l
-_start	obj/user/softint.asm	/^_start:$/;"	l
-_start	obj/user/testbss.asm	/^_start:$/;"	l
-_warn	init.s	/^_warn:$/;"	l
-_warn	kern/init.c	/^_warn(const char *file, int line, const char *fmt,...)$/;"	f
-addr_6845	kern/console.c	/^static unsigned addr_6845;$/;"	v	file:
-addr_6845	obj/kern/kernel.asm	/^		addr_6845 = CGA_BASE;$/;"	d
-addr_6845	obj/kern/kernel.asm	/^		addr_6845 = MONO_BASE;$/;"	d
-altflag	obj/kern/kernel.asm	/^			altflag = 1;$/;"	d
-altflag	obj/kern/kernel.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/badsegment.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/badsegment.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/breakpoint.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/breakpoint.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/buggyhello.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/buggyhello.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/buggyhello2.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/buggyhello2.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/divzero.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/divzero.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/evilhello.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/evilhello.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/faultread.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/faultread.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/faultreadkernel.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/faultreadkernel.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/faultwrite.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/faultwrite.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/faultwritekernel.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/faultwritekernel.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/hello.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/hello.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/softint.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/softint.asm	/^		altflag = 0;$/;"	d
-altflag	obj/user/testbss.asm	/^			altflag = 1;$/;"	d
-altflag	obj/user/testbss.asm	/^		altflag = 0;$/;"	d
-any_matches	obj/kern/kernel.asm	/^		any_matches = 1;$/;"	d
-argc	obj/kern/kernel.asm	/^	argc = 0;$/;"	d
-args_exist	lib/entry.S	/^args_exist:$/;"	l
-args_exist	obj/user/badsegment.asm	/^args_exist:$/;"	l
-args_exist	obj/user/breakpoint.asm	/^args_exist:$/;"	l
-args_exist	obj/user/buggyhello.asm	/^args_exist:$/;"	l
-args_exist	obj/user/buggyhello2.asm	/^args_exist:$/;"	l
-args_exist	obj/user/divzero.asm	/^args_exist:$/;"	l
-args_exist	obj/user/evilhello.asm	/^args_exist:$/;"	l
-args_exist	obj/user/faultread.asm	/^args_exist:$/;"	l
-args_exist	obj/user/faultreadkernel.asm	/^args_exist:$/;"	l
-args_exist	obj/user/faultwrite.asm	/^args_exist:$/;"	l
-args_exist	obj/user/faultwritekernel.asm	/^args_exist:$/;"	l
-args_exist	obj/user/hello.asm	/^args_exist:$/;"	l
-args_exist	obj/user/softint.asm	/^args_exist:$/;"	l
-args_exist	obj/user/testbss.asm	/^args_exist:$/;"	l
-assert	inc/assert.h	14;"	d
-assert_equal	gradelib.py	/^def assert_equal(got, expect, msg=""):$/;"	f
-assert_lines_match	gradelib.py	/^def assert_lines_match(text, *regexps, **kw):$/;"	f
-assert_lines_match_kw	gradelib.py	/^    def assert_lines_match_kw(no=[]):$/;"	f	function:assert_lines_match
-base	obj/kern/kernel.asm	/^			base = 10;$/;"	d
-base	obj/kern/kernel.asm	/^			base = 16;$/;"	d
-base	obj/kern/kernel.asm	/^			base = 8;$/;"	d
-base	obj/kern/kernel.asm	/^		base = 10;$/;"	d
-base	obj/user/badsegment.asm	/^			base = 10;$/;"	d
-base	obj/user/badsegment.asm	/^			base = 16;$/;"	d
-base	obj/user/badsegment.asm	/^			base = 8;$/;"	d
-base	obj/user/badsegment.asm	/^		base = 10;$/;"	d
-base	obj/user/breakpoint.asm	/^			base = 10;$/;"	d
-base	obj/user/breakpoint.asm	/^			base = 16;$/;"	d
-base	obj/user/breakpoint.asm	/^			base = 8;$/;"	d
-base	obj/user/breakpoint.asm	/^		base = 10;$/;"	d
-base	obj/user/buggyhello.asm	/^			base = 10;$/;"	d
-base	obj/user/buggyhello.asm	/^			base = 16;$/;"	d
-base	obj/user/buggyhello.asm	/^			base = 8;$/;"	d
-base	obj/user/buggyhello.asm	/^		base = 10;$/;"	d
-base	obj/user/buggyhello2.asm	/^			base = 10;$/;"	d
-base	obj/user/buggyhello2.asm	/^			base = 16;$/;"	d
-base	obj/user/buggyhello2.asm	/^			base = 8;$/;"	d
-base	obj/user/buggyhello2.asm	/^		base = 10;$/;"	d
-base	obj/user/divzero.asm	/^			base = 10;$/;"	d
-base	obj/user/divzero.asm	/^			base = 16;$/;"	d
-base	obj/user/divzero.asm	/^			base = 8;$/;"	d
-base	obj/user/divzero.asm	/^		base = 10;$/;"	d
-base	obj/user/evilhello.asm	/^			base = 10;$/;"	d
-base	obj/user/evilhello.asm	/^			base = 16;$/;"	d
-base	obj/user/evilhello.asm	/^			base = 8;$/;"	d
-base	obj/user/evilhello.asm	/^		base = 10;$/;"	d
-base	obj/user/faultread.asm	/^			base = 10;$/;"	d
-base	obj/user/faultread.asm	/^			base = 16;$/;"	d
-base	obj/user/faultread.asm	/^			base = 8;$/;"	d
-base	obj/user/faultread.asm	/^		base = 10;$/;"	d
-base	obj/user/faultreadkernel.asm	/^			base = 10;$/;"	d
-base	obj/user/faultreadkernel.asm	/^			base = 16;$/;"	d
-base	obj/user/faultreadkernel.asm	/^			base = 8;$/;"	d
-base	obj/user/faultreadkernel.asm	/^		base = 10;$/;"	d
-base	obj/user/faultwrite.asm	/^			base = 10;$/;"	d
-base	obj/user/faultwrite.asm	/^			base = 16;$/;"	d
-base	obj/user/faultwrite.asm	/^			base = 8;$/;"	d
-base	obj/user/faultwrite.asm	/^		base = 10;$/;"	d
-base	obj/user/faultwritekernel.asm	/^			base = 10;$/;"	d
-base	obj/user/faultwritekernel.asm	/^			base = 16;$/;"	d
-base	obj/user/faultwritekernel.asm	/^			base = 8;$/;"	d
-base	obj/user/faultwritekernel.asm	/^		base = 10;$/;"	d
-base	obj/user/hello.asm	/^			base = 10;$/;"	d
-base	obj/user/hello.asm	/^			base = 16;$/;"	d
-base	obj/user/hello.asm	/^			base = 8;$/;"	d
-base	obj/user/hello.asm	/^		base = 10;$/;"	d
-base	obj/user/softint.asm	/^			base = 10;$/;"	d
-base	obj/user/softint.asm	/^			base = 16;$/;"	d
-base	obj/user/softint.asm	/^			base = 8;$/;"	d
-base	obj/user/softint.asm	/^		base = 10;$/;"	d
-base	obj/user/testbss.asm	/^			base = 10;$/;"	d
-base	obj/user/testbss.asm	/^			base = 16;$/;"	d
-base	obj/user/testbss.asm	/^			base = 8;$/;"	d
-base	obj/user/testbss.asm	/^		base = 10;$/;"	d
-bigarray	user/testbss.c	/^uint32_t bigarray[ARRAYSIZE];$/;"	v
-binaryname	lib/libmain.c	/^const char *binaryname = "<unknown>";$/;"	v
-binaryname	obj/user/badsegment.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/breakpoint.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/buggyhello.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/buggyhello2.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/divzero.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/evilhello.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/faultread.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/faultreadkernel.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/faultwrite.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/faultwritekernel.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/hello.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/softint.asm	/^		binaryname = argv[0];$/;"	d
-binaryname	obj/user/testbss.asm	/^		binaryname = argv[0];$/;"	d
+reg_eax	inc/trap.h	/^	uint32_t reg_eax;$/;"	m	struct:PushRegs
+reg_ebp	inc/trap.h	/^	uint32_t reg_ebp;$/;"	m	struct:PushRegs
+reg_ebx	inc/trap.h	/^	uint32_t reg_ebx;$/;"	m	struct:PushRegs
+reg_ecx	inc/trap.h	/^	uint32_t reg_ecx;$/;"	m	struct:PushRegs
+reg_edi	inc/trap.h	/^	uint32_t reg_edi;$/;"	m	struct:PushRegs
+reg_edx	inc/trap.h	/^	uint32_t reg_edx;$/;"	m	struct:PushRegs
+reg_esi	inc/trap.h	/^	uint32_t reg_esi;$/;"	m	struct:PushRegs
+reg_oesp	inc/trap.h	/^	uint32_t reg_oesp;		\/* Useless *\/$/;"	m	struct:PushRegs
+tf_cs	inc/trap.h	/^	uint16_t tf_cs;$/;"	m	struct:Trapframe
+tf_ds	inc/trap.h	/^	uint16_t tf_ds;$/;"	m	struct:Trapframe
+tf_eflags	inc/trap.h	/^	uint32_t tf_eflags;$/;"	m	struct:Trapframe
+tf_eip	inc/trap.h	/^	uintptr_t tf_eip;$/;"	m	struct:Trapframe
+tf_err	inc/trap.h	/^	uint32_t tf_err;$/;"	m	struct:Trapframe
+tf_es	inc/trap.h	/^	uint16_t tf_es;$/;"	m	struct:Trapframe
+tf_esp	inc/trap.h	/^	uintptr_t tf_esp;$/;"	m	struct:Trapframe
+tf_padding1	inc/trap.h	/^	uint16_t tf_padding1;$/;"	m	struct:Trapframe
+tf_padding2	inc/trap.h	/^	uint16_t tf_padding2;$/;"	m	struct:Trapframe
+tf_padding3	inc/trap.h	/^	uint16_t tf_padding3;$/;"	m	struct:Trapframe
+tf_padding4	inc/trap.h	/^	uint16_t tf_padding4;$/;"	m	struct:Trapframe
+tf_regs	inc/trap.h	/^	struct PushRegs tf_regs;$/;"	m	struct:Trapframe	typeref:struct:Trapframe::PushRegs
+tf_ss	inc/trap.h	/^	uint16_t tf_ss;$/;"	m	struct:Trapframe
+tf_trapno	inc/trap.h	/^	uint32_t tf_trapno;$/;"	m	struct:Trapframe
+JOS_INC_TYPES_H	inc/types.h	2;"	d
+MAX	inc/types.h	49;"	d
+MIN	inc/types.h	43;"	d
+NULL	inc/types.h	5;"	d
+ROUNDDOWN	inc/types.h	58;"	d
+ROUNDUP	inc/types.h	64;"	d
 bool	inc/types.h	/^typedef _Bool bool;$/;"	t
-boot_alloc	kern/pmap.c	/^boot_alloc(uint32_t n)$/;"	f	file:
-boot_map_region	kern/pmap.c	/^boot_map_region(pde_t *pgdir, uintptr_t va, size_t size, physaddr_t pa, int perm)$/;"	f	file:
-bootmain	boot/main.c	/^bootmain(void)$/;"	f
-bootstack	kern/entry.S	/^bootstack:$/;"	l
-bootstacktop	kern/entry.S	/^bootstacktop:$/;"	l
-breakpoint	gradelib.py	/^    def breakpoint(self, addr):$/;"	m	class:GDBClient
+false	inc/types.h	/^enum { false, true };$/;"	e	enum:__anon6
+int16_t	inc/types.h	/^typedef short int16_t;$/;"	t
+int32_t	inc/types.h	/^typedef int int32_t;$/;"	t
+int64_t	inc/types.h	/^typedef long long int64_t;$/;"	t
+int8_t	inc/types.h	/^typedef __signed char int8_t;$/;"	t
+intptr_t	inc/types.h	/^typedef int32_t intptr_t;$/;"	t
+off_t	inc/types.h	/^typedef int32_t off_t;$/;"	t
+offsetof	inc/types.h	71;"	d
+physaddr_t	inc/types.h	/^typedef uint32_t physaddr_t;$/;"	t
+ppn_t	inc/types.h	/^typedef uint32_t ppn_t;$/;"	t
+size_t	inc/types.h	/^typedef uint32_t size_t;$/;"	t
+ssize_t	inc/types.h	/^typedef int32_t ssize_t;$/;"	t
+true	inc/types.h	/^enum { false, true };$/;"	e	enum:__anon6
+uint16_t	inc/types.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32_t	inc/types.h	/^typedef unsigned int uint32_t;$/;"	t
+uint64_t	inc/types.h	/^typedef unsigned long long uint64_t;$/;"	t
+uint8_t	inc/types.h	/^typedef unsigned char uint8_t;$/;"	t
+uintptr_t	inc/types.h	/^typedef uint32_t uintptr_t;$/;"	t
+JOS_INC_X86_H	inc/x86.h	2;"	d
 breakpoint	inc/x86.h	/^breakpoint(void)$/;"	f
+cpuid	inc/x86.h	/^cpuid(uint32_t info, uint32_t *eaxp, uint32_t *ebxp, uint32_t *ecxp, uint32_t *edxp)$/;"	f
+inb	inc/x86.h	/^inb(int port)$/;"	f
+inl	inc/x86.h	/^inl(int port)$/;"	f
+insb	inc/x86.h	/^insb(int port, void *addr, int cnt)$/;"	f
+insl	inc/x86.h	/^insl(int port, void *addr, int cnt)$/;"	f
+insw	inc/x86.h	/^insw(int port, void *addr, int cnt)$/;"	f
+invlpg	inc/x86.h	/^invlpg(void *addr)$/;"	f
+inw	inc/x86.h	/^inw(int port)$/;"	f
+lcr0	inc/x86.h	/^lcr0(uint32_t val)$/;"	f
+lcr3	inc/x86.h	/^lcr3(uint32_t val)$/;"	f
+lcr4	inc/x86.h	/^lcr4(uint32_t val)$/;"	f
+lgdt	inc/x86.h	/^lgdt(void *p)$/;"	f
+lidt	inc/x86.h	/^lidt(void *p)$/;"	f
+lldt	inc/x86.h	/^lldt(uint16_t sel)$/;"	f
+ltr	inc/x86.h	/^ltr(uint16_t sel)$/;"	f
+outb	inc/x86.h	/^outb(int port, uint8_t data)$/;"	f
+outl	inc/x86.h	/^outl(int port, uint32_t data)$/;"	f
+outsb	inc/x86.h	/^outsb(int port, const void *addr, int cnt)$/;"	f
+outsl	inc/x86.h	/^outsl(int port, const void *addr, int cnt)$/;"	f
+outsw	inc/x86.h	/^outsw(int port, const void *addr, int cnt)$/;"	f
+outw	inc/x86.h	/^outw(int port, uint16_t data)$/;"	f
+rcr0	inc/x86.h	/^rcr0(void)$/;"	f
+rcr2	inc/x86.h	/^rcr2(void)$/;"	f
+rcr3	inc/x86.h	/^rcr3(void)$/;"	f
+rcr4	inc/x86.h	/^rcr4(void)$/;"	f
+read_ebp	inc/x86.h	/^read_ebp(void)$/;"	f
+read_eflags	inc/x86.h	/^read_eflags(void)$/;"	f
+read_esp	inc/x86.h	/^read_esp(void)$/;"	f
+read_tsc	inc/x86.h	/^read_tsc(void)$/;"	f
+tlbflush	inc/x86.h	/^tlbflush(void)$/;"	f
+write_eflags	inc/x86.h	/^write_eflags(uint32_t eflags)$/;"	f
+xchg	inc/x86.h	/^xchg(volatile uint32_t *addr, uint32_t newval)$/;"	f
+_panic	init.s	/^_panic:$/;"	l
+_warn	init.s	/^_warn:$/;"	l
+i386_init	init.s	/^i386_init:$/;"	l
+test_backtrace	init.s	/^test_backtrace:$/;"	l
+ALT	kern/console.c	219;"	d	file:
+C	kern/console.c	286;"	d	file:
+CAPSLOCK	kern/console.c	221;"	d	file:
+COM1	kern/console.c	26;"	d	file:
+COM_DLL	kern/console.c	30;"	d	file:
+COM_DLM	kern/console.c	31;"	d	file:
+COM_FCR	kern/console.c	35;"	d	file:
+COM_IER	kern/console.c	32;"	d	file:
+COM_IER_RDI	kern/console.c	33;"	d	file:
+COM_IIR	kern/console.c	34;"	d	file:
+COM_LCR	kern/console.c	36;"	d	file:
+COM_LCR_DLAB	kern/console.c	37;"	d	file:
+COM_LCR_WLEN8	kern/console.c	38;"	d	file:
+COM_LSR	kern/console.c	43;"	d	file:
+COM_LSR_DATA	kern/console.c	44;"	d	file:
+COM_LSR_TSRE	kern/console.c	46;"	d	file:
+COM_LSR_TXRDY	kern/console.c	45;"	d	file:
+COM_MCR	kern/console.c	39;"	d	file:
+COM_MCR_DTR	kern/console.c	41;"	d	file:
+COM_MCR_OUT2	kern/console.c	42;"	d	file:
+COM_MCR_RTS	kern/console.c	40;"	d	file:
+COM_RX	kern/console.c	28;"	d	file:
+COM_TX	kern/console.c	29;"	d	file:
+CONSBUFSIZE	kern/console.c	382;"	d	file:
+CTL	kern/console.c	218;"	d	file:
+E0ESC	kern/console.c	225;"	d	file:
+NO	kern/console.c	215;"	d	file:
+NUMLOCK	kern/console.c	222;"	d	file:
+SCROLLLOCK	kern/console.c	223;"	d	file:
+SHIFT	kern/console.c	217;"	d	file:
+addr_6845	kern/console.c	/^static unsigned addr_6845;$/;"	v	file:
 buf	kern/console.c	/^	uint8_t buf[CONSBUFSIZE];$/;"	m	struct:__anon1	file:
-buf	lib/printf.c	/^	char buf[256];$/;"	m	struct:printbuf	file:
-buf	lib/printfmt.c	/^	char *buf;$/;"	m	struct:sprintbuf	file:
-buf	lib/readline.c	/^static char buf[BUFLEN];$/;"	v	file:
-buf	obj/kern/kernel.asm	/^		buf = readline("K> ");$/;"	d
-c	obj/kern/kernel.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/kern/kernel.asm	/^		c = cons.buf[cons.rpos++];$/;"	d
-c	obj/kern/kernel.asm	/^		c = getchar();$/;"	d
-c	obj/kern/kernel.asm	/^	c = charcode[shift & (CTL | SHIFT)][data];$/;"	d
-c	obj/kern/kernel.asm	/^	c = page2kva(pp);$/;"	d
-c	obj/user/badsegment.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/breakpoint.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/buggyhello.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/buggyhello2.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/divzero.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/evilhello.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/faultread.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/faultreadkernel.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/faultwrite.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/faultwritekernel.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/hello.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/softint.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-c	obj/user/testbss.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
-call_on_line	gradelib.py	/^def call_on_line(regexp, callback):$/;"	f
 cga_init	kern/console.c	/^cga_init(void)$/;"	f	file:
 cga_putc	kern/console.c	/^cga_putc(int c)$/;"	f	file:
-ch	obj/kern/kernel.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/badsegment.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/breakpoint.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/buggyhello.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/buggyhello2.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/divzero.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/evilhello.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/faultread.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/faultreadkernel.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/faultwrite.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/faultwritekernel.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/hello.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/softint.asm	/^				ch = *fmt;$/;"	d
-ch	obj/user/testbss.asm	/^				ch = *fmt;$/;"	d
-char	obj/kern/kernel.asm	/^char *$/;"	l
-char	obj/user/badsegment.asm	/^char *$/;"	l
-char	obj/user/breakpoint.asm	/^char *$/;"	l
-char	obj/user/buggyhello.asm	/^char *$/;"	l
-char	obj/user/buggyhello2.asm	/^char *$/;"	l
-char	obj/user/divzero.asm	/^char *$/;"	l
-char	obj/user/evilhello.asm	/^char *$/;"	l
-char	obj/user/faultread.asm	/^char *$/;"	l
-char	obj/user/faultreadkernel.asm	/^char *$/;"	l
-char	obj/user/faultwrite.asm	/^char *$/;"	l
-char	obj/user/faultwritekernel.asm	/^char *$/;"	l
-char	obj/user/hello.asm	/^char *$/;"	l
-char	obj/user/softint.asm	/^char *$/;"	l
-char	obj/user/testbss.asm	/^char *$/;"	l
 charcode	kern/console.c	/^static uint8_t *charcode[4] = {$/;"	v	file:
-check_kern_pgdir	kern/pmap.c	/^check_kern_pgdir(void)$/;"	f	file:
-check_page	kern/pmap.c	/^check_page(void)$/;"	f	file:
-check_page_alloc	kern/pmap.c	/^check_page_alloc(void)$/;"	f	file:
-check_page_free_list	kern/pmap.c	/^check_page_free_list(bool only_low_memory)$/;"	f	file:
-check_page_installed_pgdir	kern/pmap.c	/^check_page_installed_pgdir(void)$/;"	f	file:
-check_va2pa	kern/pmap.c	/^check_va2pa(pde_t *pgdir, uintptr_t va)$/;"	f	file:
-close	gradelib.py	/^    def close(self):$/;"	m	class:GDBClient
-clrflag	obj/kern/kernel.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/badsegment.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/breakpoint.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/buggyhello.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/buggyhello2.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/divzero.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/evilhello.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/faultread.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/faultreadkernel.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/faultwrite.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/faultwritekernel.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/hello.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/softint.asm	/^		clrflag = 0;$/;"	d
-clrflag	obj/user/testbss.asm	/^		clrflag = 0;$/;"	d
-cnt	lib/printf.c	/^	int cnt;	\/\/ total bytes printed so far$/;"	m	struct:printbuf	file:
-cnt	lib/printfmt.c	/^	int cnt;$/;"	m	struct:sprintbuf	file:
-cnt	obj/kern/kernel.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/badsegment.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/breakpoint.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/buggyhello.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/buggyhello2.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/divzero.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/evilhello.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/faultread.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/faultreadkernel.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/faultwrite.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/faultwritekernel.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/hello.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/softint.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-cnt	obj/user/testbss.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
-color	gradelib.py	/^def color(name, text):$/;"	f
-color	lib/printfmt.c	/^int color;$/;"	v
-color	obj/kern/kernel.asm	/^				color = 0;$/;"	d
-color	obj/kern/kernel.asm	/^			color = 0;$/;"	d
-color	obj/user/badsegment.asm	/^				color = 0;$/;"	d
-color	obj/user/badsegment.asm	/^			color = 0;$/;"	d
-color	obj/user/breakpoint.asm	/^				color = 0;$/;"	d
-color	obj/user/breakpoint.asm	/^			color = 0;$/;"	d
-color	obj/user/buggyhello.asm	/^				color = 0;$/;"	d
-color	obj/user/buggyhello.asm	/^			color = 0;$/;"	d
-color	obj/user/buggyhello2.asm	/^				color = 0;$/;"	d
-color	obj/user/buggyhello2.asm	/^			color = 0;$/;"	d
-color	obj/user/divzero.asm	/^				color = 0;$/;"	d
-color	obj/user/divzero.asm	/^			color = 0;$/;"	d
-color	obj/user/evilhello.asm	/^				color = 0;$/;"	d
-color	obj/user/evilhello.asm	/^			color = 0;$/;"	d
-color	obj/user/faultread.asm	/^				color = 0;$/;"	d
-color	obj/user/faultread.asm	/^			color = 0;$/;"	d
-color	obj/user/faultreadkernel.asm	/^				color = 0;$/;"	d
-color	obj/user/faultreadkernel.asm	/^			color = 0;$/;"	d
-color	obj/user/faultwrite.asm	/^				color = 0;$/;"	d
-color	obj/user/faultwrite.asm	/^			color = 0;$/;"	d
-color	obj/user/faultwritekernel.asm	/^				color = 0;$/;"	d
-color	obj/user/faultwritekernel.asm	/^			color = 0;$/;"	d
-color	obj/user/hello.asm	/^				color = 0;$/;"	d
-color	obj/user/hello.asm	/^			color = 0;$/;"	d
-color	obj/user/softint.asm	/^				color = 0;$/;"	d
-color	obj/user/softint.asm	/^			color = 0;$/;"	d
-color	obj/user/testbss.asm	/^				color = 0;$/;"	d
-color	obj/user/testbss.asm	/^			color = 0;$/;"	d
-colorswitch	obj/kern/kernel.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/badsegment.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/breakpoint.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/buggyhello.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/buggyhello2.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/divzero.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/evilhello.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/faultread.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/faultreadkernel.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/faultwrite.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/faultwritekernel.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/hello.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/softint.asm	/^	colorswitch:$/;"	l
-colorswitch	obj/user/testbss.asm	/^	colorswitch:$/;"	l
-commands	kern/monitor.c	/^static struct Command commands[] = {$/;"	v	typeref:struct:Command	file:
 cons	kern/console.c	/^} cons;$/;"	v	typeref:struct:__anon1	file:
 cons_getc	kern/console.c	/^cons_getc(void)$/;"	f
 cons_init	kern/console.c	/^cons_init(void)$/;"	f
 cons_intr	kern/console.c	/^cons_intr(int (*proc)(void))$/;"	f	file:
 cons_putc	kern/console.c	/^cons_putc(int c)$/;"	f	file:
-const	obj/kern/kernel.asm	/^	const struct Stab *stabs, *stab_end;$/;"	t
-const	obj/user/badsegment.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/badsegment.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/breakpoint.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/breakpoint.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/buggyhello.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/buggyhello.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/buggyhello2.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/buggyhello2.asm	/^const char *hello = "hello, world\\n";$/;"	l
-const	obj/user/buggyhello2.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/divzero.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/divzero.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/evilhello.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/evilhello.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/faultread.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/faultread.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/faultreadkernel.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/faultreadkernel.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/faultwrite.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/faultwrite.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/faultwritekernel.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/faultwritekernel.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/hello.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/hello.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/softint.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/softint.asm	/^const volatile struct Env *thisenv;$/;"	l
-const	obj/user/testbss.asm	/^const char *binaryname = "<unknown>";$/;"	l
-const	obj/user/testbss.asm	/^const volatile struct Env *thisenv;$/;"	l
-cont	gradelib.py	/^    def cont(self):$/;"	m	class:GDBClient
-cp	obj/kern/kernel.asm	/^		cp = (uint16_t*) (KERNBASE + MONO_BUF);$/;"	d
-cp	obj/kern/kernel.asm	/^	cp = (uint16_t*) (KERNBASE + CGA_BUF);$/;"	d
-cprintf	kern/printf.c	/^cprintf(const char *fmt, ...)$/;"	f
-cprintf	lib/printf.c	/^cprintf(const char *fmt, ...)$/;"	f
-cpuid	inc/x86.h	/^cpuid(uint32_t info, uint32_t *eaxp, uint32_t *ebxp, uint32_t *ecxp, uint32_t *edxp)$/;"	f
 cputchar	kern/console.c	/^cputchar(int c)$/;"	f
-cputchar	lib/console.c	/^cputchar(int ch)$/;"	f
-cr0	obj/kern/kernel.asm	/^	cr0 = rcr0();$/;"	d
 crt_buf	kern/console.c	/^static uint16_t *crt_buf;$/;"	v	file:
-crt_buf	obj/kern/kernel.asm	/^	crt_buf = (uint16_t*) cp;$/;"	d
 crt_pos	kern/console.c	/^static uint16_t crt_pos;$/;"	v	file:
-crt_pos	obj/kern/kernel.asm	/^	crt_pos = pos;$/;"	d
 ctlmap	kern/console.c	/^static uint8_t ctlmap[256] =$/;"	v	file:
-curenv	kern/env.c	/^struct Env *curenv = NULL;		\/\/ The current env$/;"	v	typeref:struct:Env
-d	obj/kern/kernel.asm	/^	d = dst;$/;"	d
-d	obj/user/badsegment.asm	/^	d = dst;$/;"	d
-d	obj/user/breakpoint.asm	/^	d = dst;$/;"	d
-d	obj/user/buggyhello.asm	/^	d = dst;$/;"	d
-d	obj/user/buggyhello2.asm	/^	d = dst;$/;"	d
-d	obj/user/divzero.asm	/^	d = dst;$/;"	d
-d	obj/user/evilhello.asm	/^	d = dst;$/;"	d
-d	obj/user/faultread.asm	/^	d = dst;$/;"	d
-d	obj/user/faultreadkernel.asm	/^	d = dst;$/;"	d
-d	obj/user/faultwrite.asm	/^	d = dst;$/;"	d
-d	obj/user/faultwritekernel.asm	/^	d = dst;$/;"	d
-d	obj/user/hello.asm	/^	d = dst;$/;"	d
-d	obj/user/softint.asm	/^	d = dst;$/;"	d
-d	obj/user/testbss.asm	/^	d = dst;$/;"	d
-data	obj/kern/kernel.asm	/^		data = (shift & E0ESC ? data : data & 0x7F);$/;"	d
-data	obj/kern/kernel.asm	/^	data = inb(KBDATAP);$/;"	d
-dead	obj/kern/kernel.asm	/^dead:$/;"	l
-debuginfo_eip	kern/kdebug.c	/^debuginfo_eip(uintptr_t addr, struct Eipdebuginfo *info)$/;"	f
-default	obj/kern/kernel.asm	/^		default:$/;"	l
-default	obj/kern/kernel.asm	/^	default:$/;"	l
-default	obj/user/badsegment.asm	/^		default:$/;"	l
-default	obj/user/breakpoint.asm	/^		default:$/;"	l
-default	obj/user/buggyhello.asm	/^		default:$/;"	l
-default	obj/user/buggyhello2.asm	/^		default:$/;"	l
-default	obj/user/divzero.asm	/^		default:$/;"	l
-default	obj/user/evilhello.asm	/^		default:$/;"	l
-default	obj/user/faultread.asm	/^		default:$/;"	l
-default	obj/user/faultreadkernel.asm	/^		default:$/;"	l
-default	obj/user/faultwrite.asm	/^		default:$/;"	l
-default	obj/user/faultwritekernel.asm	/^		default:$/;"	l
-default	obj/user/hello.asm	/^		default:$/;"	l
-default	obj/user/softint.asm	/^		default:$/;"	l
-default	obj/user/testbss.asm	/^		default:$/;"	l
 delay	kern/console.c	/^delay(void)$/;"	f	file:
-desc	kern/monitor.c	/^	const char *desc;$/;"	m	struct:Command	file:
-dig	obj/kern/kernel.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/kern/kernel.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/kern/kernel.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/badsegment.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/badsegment.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/badsegment.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/breakpoint.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/breakpoint.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/breakpoint.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/buggyhello.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/buggyhello.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/buggyhello.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/buggyhello2.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/buggyhello2.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/buggyhello2.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/divzero.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/divzero.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/divzero.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/evilhello.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/evilhello.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/evilhello.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/faultread.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/faultread.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/faultread.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/faultreadkernel.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/faultreadkernel.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/faultreadkernel.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/faultwrite.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/faultwrite.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/faultwrite.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/faultwritekernel.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/faultwritekernel.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/faultwritekernel.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/hello.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/hello.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/hello.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/softint.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/softint.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/softint.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dig	obj/user/testbss.asm	/^			dig = *s - '0';$/;"	d
-dig	obj/user/testbss.asm	/^			dig = *s - 'A' + 10;$/;"	d
-dig	obj/user/testbss.asm	/^			dig = *s - 'a' + 10;$/;"	d
-dst_in	obj/kern/kernel.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/badsegment.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/breakpoint.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/buggyhello.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/buggyhello2.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/divzero.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/evilhello.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/faultread.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/faultreadkernel.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/faultwrite.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/faultwritekernel.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/hello.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/softint.asm	/^	dst_in = dst;$/;"	d
-dst_in	obj/user/testbss.asm	/^	dst_in = dst;$/;"	d
-e	obj/kern/kernel.asm	/^	e = &envs[ENVX(envid)];$/;"	d
-e_ehsize	inc/elf.h	/^	uint16_t e_ehsize;$/;"	m	struct:Elf
-e_elf	inc/elf.h	/^	uint8_t e_elf[12];$/;"	m	struct:Elf
-e_entry	inc/elf.h	/^	uint32_t e_entry;$/;"	m	struct:Elf
-e_flags	inc/elf.h	/^	uint32_t e_flags;$/;"	m	struct:Elf
-e_machine	inc/elf.h	/^	uint16_t e_machine;$/;"	m	struct:Elf
-e_magic	inc/elf.h	/^	uint32_t e_magic;	\/\/ must equal ELF_MAGIC$/;"	m	struct:Elf
-e_phentsize	inc/elf.h	/^	uint16_t e_phentsize;$/;"	m	struct:Elf
-e_phnum	inc/elf.h	/^	uint16_t e_phnum;$/;"	m	struct:Elf
-e_phoff	inc/elf.h	/^	uint32_t e_phoff;$/;"	m	struct:Elf
-e_shentsize	inc/elf.h	/^	uint16_t e_shentsize;$/;"	m	struct:Elf
-e_shnum	inc/elf.h	/^	uint16_t e_shnum;$/;"	m	struct:Elf
-e_shoff	inc/elf.h	/^	uint32_t e_shoff;$/;"	m	struct:Elf
-e_shstrndx	inc/elf.h	/^	uint16_t e_shstrndx;$/;"	m	struct:Elf
-e_type	inc/elf.h	/^	uint16_t e_type;$/;"	m	struct:Elf
-e_version	inc/elf.h	/^	uint32_t e_version;$/;"	m	struct:Elf
-ebp	obj/kern/kernel.asm	/^		ebp = (uint32_t *)ebp[0];$/;"	d
-ebuf	lib/printfmt.c	/^	char *ebuf;$/;"	m	struct:sprintbuf	file:
-echoing	obj/kern/kernel.asm	/^	echoing = iscons(0);$/;"	d
-eip	obj/kern/kernel.asm	/^		eip = ebp[1];$/;"	d
+getchar	kern/console.c	/^getchar(void)$/;"	f
+iscons	kern/console.c	/^iscons(int fdnum)$/;"	f
+kbd_init	kern/console.c	/^kbd_init(void)$/;"	f	file:
+kbd_intr	kern/console.c	/^kbd_intr(void)$/;"	f
+kbd_proc_data	kern/console.c	/^kbd_proc_data(void)$/;"	f	file:
+lpt_putc	kern/console.c	/^lpt_putc(int c)$/;"	f	file:
+normalmap	kern/console.c	/^static uint8_t normalmap[256] =$/;"	v	file:
+rpos	kern/console.c	/^	uint32_t rpos;$/;"	m	struct:__anon1	file:
+serial_exists	kern/console.c	/^static bool serial_exists;$/;"	v	file:
+serial_init	kern/console.c	/^serial_init(void)$/;"	f	file:
+serial_intr	kern/console.c	/^serial_intr(void)$/;"	f
+serial_proc_data	kern/console.c	/^serial_proc_data(void)$/;"	f	file:
+serial_putc	kern/console.c	/^serial_putc(int c)$/;"	f	file:
+shiftcode	kern/console.c	/^static uint8_t shiftcode[256] =$/;"	v	file:
+shiftmap	kern/console.c	/^static uint8_t shiftmap[256] =$/;"	v	file:
+togglecode	kern/console.c	/^static uint8_t togglecode[256] =$/;"	v	file:
+wpos	kern/console.c	/^	uint32_t wpos;$/;"	m	struct:__anon1	file:
+CGA_BASE	kern/console.h	13;"	d
+CGA_BUF	kern/console.h	14;"	d
+CRT_COLS	kern/console.h	17;"	d
+CRT_ROWS	kern/console.h	16;"	d
+CRT_SIZE	kern/console.h	18;"	d
+MONO_BASE	kern/console.h	11;"	d
+MONO_BUF	kern/console.h	12;"	d
+_CONSOLE_H_	kern/console.h	4;"	d
+CHECKSUM	kern/entry.S	/^#define CHECKSUM (-(MULTIBOOT_HEADER_MAGIC + MULTIBOOT_HEADER_FLAGS))$/;"	d
+MULTIBOOT_HEADER_FLAGS	kern/entry.S	/^#define MULTIBOOT_HEADER_FLAGS (0)$/;"	d
+MULTIBOOT_HEADER_MAGIC	kern/entry.S	/^#define MULTIBOOT_HEADER_MAGIC (0x1BADB002)$/;"	d
+RELOC	kern/entry.S	/^#define	RELOC(x) ((x) - KERNBASE)$/;"	d
+SRL	kern/entry.S	/^#define SRL(val, shamt)		(((val) >> (shamt)) & ~(-1 << (32 - (shamt))))$/;"	d
+_start	kern/entry.S	/^_start = RELOC(entry)$/;"	d
+bootstack	kern/entry.S	/^bootstack:$/;"	l
+bootstacktop	kern/entry.S	/^bootstacktop:$/;"	l
+entry	kern/entry.S	/^entry:$/;"	l
+relocated	kern/entry.S	/^relocated:$/;"	l
+spin	kern/entry.S	/^spin:	jmp	spin$/;"	l
+entry_pgdir	kern/entrypgdir.c	/^pde_t entry_pgdir[NPDENTRIES] = {$/;"	v
+entry_pgtable	kern/entrypgdir.c	/^pte_t entry_pgtable[NPTENTRIES] = {$/;"	v
+entry_pgtable	kern/entrypgdir.c	/^pte_t entry_pgtable[NPTENTRIES];$/;"	v
+ENVGENSHIFT	kern/env.c	20;"	d	file:
+curenv	kern/env.c	/^struct Env *curenv = NULL;		\/\/ The current env$/;"	v	typeref:struct:Env
+env_alloc	kern/env.c	/^env_alloc(struct Env **newenv_store, envid_t parent_id)$/;"	f
+env_create	kern/env.c	/^env_create(uint8_t *binary, enum EnvType type)$/;"	f
+env_destroy	kern/env.c	/^env_destroy(struct Env *e)$/;"	f
+env_free	kern/env.c	/^env_free(struct Env *e)$/;"	f
+env_free_list	kern/env.c	/^static struct Env *env_free_list;	\/\/ Free environment list$/;"	v	typeref:struct:Env	file:
+env_init	kern/env.c	/^env_init(void)$/;"	f
+env_init_percpu	kern/env.c	/^env_init_percpu(void)$/;"	f
+env_pop_tf	kern/env.c	/^env_pop_tf(struct Trapframe *tf)$/;"	f
+env_run	kern/env.c	/^env_run(struct Env *e)$/;"	f
+env_setup_vm	kern/env.c	/^env_setup_vm(struct Env *e)$/;"	f	file:
+envid2env	kern/env.c	/^envid2env(envid_t envid, struct Env **env_store, bool checkperm)$/;"	f
+envs	kern/env.c	/^struct Env *envs = NULL;		\/\/ All environments$/;"	v	typeref:struct:Env
+gdt	kern/env.c	/^struct Segdesc gdt[] =$/;"	v	typeref:struct:Segdesc
+gdt_pd	kern/env.c	/^struct Pseudodesc gdt_pd = {$/;"	v	typeref:struct:Pseudodesc
+load_icode	kern/env.c	/^load_icode(struct Env *e, uint8_t *binary)$/;"	f	file:
+region_alloc	kern/env.c	/^region_alloc(struct Env *e, void *va, size_t len)$/;"	f	file:
+ENV_CREATE	kern/env.h	28;"	d
+ENV_PASTE3	kern/env.h	26;"	d
+JOS_KERN_ENV_H	kern/env.h	4;"	d
+_panic	kern/init.c	/^_panic(const char *file, int line, const char *fmt,...)$/;"	f
+_warn	kern/init.c	/^_warn(const char *file, int line, const char *fmt,...)$/;"	f
+i386_init	kern/init.c	/^i386_init(void)$/;"	f
+panicstr	kern/init.c	/^const char *panicstr;$/;"	v
+mc146818_read	kern/kclock.c	/^mc146818_read(unsigned reg)$/;"	f
+mc146818_write	kern/kclock.c	/^mc146818_write(unsigned reg, unsigned datum)$/;"	f
+IO_RTC	kern/kclock.h	9;"	d
+JOS_KERN_KCLOCK_H	kern/kclock.h	4;"	d
+MC_NVRAM_SIZE	kern/kclock.h	12;"	d
+MC_NVRAM_START	kern/kclock.h	11;"	d
+NVRAM_BASEHI	kern/kclock.h	16;"	d
+NVRAM_BASELO	kern/kclock.h	15;"	d
+NVRAM_CENTURY	kern/kclock.h	27;"	d
+NVRAM_EXTHI	kern/kclock.h	20;"	d
+NVRAM_EXTLO	kern/kclock.h	19;"	d
+NVRAM_PEXTHI	kern/kclock.h	24;"	d
+NVRAM_PEXTLO	kern/kclock.h	23;"	d
+UserStabData	kern/kdebug.c	/^struct UserStabData {$/;"	s	file:
+debuginfo_eip	kern/kdebug.c	/^debuginfo_eip(uintptr_t addr, struct Eipdebuginfo *info)$/;"	f
+stab_binsearch	kern/kdebug.c	/^stab_binsearch(const struct Stab *stabs, int *region_left, int *region_right,$/;"	f	file:
+stab_end	kern/kdebug.c	/^	const struct Stab *stab_end;$/;"	m	struct:UserStabData	typeref:struct:UserStabData::Stab	file:
+stabs	kern/kdebug.c	/^	const struct Stab *stabs;$/;"	m	struct:UserStabData	typeref:struct:UserStabData::Stab	file:
+stabstr	kern/kdebug.c	/^	const char *stabstr;$/;"	m	struct:UserStabData	file:
+stabstr_end	kern/kdebug.c	/^	const char *stabstr_end;$/;"	m	struct:UserStabData	file:
+Eipdebuginfo	kern/kdebug.h	/^struct Eipdebuginfo {$/;"	s
+JOS_KERN_KDEBUG_H	kern/kdebug.h	2;"	d
 eip_file	kern/kdebug.h	/^	const char *eip_file;		\/\/ Source code filename for EIP$/;"	m	struct:Eipdebuginfo
 eip_fn_addr	kern/kdebug.h	/^	uintptr_t eip_fn_addr;		\/\/ Address of start of function$/;"	m	struct:Eipdebuginfo
 eip_fn_name	kern/kdebug.h	/^	const char *eip_fn_name;	\/\/ Name of function containing EIP$/;"	m	struct:Eipdebuginfo
 eip_fn_namelen	kern/kdebug.h	/^	int eip_fn_namelen;		\/\/ Length of function name$/;"	m	struct:Eipdebuginfo
 eip_fn_narg	kern/kdebug.h	/^	int eip_fn_narg;		\/\/ Number of function arguments$/;"	m	struct:Eipdebuginfo
 eip_line	kern/kdebug.h	/^	int eip_line;			\/\/ Source code linenumber for EIP$/;"	m	struct:Eipdebuginfo
-end	obj/kern/kernel.asm	/^	end = PGNUM(PADDR(boot_alloc(0)));$/;"	d
+CMDBUF_SIZE	kern/monitor.c	15;"	d	file:
+Command	kern/monitor.c	/^struct Command {$/;"	s	file:
+MAXARGS	kern/monitor.c	90;"	d	file:
+NCOMMANDS	kern/monitor.c	30;"	d	file:
+WHITESPACE	kern/monitor.c	89;"	d	file:
+commands	kern/monitor.c	/^static struct Command commands[] = {$/;"	v	typeref:struct:Command	file:
+desc	kern/monitor.c	/^	const char *desc;$/;"	m	struct:Command	file:
+func	kern/monitor.c	/^	int (*func)(int argc, char** argv, struct Trapframe* tf);$/;"	m	struct:Command	file:
+mon_backtrace	kern/monitor.c	/^mon_backtrace(int argc, char **argv, struct Trapframe *tf)$/;"	f
+mon_help	kern/monitor.c	/^mon_help(int argc, char **argv, struct Trapframe *tf)$/;"	f
+mon_kerninfo	kern/monitor.c	/^mon_kerninfo(int argc, char **argv, struct Trapframe *tf)$/;"	f
+monitor	kern/monitor.c	/^monitor(struct Trapframe *tf)$/;"	f
+name	kern/monitor.c	/^	const char *name;$/;"	m	struct:Command	file:
+runcmd	kern/monitor.c	/^runcmd(char *buf, struct Trapframe *tf)$/;"	f	file:
+JOS_KERN_MONITOR_H	kern/monitor.h	2;"	d
+boot_alloc	kern/pmap.c	/^boot_alloc(uint32_t n)$/;"	f	file:
+boot_map_region	kern/pmap.c	/^boot_map_region(pde_t *pgdir, uintptr_t va, size_t size, physaddr_t pa, int perm)$/;"	f	file:
+check_kern_pgdir	kern/pmap.c	/^check_kern_pgdir(void)$/;"	f	file:
+check_page	kern/pmap.c	/^check_page(void)$/;"	f	file:
+check_page_alloc	kern/pmap.c	/^check_page_alloc(void)$/;"	f	file:
+check_page_free_list	kern/pmap.c	/^check_page_free_list(bool only_low_memory)$/;"	f	file:
+check_page_installed_pgdir	kern/pmap.c	/^check_page_installed_pgdir(void)$/;"	f	file:
+check_va2pa	kern/pmap.c	/^check_va2pa(pde_t *pgdir, uintptr_t va)$/;"	f	file:
+i386_detect_memory	kern/pmap.c	/^i386_detect_memory(void)$/;"	f	file:
+kern_pgdir	kern/pmap.c	/^pde_t *kern_pgdir;		\/\/ Kernel's initial page directory$/;"	v
+mem_init	kern/pmap.c	/^mem_init(void)$/;"	f
+npages	kern/pmap.c	/^size_t npages;			\/\/ Amount of physical memory (in pages)$/;"	v
+npages_basemem	kern/pmap.c	/^static size_t npages_basemem;	\/\/ Amount of base memory (in pages)$/;"	v	file:
+nvram_read	kern/pmap.c	/^nvram_read(int r)$/;"	f	file:
+page_alloc	kern/pmap.c	/^page_alloc(int alloc_flags)$/;"	f
+page_decref	kern/pmap.c	/^page_decref(struct PageInfo* pp)$/;"	f
+page_free	kern/pmap.c	/^page_free(struct PageInfo *pp)$/;"	f
+page_free_list	kern/pmap.c	/^static struct PageInfo *page_free_list;	\/\/ Free list of physical pages$/;"	v	typeref:struct:PageInfo	file:
+page_init	kern/pmap.c	/^page_init(void)$/;"	f
+page_insert	kern/pmap.c	/^page_insert(pde_t *pgdir, struct PageInfo *pp, void *va, int perm)$/;"	f
+page_lookup	kern/pmap.c	/^page_lookup(pde_t *pgdir, void *va, pte_t **pte_store)$/;"	f
+page_remove	kern/pmap.c	/^page_remove(pde_t *pgdir, void *va)$/;"	f
+pages	kern/pmap.c	/^struct PageInfo *pages;		\/\/ Physical page state array$/;"	v	typeref:struct:PageInfo
+pgdir_walk	kern/pmap.c	/^pgdir_walk(pde_t *pgdir, const void *va, int create)$/;"	f
+tlb_invalidate	kern/pmap.c	/^tlb_invalidate(pde_t *pgdir, void *va)$/;"	f
+user_mem_assert	kern/pmap.c	/^user_mem_assert(struct Env *env, const void *va, size_t len, int perm)$/;"	f
+user_mem_check	kern/pmap.c	/^user_mem_check(struct Env *env, const void *va, size_t len, int perm)$/;"	f
+user_mem_check_addr	kern/pmap.c	/^static uintptr_t user_mem_check_addr;$/;"	v	file:
+ALLOC_ZERO	kern/pmap.h	/^	ALLOC_ZERO = 1<<0,$/;"	e	enum:__anon2
+JOS_KERN_PMAP_H	kern/pmap.h	4;"	d
+KADDR	kern/pmap.h	38;"	d
+PADDR	kern/pmap.h	26;"	d
+_kaddr	kern/pmap.h	/^_kaddr(const char *file, int line, physaddr_t pa)$/;"	f
+_paddr	kern/pmap.h	/^_paddr(const char *file, int line, void *kva)$/;"	f
+pa2page	kern/pmap.h	/^pa2page(physaddr_t pa)$/;"	f
+page2kva	kern/pmap.h	/^page2kva(struct PageInfo *pp)$/;"	f
+page2pa	kern/pmap.h	/^page2pa(struct PageInfo *pp)$/;"	f
+cprintf	kern/printf.c	/^cprintf(const char *fmt, ...)$/;"	f
+putch	kern/printf.c	/^putch(int ch, int *cnt)$/;"	f	file:
+vcprintf	kern/printf.c	/^vcprintf(const char *fmt, va_list ap)$/;"	f
+sys_cgetc	kern/syscall.c	/^sys_cgetc(void)$/;"	f	file:
+sys_cputs	kern/syscall.c	/^sys_cputs(const char *s, size_t len)$/;"	f	file:
+sys_env_destroy	kern/syscall.c	/^sys_env_destroy(envid_t envid)$/;"	f	file:
+sys_getenvid	kern/syscall.c	/^sys_getenvid(void)$/;"	f	file:
+syscall	kern/syscall.c	/^syscall(uint32_t syscallno, uint32_t a1, uint32_t a2, uint32_t a3, uint32_t a4, uint32_t a5)$/;"	f
+JOS_KERN_SYSCALL_H	kern/syscall.h	2;"	d
+idt	kern/trap.c	/^struct Gatedesc idt[256] = { { 0 } };$/;"	v	typeref:struct:Gatedesc
+idt_pd	kern/trap.c	/^struct Pseudodesc idt_pd = {$/;"	v	typeref:struct:Pseudodesc
+last_tf	kern/trap.c	/^static struct Trapframe *last_tf;$/;"	v	typeref:struct:Trapframe	file:
+page_fault_handler	kern/trap.c	/^page_fault_handler(struct Trapframe *tf)$/;"	f
+print_regs	kern/trap.c	/^print_regs(struct PushRegs *regs)$/;"	f
+print_trapframe	kern/trap.c	/^print_trapframe(struct Trapframe *tf)$/;"	f
+trap	kern/trap.c	/^trap(struct Trapframe *tf)$/;"	f
+trap_dispatch	kern/trap.c	/^trap_dispatch(struct Trapframe *tf)$/;"	f	file:
+trap_init	kern/trap.c	/^trap_init(void)$/;"	f
+trap_init_percpu	kern/trap.c	/^trap_init_percpu(void)$/;"	f
+trapname	kern/trap.c	/^static const char *trapname(int trapno)$/;"	f	file:
+ts	kern/trap.c	/^static struct Taskstate ts;$/;"	v	typeref:struct:Taskstate	file:
+JOS_KERN_TRAP_H	kern/trap.h	4;"	d
+TRAPHANDLER	kern/trapentry.S	/^#define TRAPHANDLER(name, num)						\\$/;"	d
+TRAPHANDLER_NOEC	kern/trapentry.S	/^#define TRAPHANDLER_NOEC(name, num)					\\$/;"	d
+name	kern/trapentry.S	/^	name:								\\$/;"	l
+name	kern/trapentry.S	/^	name:			\/* function starts here *\/		\\$/;"	l
+cputchar	lib/console.c	/^cputchar(int ch)$/;"	f
+getchar	lib/console.c	/^getchar(void)$/;"	f
+_start	lib/entry.S	/^_start:$/;"	l
+args_exist	lib/entry.S	/^args_exist:$/;"	l
+exit	lib/exit.c	/^exit(void)$/;"	f
+binaryname	lib/libmain.c	/^const char *binaryname = "<unknown>";$/;"	v
+libmain	lib/libmain.c	/^libmain(int argc, char **argv)$/;"	f
+thisenv	lib/libmain.c	/^const volatile struct Env *thisenv;$/;"	v	typeref:struct:Env
+_panic	lib/panic.c	/^_panic(const char *file, int line, const char *fmt, ...)$/;"	f
+buf	lib/printf.c	/^	char buf[256];$/;"	m	struct:printbuf	file:
+cnt	lib/printf.c	/^	int cnt;	\/\/ total bytes printed so far$/;"	m	struct:printbuf	file:
+cprintf	lib/printf.c	/^cprintf(const char *fmt, ...)$/;"	f
+idx	lib/printf.c	/^	int idx;	\/\/ current buffer index$/;"	m	struct:printbuf	file:
+printbuf	lib/printf.c	/^struct printbuf {$/;"	s	file:
+putch	lib/printf.c	/^putch(int ch, struct printbuf *b)$/;"	f	file:
+vcprintf	lib/printf.c	/^vcprintf(const char *fmt, va_list ap)$/;"	f
+buf	lib/printfmt.c	/^	char *buf;$/;"	m	struct:sprintbuf	file:
+cnt	lib/printfmt.c	/^	int cnt;$/;"	m	struct:sprintbuf	file:
+color	lib/printfmt.c	/^int color;$/;"	v
+ebuf	lib/printfmt.c	/^	char *ebuf;$/;"	m	struct:sprintbuf	file:
+error_string	lib/printfmt.c	/^static const char * const error_string[MAXERROR] =$/;"	v	file:
+getint	lib/printfmt.c	/^getint(va_list *ap, int lflag)$/;"	f	file:
+getuint	lib/printfmt.c	/^getuint(va_list *ap, int lflag)$/;"	f	file:
+printfmt	lib/printfmt.c	/^printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...)$/;"	f
+printnum	lib/printfmt.c	/^printnum(void (*putch)(int, void*), void *putdat,$/;"	f	file:
+snprintf	lib/printfmt.c	/^snprintf(char *buf, int n, const char *fmt, ...)$/;"	f
+sprintbuf	lib/printfmt.c	/^struct sprintbuf {$/;"	s	file:
+sprintputch	lib/printfmt.c	/^sprintputch(int ch, struct sprintbuf *b)$/;"	f	file:
+vprintfmt	lib/printfmt.c	/^vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)$/;"	f
+vsnprintf	lib/printfmt.c	/^vsnprintf(char *buf, int n, const char *fmt, va_list ap)$/;"	f
+BUFLEN	lib/readline.c	4;"	d	file:
+buf	lib/readline.c	/^static char buf[BUFLEN];$/;"	v	file:
+readline	lib/readline.c	/^readline(const char *prompt)$/;"	f
+ASM	lib/string.c	9;"	d	file:
+memcmp	lib/string.c	/^memcmp(const void *v1, const void *v2, size_t n)$/;"	f
+memcpy	lib/string.c	/^memcpy(void *dst, const void *src, size_t n)$/;"	f
+memfind	lib/string.c	/^memfind(const void *s, int c, size_t n)$/;"	f
+memmove	lib/string.c	/^memmove(void *dst, const void *src, size_t n)$/;"	f
+memset	lib/string.c	/^memset(void *v, int c, size_t n)$/;"	f
+strcat	lib/string.c	/^strcat(char *dst, const char *src)$/;"	f
+strchr	lib/string.c	/^strchr(const char *s, char c)$/;"	f
+strcmp	lib/string.c	/^strcmp(const char *p, const char *q)$/;"	f
+strcpy	lib/string.c	/^strcpy(char *dst, const char *src)$/;"	f
+strfind	lib/string.c	/^strfind(const char *s, char c)$/;"	f
+strlcpy	lib/string.c	/^strlcpy(char *dst, const char *src, size_t size)$/;"	f
+strlen	lib/string.c	/^strlen(const char *s)$/;"	f
+strncmp	lib/string.c	/^strncmp(const char *p, const char *q, size_t n)$/;"	f
+strncpy	lib/string.c	/^strncpy(char *dst, const char *src, size_t size) {$/;"	f
+strnlen	lib/string.c	/^strnlen(const char *s, size_t size)$/;"	f
+strtol	lib/string.c	/^strtol(const char *s, char **endptr, int base)$/;"	f
+sys_cgetc	lib/syscall.c	/^sys_cgetc(void)$/;"	f
+sys_cputs	lib/syscall.c	/^sys_cputs(const char *s, size_t len)$/;"	f
+sys_env_destroy	lib/syscall.c	/^sys_env_destroy(envid_t envid)$/;"	f
+sys_getenvid	lib/syscall.c	/^sys_getenvid(void)$/;"	f
+syscall	lib/syscall.c	/^syscall(int num, int check, uint32_t a1, uint32_t a2, uint32_t a3, uint32_t a4, uint32_t a5)$/;"	f	file:
+readdeps	mergedep.pl	/^sub readdeps {$/;"	s
+Disassembly	obj/boot/boot.asm	/^Disassembly of section .text:$/;"	l
 end_pa	obj/boot/boot.asm	/^	end_pa = pa + count;$/;"	d
-end_part	gradelib.py	/^def end_part(name):$/;"	f
-entry	kern/entry.S	/^entry:$/;"	l
+eph	obj/boot/boot.asm	/^	eph = ph + ELFHDR->e_phnum;$/;"	d
+offset	obj/boot/boot.asm	/^	offset = (offset \/ SECTSIZE) + 1;$/;"	d
+ph	obj/boot/boot.asm	/^	ph = (struct Proghdr *) ((uint8_t *) ELFHDR + ELFHDR->e_phoff);$/;"	d
+protcseg	obj/boot/boot.asm	/^protcseg:$/;"	l
+spin	obj/boot/boot.asm	/^spin:$/;"	l
+start	obj/boot/boot.asm	/^start:$/;"	l
+static	obj/boot/boot.asm	/^static __inline uint8_t$/;"	l
+static	obj/boot/boot.asm	/^static __inline void$/;"	l
+void	obj/boot/boot.asm	/^void readsect(void*, uint32_t);$/;"	l
+void	obj/boot/boot.asm	/^void readseg(uint32_t, uint32_t, uint32_t);$/;"	l
+void	obj/boot/boot.asm	/^void$/;"	l
+ASM	obj/kern/kernel.asm	/^#define ASM 1$/;"	d
+BUFLEN	obj/kern/kernel.asm	/^#define BUFLEN 1024$/;"	d
+Disassembly	obj/kern/kernel.asm	/^Disassembly of section .text:$/;"	l
+KADDR	obj/kern/kernel.asm	/^#define KADDR(pa) _kaddr(__FILE__, __LINE__, pa)$/;"	d
+PADDR	obj/kern/kernel.asm	/^#define PADDR(kva) _paddr(__FILE__, __LINE__, kva)$/;"	d
+_start	obj/kern/kernel.asm	/^_start = RELOC(entry)$/;"	d
+addr_6845	obj/kern/kernel.asm	/^		addr_6845 = CGA_BASE;$/;"	d
+addr_6845	obj/kern/kernel.asm	/^		addr_6845 = MONO_BASE;$/;"	d
+altflag	obj/kern/kernel.asm	/^			altflag = 1;$/;"	d
+altflag	obj/kern/kernel.asm	/^		altflag = 0;$/;"	d
+any_matches	obj/kern/kernel.asm	/^		any_matches = 1;$/;"	d
+argc	obj/kern/kernel.asm	/^	argc = 0;$/;"	d
+base	obj/kern/kernel.asm	/^			base = 10;$/;"	d
+base	obj/kern/kernel.asm	/^			base = 16;$/;"	d
+base	obj/kern/kernel.asm	/^			base = 8;$/;"	d
+base	obj/kern/kernel.asm	/^		base = 10;$/;"	d
+buf	obj/kern/kernel.asm	/^		buf = readline("K> ");$/;"	d
+c	obj/kern/kernel.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+c	obj/kern/kernel.asm	/^		c = cons.buf[cons.rpos++];$/;"	d
+c	obj/kern/kernel.asm	/^		c = getchar();$/;"	d
+c	obj/kern/kernel.asm	/^	c = charcode[shift & (CTL | SHIFT)][data];$/;"	d
+c	obj/kern/kernel.asm	/^	c = page2kva(pp);$/;"	d
+ch	obj/kern/kernel.asm	/^				ch = *fmt;$/;"	d
+char	obj/kern/kernel.asm	/^char *$/;"	l
+clrflag	obj/kern/kernel.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/kern/kernel.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/kern/kernel.asm	/^				color = 0;$/;"	d
+color	obj/kern/kernel.asm	/^			color = 0;$/;"	d
+colorswitch	obj/kern/kernel.asm	/^	colorswitch:$/;"	l
+const	obj/kern/kernel.asm	/^	const struct Stab *stabs, *stab_end;$/;"	t
+cp	obj/kern/kernel.asm	/^		cp = (uint16_t*) (KERNBASE + MONO_BUF);$/;"	d
+cp	obj/kern/kernel.asm	/^	cp = (uint16_t*) (KERNBASE + CGA_BUF);$/;"	d
+cr0	obj/kern/kernel.asm	/^	cr0 = rcr0();$/;"	d
+crt_buf	obj/kern/kernel.asm	/^	crt_buf = (uint16_t*) cp;$/;"	d
+crt_pos	obj/kern/kernel.asm	/^	crt_pos = pos;$/;"	d
+d	obj/kern/kernel.asm	/^	d = dst;$/;"	d
+data	obj/kern/kernel.asm	/^		data = (shift & E0ESC ? data : data & 0x7F);$/;"	d
+data	obj/kern/kernel.asm	/^	data = inb(KBDATAP);$/;"	d
+dead	obj/kern/kernel.asm	/^dead:$/;"	l
+default	obj/kern/kernel.asm	/^		default:$/;"	l
+default	obj/kern/kernel.asm	/^	default:$/;"	l
+dig	obj/kern/kernel.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/kern/kernel.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/kern/kernel.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/kern/kernel.asm	/^	dst_in = dst;$/;"	d
+e	obj/kern/kernel.asm	/^	e = &envs[ENVX(envid)];$/;"	d
+ebp	obj/kern/kernel.asm	/^		ebp = (uint32_t *)ebp[0];$/;"	d
+echoing	obj/kern/kernel.asm	/^	echoing = iscons(0);$/;"	d
+eip	obj/kern/kernel.asm	/^		eip = ebp[1];$/;"	d
+end	obj/kern/kernel.asm	/^	end = PGNUM(PADDR(boot_alloc(0)));$/;"	d
 entry	obj/kern/kernel.asm	/^entry:$/;"	l
-entry_pgdir	kern/entrypgdir.c	/^pde_t entry_pgdir[NPDENTRIES] = {$/;"	v
-entry_pgtable	kern/entrypgdir.c	/^pte_t entry_pgtable[NPTENTRIES] = {$/;"	v
-entry_pgtable	kern/entrypgdir.c	/^pte_t entry_pgtable[NPTENTRIES];$/;"	v
-env_alloc	kern/env.c	/^env_alloc(struct Env **newenv_store, envid_t parent_id)$/;"	f
-env_create	kern/env.c	/^env_create(uint8_t *binary, enum EnvType type)$/;"	f
-env_destroy	kern/env.c	/^env_destroy(struct Env *e)$/;"	f
-env_free	kern/env.c	/^env_free(struct Env *e)$/;"	f
-env_free_list	kern/env.c	/^static struct Env *env_free_list;	\/\/ Free environment list$/;"	v	typeref:struct:Env	file:
 env_free_list	obj/kern/kernel.asm	/^	env_free_list = e->env_link;$/;"	d
 env_free_list	obj/kern/kernel.asm	/^	env_free_list = e;$/;"	d
-env_id	inc/env.h	/^	envid_t env_id;			\/\/ Unique environment identifier$/;"	m	struct:Env
-env_init	kern/env.c	/^env_init(void)$/;"	f
-env_init_percpu	kern/env.c	/^env_init_percpu(void)$/;"	f
-env_link	inc/env.h	/^	struct Env *env_link;		\/\/ Next free Env$/;"	m	struct:Env	typeref:struct:Env::Env
-env_parent_id	inc/env.h	/^	envid_t env_parent_id;		\/\/ env_id of this env's parent$/;"	m	struct:Env
-env_pgdir	inc/env.h	/^	pde_t *env_pgdir;		\/\/ Kernel virtual address of page dir$/;"	m	struct:Env
-env_pop_tf	kern/env.c	/^env_pop_tf(struct Trapframe *tf)$/;"	f
-env_run	kern/env.c	/^env_run(struct Env *e)$/;"	f
-env_runs	inc/env.h	/^	uint32_t env_runs;		\/\/ Number of times environment has run$/;"	m	struct:Env
-env_setup_vm	kern/env.c	/^env_setup_vm(struct Env *e)$/;"	f	file:
-env_status	inc/env.h	/^	unsigned env_status;		\/\/ Status of the environment$/;"	m	struct:Env
-env_tf	inc/env.h	/^	struct Trapframe env_tf;	\/\/ Saved registers$/;"	m	struct:Env	typeref:struct:Env::Trapframe
-env_type	inc/env.h	/^	enum EnvType env_type;		\/\/ Indicates special system environments$/;"	m	struct:Env	typeref:enum:Env::EnvType
-envid2env	kern/env.c	/^envid2env(envid_t envid, struct Env **env_store, bool checkperm)$/;"	f
-envid_t	inc/env.h	/^typedef int32_t envid_t;$/;"	t
-envid_t	obj/user/badsegment.asm	/^envid_t$/;"	l
-envid_t	obj/user/breakpoint.asm	/^envid_t$/;"	l
-envid_t	obj/user/buggyhello.asm	/^envid_t$/;"	l
-envid_t	obj/user/buggyhello2.asm	/^envid_t$/;"	l
-envid_t	obj/user/divzero.asm	/^envid_t$/;"	l
-envid_t	obj/user/evilhello.asm	/^envid_t$/;"	l
-envid_t	obj/user/faultread.asm	/^envid_t$/;"	l
-envid_t	obj/user/faultreadkernel.asm	/^envid_t$/;"	l
-envid_t	obj/user/faultwrite.asm	/^envid_t$/;"	l
-envid_t	obj/user/faultwritekernel.asm	/^envid_t$/;"	l
-envid_t	obj/user/hello.asm	/^envid_t$/;"	l
-envid_t	obj/user/softint.asm	/^envid_t$/;"	l
-envid_t	obj/user/testbss.asm	/^envid_t$/;"	l
-envs	kern/env.c	/^struct Env *envs = NULL;		\/\/ All environments$/;"	v	typeref:struct:Env
 envs	obj/kern/kernel.asm	/^	envs = (struct Env *)boot_alloc(sizeof(struct Env) * NENV);$/;"	d
-eph	obj/boot/boot.asm	/^	eph = ph + ELFHDR->e_phnum;$/;"	d
 err	obj/kern/kernel.asm	/^				err = -err;$/;"	d
 err	obj/kern/kernel.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/badsegment.asm	/^				err = -err;$/;"	d
-err	obj/user/badsegment.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/breakpoint.asm	/^				err = -err;$/;"	d
-err	obj/user/breakpoint.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/buggyhello.asm	/^				err = -err;$/;"	d
-err	obj/user/buggyhello.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/buggyhello2.asm	/^				err = -err;$/;"	d
-err	obj/user/buggyhello2.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/divzero.asm	/^				err = -err;$/;"	d
-err	obj/user/divzero.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/evilhello.asm	/^				err = -err;$/;"	d
-err	obj/user/evilhello.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/faultread.asm	/^				err = -err;$/;"	d
-err	obj/user/faultread.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/faultreadkernel.asm	/^				err = -err;$/;"	d
-err	obj/user/faultreadkernel.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/faultwrite.asm	/^				err = -err;$/;"	d
-err	obj/user/faultwrite.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/faultwritekernel.asm	/^				err = -err;$/;"	d
-err	obj/user/faultwritekernel.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/hello.asm	/^				err = -err;$/;"	d
-err	obj/user/hello.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/softint.asm	/^				err = -err;$/;"	d
-err	obj/user/softint.asm	/^			err = va_arg(ap, int);$/;"	d
-err	obj/user/testbss.asm	/^				err = -err;$/;"	d
-err	obj/user/testbss.asm	/^			err = va_arg(ap, int);$/;"	d
-error_string	lib/printfmt.c	/^static const char * const error_string[MAXERROR] =$/;"	v	file:
-exit	lib/exit.c	/^exit(void)$/;"	f
 extern	obj/kern/kernel.asm	/^	extern struct Segdesc gdt[];$/;"	t
 extern	obj/kern/kernel.asm	/^extern int color;$/;"	l
 f0100000	obj/kern/kernel.asm	/^f0100000 <_start+0xeffffff4>:$/;"	l
@@ -6483,581 +6455,91 @@ f0104904	obj/kern/kernel.asm	/^f0104904:	8d 74 26 00          	lea    0x0(%esi,%
 f0104908	obj/kern/kernel.asm	/^f0104908:	3b 44 24 0c          	cmp    0xc(%esp),%eax$/;"	l
 f010490c	obj/kern/kernel.asm	/^f010490c:	0f 82 0f ff ff ff    	jb     f0104821 <__umoddi3+0x61>$/;"	l
 f0104912	obj/kern/kernel.asm	/^f0104912:	e9 1a ff ff ff       	jmp    f0104831 <__umoddi3+0x71>$/;"	l
-false	inc/types.h	/^enum { false, true };$/;"	e	enum:__anon6
-fileno	gradelib.py	/^    def fileno(self):$/;"	f
-fileno	gradelib.py	/^    def fileno(self):$/;"	m	class:GDBClient
 first_free_page	obj/kern/kernel.asm	/^	first_free_page = (char *) boot_alloc(0);$/;"	d
 fl	obj/kern/kernel.asm	/^	fl = page_free_list;$/;"	d
-func	kern/monitor.c	/^	int (*func)(int argc, char** argv, struct Trapframe* tf);$/;"	m	struct:Command	file:
-gd_args	inc/mmu.h	/^	unsigned gd_args : 5;        \/\/ # args, 0 for interrupt\/trap gates$/;"	m	struct:Gatedesc
-gd_dpl	inc/mmu.h	/^	unsigned gd_dpl : 2;         \/\/ descriptor(meaning new) privilege level$/;"	m	struct:Gatedesc
-gd_off_15_0	inc/mmu.h	/^	unsigned gd_off_15_0 : 16;   \/\/ low 16 bits of offset in segment$/;"	m	struct:Gatedesc
-gd_off_31_16	inc/mmu.h	/^	unsigned gd_off_31_16 : 16;  \/\/ high bits of offset in segment$/;"	m	struct:Gatedesc
-gd_p	inc/mmu.h	/^	unsigned gd_p : 1;           \/\/ Present$/;"	m	struct:Gatedesc
-gd_rsv1	inc/mmu.h	/^	unsigned gd_rsv1 : 3;        \/\/ reserved(should be zero I guess)$/;"	m	struct:Gatedesc
-gd_s	inc/mmu.h	/^	unsigned gd_s : 1;           \/\/ must be 0 (system)$/;"	m	struct:Gatedesc
-gd_sel	inc/mmu.h	/^	unsigned gd_sel : 16;        \/\/ segment selector$/;"	m	struct:Gatedesc
-gd_type	inc/mmu.h	/^	unsigned gd_type : 4;        \/\/ type(STS_{TG,IG32,TG32})$/;"	m	struct:Gatedesc
-gdt	boot/boot.S	/^gdt:$/;"	l
-gdt	kern/env.c	/^struct Segdesc gdt[] =$/;"	v	typeref:struct:Segdesc
-gdt_pd	kern/env.c	/^struct Pseudodesc gdt_pd = {$/;"	v	typeref:struct:Pseudodesc
-gdtdesc	boot/boot.S	/^gdtdesc:$/;"	l
 generation	obj/kern/kernel.asm	/^		generation = 1 << ENVGENSHIFT;$/;"	d
 generation	obj/kern/kernel.asm	/^	generation = (e->env_id + (1 << ENVGENSHIFT)) & ~(NENV - 1);$/;"	d
-get_current_test	gradelib.py	/^def get_current_test():$/;"	f
-get_gdb_port	gradelib.py	/^    def get_gdb_port():$/;"	f
-getchar	kern/console.c	/^getchar(void)$/;"	f
-getchar	lib/console.c	/^getchar(void)$/;"	f
-getint	lib/printfmt.c	/^getint(va_list *ap, int lflag)$/;"	f	file:
-getuint	lib/printfmt.c	/^getuint(va_list *ap, int lflag)$/;"	f	file:
-handle_output	gradelib.py	/^        def handle_output(output):$/;"	f	function:call_on_line.setup_call_on_line
-handle_read	gradelib.py	/^    def handle_read(self):$/;"	f
-handle_read	gradelib.py	/^    def handle_read(self):$/;"	m	class:GDBClient
-hello	user/buggyhello2.c	/^const char *hello = "hello, world\\n";$/;"	v
 i	obj/kern/kernel.asm	/^	i = 0;$/;"	d
-i386_detect_memory	kern/pmap.c	/^i386_detect_memory(void)$/;"	f	file:
-i386_init	init.s	/^i386_init:$/;"	l
-i386_init	kern/init.c	/^i386_init(void)$/;"	f
-idt	kern/trap.c	/^struct Gatedesc idt[256] = { { 0 } };$/;"	v	typeref:struct:Gatedesc
-idt_pd	kern/trap.c	/^struct Pseudodesc idt_pd = {$/;"	v	typeref:struct:Pseudodesc
-idx	lib/printf.c	/^	int idx;	\/\/ current buffer index$/;"	m	struct:printbuf	file:
-inb	inc/x86.h	/^inb(int port)$/;"	f
-inl	inc/x86.h	/^inl(int port)$/;"	f
-insb	inc/x86.h	/^insb(int port, void *addr, int cnt)$/;"	f
-insl	inc/x86.h	/^insl(int port, void *addr, int cnt)$/;"	f
-insw	inc/x86.h	/^insw(int port, void *addr, int cnt)$/;"	f
 int	obj/kern/kernel.asm	/^int color;$/;"	l
 int	obj/kern/kernel.asm	/^int x = 1, y = 3, z = 4;$/;"	l
 int	obj/kern/kernel.asm	/^int$/;"	l
-int	obj/user/badsegment.asm	/^int color;$/;"	l
-int	obj/user/badsegment.asm	/^int$/;"	l
-int	obj/user/breakpoint.asm	/^int color;$/;"	l
-int	obj/user/breakpoint.asm	/^int$/;"	l
-int	obj/user/buggyhello.asm	/^int color;$/;"	l
-int	obj/user/buggyhello.asm	/^int$/;"	l
-int	obj/user/buggyhello2.asm	/^int color;$/;"	l
-int	obj/user/buggyhello2.asm	/^int$/;"	l
-int	obj/user/divzero.asm	/^int color;$/;"	l
-int	obj/user/divzero.asm	/^int zero;$/;"	l
-int	obj/user/divzero.asm	/^int$/;"	l
-int	obj/user/evilhello.asm	/^int color;$/;"	l
-int	obj/user/evilhello.asm	/^int$/;"	l
-int	obj/user/faultread.asm	/^int color;$/;"	l
-int	obj/user/faultread.asm	/^int$/;"	l
-int	obj/user/faultreadkernel.asm	/^int color;$/;"	l
-int	obj/user/faultreadkernel.asm	/^int$/;"	l
-int	obj/user/faultwrite.asm	/^int color;$/;"	l
-int	obj/user/faultwrite.asm	/^int$/;"	l
-int	obj/user/faultwritekernel.asm	/^int color;$/;"	l
-int	obj/user/faultwritekernel.asm	/^int$/;"	l
-int	obj/user/hello.asm	/^int color;$/;"	l
-int	obj/user/hello.asm	/^int$/;"	l
-int	obj/user/softint.asm	/^int color;$/;"	l
-int	obj/user/softint.asm	/^int$/;"	l
-int	obj/user/testbss.asm	/^int color;$/;"	l
-int	obj/user/testbss.asm	/^int$/;"	l
-int16_t	inc/types.h	/^typedef short int16_t;$/;"	t
-int32_t	inc/types.h	/^typedef int int32_t;$/;"	t
-int64_t	inc/types.h	/^typedef long long int64_t;$/;"	t
-int8_t	inc/types.h	/^typedef __signed char int8_t;$/;"	t
-intptr_t	inc/types.h	/^typedef int32_t intptr_t;$/;"	t
-invlpg	inc/x86.h	/^invlpg(void *addr)$/;"	f
-inw	inc/x86.h	/^inw(int port)$/;"	f
-iscons	kern/console.c	/^iscons(int fdnum)$/;"	f
-kbd_init	kern/console.c	/^kbd_init(void)$/;"	f	file:
-kbd_intr	kern/console.c	/^kbd_intr(void)$/;"	f
-kbd_proc_data	kern/console.c	/^kbd_proc_data(void)$/;"	f	file:
-kern_pgdir	kern/pmap.c	/^pde_t *kern_pgdir;		\/\/ Kernel's initial page directory$/;"	v
 kern_pgdir	obj/kern/kernel.asm	/^	kern_pgdir = (pde_t *) boot_alloc(PGSIZE);$/;"	d
-kill	gradelib.py	/^    def kill(self):$/;"	f
 l	obj/kern/kernel.asm	/^			l = m;$/;"	d
 l	obj/kern/kernel.asm	/^			l = true_m + 1;$/;"	d
-last_tf	kern/trap.c	/^static struct Trapframe *last_tf;$/;"	v	typeref:struct:Trapframe	file:
 last_tf	obj/kern/kernel.asm	/^	last_tf = tf;$/;"	d
-lcr0	inc/x86.h	/^lcr0(uint32_t val)$/;"	f
-lcr3	inc/x86.h	/^lcr3(uint32_t val)$/;"	f
-lcr4	inc/x86.h	/^lcr4(uint32_t val)$/;"	f
 lfile	obj/kern/kernel.asm	/^	lfile = 0;$/;"	d
 lflag	obj/kern/kernel.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/badsegment.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/breakpoint.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/buggyhello.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/buggyhello2.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/divzero.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/evilhello.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/faultread.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/faultreadkernel.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/faultwrite.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/faultwritekernel.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/hello.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/softint.asm	/^		lflag = 0;$/;"	d
-lflag	obj/user/testbss.asm	/^		lflag = 0;$/;"	d
 lfun	obj/kern/kernel.asm	/^	lfun = lfile;$/;"	d
-lgdt	inc/x86.h	/^lgdt(void *p)$/;"	f
-libmain	lib/libmain.c	/^libmain(int argc, char **argv)$/;"	f
-lidt	inc/x86.h	/^lidt(void *p)$/;"	f
-lldt	inc/x86.h	/^lldt(uint16_t sel)$/;"	f
 lline	obj/kern/kernel.asm	/^		lline = lfile;$/;"	d
 lline	obj/kern/kernel.asm	/^		lline = lfun;$/;"	d
-load_icode	kern/env.c	/^load_icode(struct Env *e, uint8_t *binary)$/;"	f	file:
 long	obj/kern/kernel.asm	/^long$/;"	l
-long	obj/user/badsegment.asm	/^long$/;"	l
-long	obj/user/breakpoint.asm	/^long$/;"	l
-long	obj/user/buggyhello.asm	/^long$/;"	l
-long	obj/user/buggyhello2.asm	/^long$/;"	l
-long	obj/user/divzero.asm	/^long$/;"	l
-long	obj/user/evilhello.asm	/^long$/;"	l
-long	obj/user/faultread.asm	/^long$/;"	l
-long	obj/user/faultreadkernel.asm	/^long$/;"	l
-long	obj/user/faultwrite.asm	/^long$/;"	l
-long	obj/user/faultwritekernel.asm	/^long$/;"	l
-long	obj/user/hello.asm	/^long$/;"	l
-long	obj/user/softint.asm	/^long$/;"	l
-long	obj/user/testbss.asm	/^long$/;"	l
-lpt_putc	kern/console.c	/^lpt_putc(int c)$/;"	f	file:
-ltr	inc/x86.h	/^ltr(uint16_t sel)$/;"	f
-make	gradelib.py	/^def make(*target):$/;"	f
-match	gradelib.py	/^    def match(self, *args, **kwargs):$/;"	m	class:Runner
-maybe_unlink	gradelib.py	/^def maybe_unlink(*paths):$/;"	f
-mc146818_read	kern/kclock.c	/^mc146818_read(unsigned reg)$/;"	f
-mc146818_write	kern/kclock.c	/^mc146818_write(unsigned reg, unsigned datum)$/;"	f
-mem_init	kern/pmap.c	/^mem_init(void)$/;"	f
-memcmp	lib/string.c	/^memcmp(const void *v1, const void *v2, size_t n)$/;"	f
-memcpy	lib/string.c	/^memcpy(void *dst, const void *src, size_t n)$/;"	f
-memfind	lib/string.c	/^memfind(const void *s, int c, size_t n)$/;"	f
-memmove	lib/string.c	/^memmove(void *dst, const void *src, size_t n)$/;"	f
-memset	lib/string.c	/^memset(void *v, int c, size_t n)$/;"	f
-mon_backtrace	kern/monitor.c	/^mon_backtrace(int argc, char **argv, struct Trapframe *tf)$/;"	f
-mon_help	kern/monitor.c	/^mon_help(int argc, char **argv, struct Trapframe *tf)$/;"	f
-mon_kerninfo	kern/monitor.c	/^mon_kerninfo(int argc, char **argv, struct Trapframe *tf)$/;"	f
-monitor	kern/monitor.c	/^monitor(struct Trapframe *tf)$/;"	f
 n	obj/kern/kernel.asm	/^	n = ROUNDUP(NENV*sizeof(struct Env), PGSIZE);$/;"	d
 n	obj/kern/kernel.asm	/^	n = ROUNDUP(npages*sizeof(struct PageInfo), PGSIZE);$/;"	d
-n_desc	inc/stab.h	/^	uint16_t n_desc;        \/\/ description field$/;"	m	struct:Stab
-n_other	inc/stab.h	/^	uint8_t n_other;        \/\/ misc info (usually empty)$/;"	m	struct:Stab
-n_strx	inc/stab.h	/^	uint32_t n_strx;	\/\/ index into string table of name$/;"	m	struct:Stab
-n_type	inc/stab.h	/^	uint8_t n_type;         \/\/ type of symbol$/;"	m	struct:Stab
-n_value	inc/stab.h	/^	uintptr_t n_value;	\/\/ value of symbol$/;"	m	struct:Stab
-name	kern/monitor.c	/^	const char *name;$/;"	m	struct:Command	file:
-name	kern/trapentry.S	/^	name:								\\$/;"	l
-name	kern/trapentry.S	/^	name:			\/* function starts here *\/		\\$/;"	l
 nextfree	obj/kern/kernel.asm	/^		nextfree = ROUNDUP((char *) end, PGSIZE);$/;"	d
 nextfree	obj/kern/kernel.asm	/^	nextfree = ROUNDUP((char *) nextfree, PGSIZE);$/;"	d
 nextfree	obj/kern/kernel.asm	/^	nextfree = nextfree + n;$/;"	d
-normalmap	kern/console.c	/^static uint8_t normalmap[256] =$/;"	v	file:
-npages	kern/pmap.c	/^size_t npages;			\/\/ Amount of physical memory (in pages)$/;"	v
 npages	obj/kern/kernel.asm	/^		npages = (EXTPHYSMEM \/ PGSIZE) + npages_extmem;$/;"	d
 npages	obj/kern/kernel.asm	/^		npages = npages_basemem;$/;"	d
-npages_basemem	kern/pmap.c	/^static size_t npages_basemem;	\/\/ Amount of base memory (in pages)$/;"	v	file:
 npages_basemem	obj/kern/kernel.asm	/^	npages_basemem = (nvram_read(NVRAM_BASELO) * 1024) \/ PGSIZE;$/;"	d
 npages_extmem	obj/kern/kernel.asm	/^	npages_extmem = (nvram_read(NVRAM_EXTLO) * 1024) \/ PGSIZE;$/;"	d
 num	obj/kern/kernel.asm	/^				num = -(long long) num;$/;"	d
 num	obj/kern/kernel.asm	/^			num = (unsigned long long)$/;"	d
 num	obj/kern/kernel.asm	/^			num = getint(&ap, lflag);$/;"	d
 num	obj/kern/kernel.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/badsegment.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/badsegment.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/badsegment.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/badsegment.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/breakpoint.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/breakpoint.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/breakpoint.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/breakpoint.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/buggyhello.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/buggyhello.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/buggyhello.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/buggyhello.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/buggyhello2.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/buggyhello2.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/buggyhello2.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/buggyhello2.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/divzero.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/divzero.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/divzero.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/divzero.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/evilhello.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/evilhello.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/evilhello.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/evilhello.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/faultread.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/faultread.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/faultread.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/faultread.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/faultreadkernel.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/faultreadkernel.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/faultreadkernel.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/faultreadkernel.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/faultwrite.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/faultwrite.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/faultwrite.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/faultwrite.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/faultwritekernel.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/faultwritekernel.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/faultwritekernel.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/faultwritekernel.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/hello.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/hello.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/hello.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/hello.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/softint.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/softint.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/softint.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/softint.asm	/^			num = getuint(&ap, lflag);$/;"	d
-num	obj/user/testbss.asm	/^				num = -(long long) num;$/;"	d
-num	obj/user/testbss.asm	/^			num = (unsigned long long)$/;"	d
-num	obj/user/testbss.asm	/^			num = getint(&ap, lflag);$/;"	d
-num	obj/user/testbss.asm	/^			num = getuint(&ap, lflag);$/;"	d
 number	obj/kern/kernel.asm	/^		number:$/;"	l
-number	obj/user/badsegment.asm	/^		number:$/;"	l
-number	obj/user/breakpoint.asm	/^		number:$/;"	l
-number	obj/user/buggyhello.asm	/^		number:$/;"	l
-number	obj/user/buggyhello2.asm	/^		number:$/;"	l
-number	obj/user/divzero.asm	/^		number:$/;"	l
-number	obj/user/evilhello.asm	/^		number:$/;"	l
-number	obj/user/faultread.asm	/^		number:$/;"	l
-number	obj/user/faultreadkernel.asm	/^		number:$/;"	l
-number	obj/user/faultwrite.asm	/^		number:$/;"	l
-number	obj/user/faultwritekernel.asm	/^		number:$/;"	l
-number	obj/user/hello.asm	/^		number:$/;"	l
-number	obj/user/softint.asm	/^		number:$/;"	l
-number	obj/user/testbss.asm	/^		number:$/;"	l
-nvram_read	kern/pmap.c	/^nvram_read(int r)$/;"	f	file:
-off_t	inc/types.h	/^typedef int32_t off_t;$/;"	t
-offset	obj/boot/boot.asm	/^	offset = (offset \/ SECTSIZE) + 1;$/;"	d
-offsetof	inc/types.h	71;"	d
-outb	inc/x86.h	/^outb(int port, uint8_t data)$/;"	f
-outl	inc/x86.h	/^outl(int port, uint32_t data)$/;"	f
-outsb	inc/x86.h	/^outsb(int port, const void *addr, int cnt)$/;"	f
-outsl	inc/x86.h	/^outsl(int port, const void *addr, int cnt)$/;"	f
-outsw	inc/x86.h	/^outsw(int port, const void *addr, int cnt)$/;"	f
-outw	inc/x86.h	/^outw(int port, uint16_t data)$/;"	f
 p	obj/kern/kernel.asm	/^				p = "(null)";$/;"	d
 p	obj/kern/kernel.asm	/^	p = (pte_t*) KADDR(PTE_ADDR(*pgdir));$/;"	d
-p	obj/user/badsegment.asm	/^				p = "(null)";$/;"	d
-p	obj/user/breakpoint.asm	/^				p = "(null)";$/;"	d
-p	obj/user/buggyhello.asm	/^				p = "(null)";$/;"	d
-p	obj/user/buggyhello2.asm	/^				p = "(null)";$/;"	d
-p	obj/user/divzero.asm	/^				p = "(null)";$/;"	d
-p	obj/user/evilhello.asm	/^				p = "(null)";$/;"	d
-p	obj/user/faultread.asm	/^				p = "(null)";$/;"	d
-p	obj/user/faultreadkernel.asm	/^				p = "(null)";$/;"	d
-p	obj/user/faultwrite.asm	/^				p = "(null)";$/;"	d
-p	obj/user/faultwritekernel.asm	/^				p = "(null)";$/;"	d
-p	obj/user/hello.asm	/^				p = "(null)";$/;"	d
-p	obj/user/softint.asm	/^				p = "(null)";$/;"	d
-p	obj/user/testbss.asm	/^				p = "(null)";$/;"	d
-p_align	inc/elf.h	/^	uint32_t p_align;$/;"	m	struct:Proghdr
-p_filesz	inc/elf.h	/^	uint32_t p_filesz;$/;"	m	struct:Proghdr
-p_flags	inc/elf.h	/^	uint32_t p_flags;$/;"	m	struct:Proghdr
-p_memsz	inc/elf.h	/^	uint32_t p_memsz;$/;"	m	struct:Proghdr
-p_offset	inc/elf.h	/^	uint32_t p_offset;$/;"	m	struct:Proghdr
-p_pa	inc/elf.h	/^	uint32_t p_pa;$/;"	m	struct:Proghdr
-p_type	inc/elf.h	/^	uint32_t p_type;$/;"	m	struct:Proghdr
-p_va	inc/elf.h	/^	uint32_t p_va;$/;"	m	struct:Proghdr
 pa	obj/kern/kernel.asm	/^		pa = PTE_ADDR(e->env_pgdir[pdeno]);$/;"	d
 pa	obj/kern/kernel.asm	/^	pa = PADDR(e->env_pgdir);$/;"	d
-pa2page	kern/pmap.h	/^pa2page(physaddr_t pa)$/;"	f
 padc	obj/kern/kernel.asm	/^			padc = '-';$/;"	d
 padc	obj/kern/kernel.asm	/^			padc = '0';$/;"	d
-padc	obj/user/badsegment.asm	/^			padc = '-';$/;"	d
-padc	obj/user/badsegment.asm	/^			padc = '0';$/;"	d
-padc	obj/user/breakpoint.asm	/^			padc = '-';$/;"	d
-padc	obj/user/breakpoint.asm	/^			padc = '0';$/;"	d
-padc	obj/user/buggyhello.asm	/^			padc = '-';$/;"	d
-padc	obj/user/buggyhello.asm	/^			padc = '0';$/;"	d
-padc	obj/user/buggyhello2.asm	/^			padc = '-';$/;"	d
-padc	obj/user/buggyhello2.asm	/^			padc = '0';$/;"	d
-padc	obj/user/divzero.asm	/^			padc = '-';$/;"	d
-padc	obj/user/divzero.asm	/^			padc = '0';$/;"	d
-padc	obj/user/evilhello.asm	/^			padc = '-';$/;"	d
-padc	obj/user/evilhello.asm	/^			padc = '0';$/;"	d
-padc	obj/user/faultread.asm	/^			padc = '-';$/;"	d
-padc	obj/user/faultread.asm	/^			padc = '0';$/;"	d
-padc	obj/user/faultreadkernel.asm	/^			padc = '-';$/;"	d
-padc	obj/user/faultreadkernel.asm	/^			padc = '0';$/;"	d
-padc	obj/user/faultwrite.asm	/^			padc = '-';$/;"	d
-padc	obj/user/faultwrite.asm	/^			padc = '0';$/;"	d
-padc	obj/user/faultwritekernel.asm	/^			padc = '-';$/;"	d
-padc	obj/user/faultwritekernel.asm	/^			padc = '0';$/;"	d
-padc	obj/user/hello.asm	/^			padc = '-';$/;"	d
-padc	obj/user/hello.asm	/^			padc = '0';$/;"	d
-padc	obj/user/softint.asm	/^			padc = '-';$/;"	d
-padc	obj/user/softint.asm	/^			padc = '0';$/;"	d
-padc	obj/user/testbss.asm	/^			padc = '-';$/;"	d
-padc	obj/user/testbss.asm	/^			padc = '0';$/;"	d
-page2kva	kern/pmap.h	/^page2kva(struct PageInfo *pp)$/;"	f
-page2pa	kern/pmap.h	/^page2pa(struct PageInfo *pp)$/;"	f
-page_alloc	kern/pmap.c	/^page_alloc(int alloc_flags)$/;"	f
-page_decref	kern/pmap.c	/^page_decref(struct PageInfo* pp)$/;"	f
-page_fault_handler	kern/trap.c	/^page_fault_handler(struct Trapframe *tf)$/;"	f
-page_free	kern/pmap.c	/^page_free(struct PageInfo *pp)$/;"	f
-page_free_list	kern/pmap.c	/^static struct PageInfo *page_free_list;	\/\/ Free list of physical pages$/;"	v	typeref:struct:PageInfo	file:
 page_free_list	obj/kern/kernel.asm	/^		page_free_list = &pages[i];$/;"	d
 page_free_list	obj/kern/kernel.asm	/^		page_free_list = pp1;$/;"	d
 page_free_list	obj/kern/kernel.asm	/^		page_free_list = pp;$/;"	d
 page_free_list	obj/kern/kernel.asm	/^	page_free_list = 0;$/;"	d
 page_free_list	obj/kern/kernel.asm	/^	page_free_list = fl;$/;"	d
 page_free_list	obj/kern/kernel.asm	/^	page_free_list = page_free_list->pp_link; $/;"	d
-page_init	kern/pmap.c	/^page_init(void)$/;"	f
-page_insert	kern/pmap.c	/^page_insert(pde_t *pgdir, struct PageInfo *pp, void *va, int perm)$/;"	f
-page_lookup	kern/pmap.c	/^page_lookup(pde_t *pgdir, void *va, pte_t **pte_store)$/;"	f
-page_remove	kern/pmap.c	/^page_remove(pde_t *pgdir, void *va)$/;"	f
-pages	kern/pmap.c	/^struct PageInfo *pages;		\/\/ Physical page state array$/;"	v	typeref:struct:PageInfo
 pages	obj/kern/kernel.asm	/^	pages = (struct PageInfo *)boot_alloc(sizeof(struct PageInfo) * npages);$/;"	d
-panic	inc/assert.h	12;"	d
-panicstr	kern/init.c	/^const char *panicstr;$/;"	v
 panicstr	obj/kern/kernel.asm	/^	panicstr = fmt;$/;"	d
-pd_base	inc/mmu.h	/^	uint32_t pd_base;		\/\/ Base address$/;"	m	struct:Pseudodesc
-pd_lim	inc/mmu.h	/^	uint16_t pd_lim;		\/\/ Limit$/;"	m	struct:Pseudodesc
-pde_t	inc/memlayout.h	/^typedef uint32_t pde_t;$/;"	t
 pgdir	obj/kern/kernel.asm	/^	pgdir = &pgdir[PDX(va)];$/;"	d
 pgdir	obj/kern/kernel.asm	/^	pgdir = kern_pgdir;$/;"	d
-pgdir_walk	kern/pmap.c	/^pgdir_walk(pde_t *pgdir, const void *va, int create)$/;"	f
-ph	obj/boot/boot.asm	/^	ph = (struct Proghdr *) ((uint8_t *) ELFHDR + ELFHDR->e_phoff);$/;"	d
-physaddr_t	inc/types.h	/^typedef uint32_t physaddr_t;$/;"	t
 pos	obj/kern/kernel.asm	/^	pos = inb(addr_6845 + 1) << 8;$/;"	d
-post_make	gradelib.py	/^def post_make():$/;"	f
 pp0	obj/kern/kernel.asm	/^	pp0 = pp1 = pp2 = 0;$/;"	d
 pp1	obj/kern/kernel.asm	/^	pp1 = pp2 = 0;$/;"	d
-pp_link	inc/memlayout.h	/^	struct PageInfo *pp_link;$/;"	m	struct:PageInfo	typeref:struct:PageInfo::PageInfo
-pp_ref	inc/memlayout.h	/^	uint16_t pp_ref;$/;"	m	struct:PageInfo
-ppn_t	inc/types.h	/^typedef uint32_t ppn_t;$/;"	t
-pre_make	gradelib.py	/^def pre_make():$/;"	f
 precision	obj/kern/kernel.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
 precision	obj/kern/kernel.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/badsegment.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/badsegment.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/breakpoint.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/breakpoint.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/buggyhello.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/buggyhello.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/buggyhello2.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/buggyhello2.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/divzero.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/divzero.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/evilhello.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/evilhello.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/faultread.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/faultread.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/faultreadkernel.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/faultreadkernel.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/faultwrite.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/faultwrite.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/faultwritekernel.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/faultwritekernel.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/hello.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/hello.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/softint.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/softint.asm	/^			precision = va_arg(ap, int);$/;"	d
-precision	obj/user/testbss.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
-precision	obj/user/testbss.asm	/^			precision = va_arg(ap, int);$/;"	d
-print_regs	kern/trap.c	/^print_regs(struct PushRegs *regs)$/;"	f
-print_trapframe	kern/trap.c	/^print_trapframe(struct Trapframe *tf)$/;"	f
-printbuf	lib/printf.c	/^struct printbuf {$/;"	s	file:
-printfmt	lib/printfmt.c	/^printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...)$/;"	f
-printnum	lib/printfmt.c	/^printnum(void (*putch)(int, void*), void *putdat,$/;"	f	file:
 process_precision	obj/kern/kernel.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/badsegment.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/breakpoint.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/buggyhello.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/buggyhello2.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/divzero.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/evilhello.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/faultread.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/faultreadkernel.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/faultwrite.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/faultwritekernel.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/hello.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/softint.asm	/^		process_precision:$/;"	l
-process_precision	obj/user/testbss.asm	/^		process_precision:$/;"	l
-protcseg	boot/boot.S	/^protcseg:$/;"	l
-protcseg	obj/boot/boot.asm	/^protcseg:$/;"	l
 pt	obj/kern/kernel.asm	/^		pt = (pte_t*) KADDR(pa);$/;"	d
 pte	obj/kern/kernel.asm	/^		pte = (pte_t *)(physaddr_t)pgdir_walk(pgdir, va + PGADDR(0, i, 0), true);$/;"	d
-pte_t	inc/memlayout.h	/^typedef uint32_t pte_t;$/;"	t
 pte_t	obj/kern/kernel.asm	/^pte_t *$/;"	l
 ptep	obj/kern/kernel.asm	/^	ptep = (pte_t *) KADDR(PTE_ADDR(kern_pgdir[PDX(PGSIZE)]));$/;"	d
 ptep	obj/kern/kernel.asm	/^	ptep = (pte_t *) page2kva(pp0);$/;"	d
 ptep	obj/kern/kernel.asm	/^	ptep = pgdir_walk(kern_pgdir, va, 1);$/;"	d
 ptep1	obj/kern/kernel.asm	/^	ptep1 = (pte_t *) KADDR(PTE_ADDR(kern_pgdir[PDX(va)]));$/;"	d
-putch	kern/printf.c	/^putch(int ch, int *cnt)$/;"	f	file:
-putch	lib/printf.c	/^putch(int ch, struct printbuf *b)$/;"	f	file:
-r	grade-lab1	/^r = Runner(save("jos.out"),$/;"	v
-r	grade-lab2	/^r = Runner(save("jos.out"),$/;"	v
-r	grade-lab3	/^r = Runner(save("jos.out"),$/;"	v
 r	obj/kern/kernel.asm	/^			r = m - 1;$/;"	d
 rc	obj/kern/kernel.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/badsegment.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/breakpoint.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/buggyhello.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/buggyhello2.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/divzero.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/evilhello.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/faultread.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/faultreadkernel.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/faultwrite.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/faultwritekernel.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/hello.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/softint.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rc	obj/user/testbss.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
-rcr0	inc/x86.h	/^rcr0(void)$/;"	f
-rcr2	inc/x86.h	/^rcr2(void)$/;"	f
-rcr3	inc/x86.h	/^rcr3(void)$/;"	f
-rcr4	inc/x86.h	/^rcr4(void)$/;"	f
-read_ebp	inc/x86.h	/^read_ebp(void)$/;"	f
-read_eflags	inc/x86.h	/^read_eflags(void)$/;"	f
-read_esp	inc/x86.h	/^read_esp(void)$/;"	f
-read_tsc	inc/x86.h	/^read_tsc(void)$/;"	f
-readdeps	mergedep.pl	/^sub readdeps {$/;"	s
-readline	lib/readline.c	/^readline(const char *prompt)$/;"	f
-readsect	boot/main.c	/^readsect(void *dst, uint32_t offset)$/;"	f
-readseg	boot/main.c	/^readseg(uint32_t pa, uint32_t count, uint32_t offset)$/;"	f
-reg_eax	inc/trap.h	/^	uint32_t reg_eax;$/;"	m	struct:PushRegs
-reg_ebp	inc/trap.h	/^	uint32_t reg_ebp;$/;"	m	struct:PushRegs
-reg_ebx	inc/trap.h	/^	uint32_t reg_ebx;$/;"	m	struct:PushRegs
-reg_ecx	inc/trap.h	/^	uint32_t reg_ecx;$/;"	m	struct:PushRegs
-reg_edi	inc/trap.h	/^	uint32_t reg_edi;$/;"	m	struct:PushRegs
-reg_edx	inc/trap.h	/^	uint32_t reg_edx;$/;"	m	struct:PushRegs
-reg_esi	inc/trap.h	/^	uint32_t reg_esi;$/;"	m	struct:PushRegs
-reg_oesp	inc/trap.h	/^	uint32_t reg_oesp;		\/* Useless *\/$/;"	m	struct:PushRegs
-region_alloc	kern/env.c	/^region_alloc(struct Env *e, void *va, size_t len)$/;"	f	file:
-register_test	gradelib.py	/^    def register_test(fn, title=title):$/;"	f	function:test
-relocated	kern/entry.S	/^relocated:$/;"	l
 relocated	obj/kern/kernel.asm	/^relocated:$/;"	l
-reset_fs	gradelib.py	/^def reset_fs():$/;"	f
 result	obj/kern/kernel.asm	/^	result = nextfree;$/;"	d
 result	obj/kern/kernel.asm	/^	result = page_free_list;$/;"	d
 reswitch	obj/kern/kernel.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/badsegment.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/breakpoint.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/buggyhello.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/buggyhello2.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/divzero.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/evilhello.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/faultread.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/faultreadkernel.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/faultwrite.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/faultwritekernel.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/hello.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/softint.asm	/^	reswitch:$/;"	l
-reswitch	obj/user/testbss.asm	/^	reswitch:$/;"	l
 ret	obj/kern/kernel.asm	/^	ret = dst;$/;"	d
-ret	obj/user/badsegment.asm	/^	ret = dst;$/;"	d
-ret	obj/user/breakpoint.asm	/^	ret = dst;$/;"	d
-ret	obj/user/buggyhello.asm	/^	ret = dst;$/;"	d
-ret	obj/user/buggyhello2.asm	/^	ret = dst;$/;"	d
-ret	obj/user/divzero.asm	/^	ret = dst;$/;"	d
-ret	obj/user/evilhello.asm	/^	ret = dst;$/;"	d
-ret	obj/user/faultread.asm	/^	ret = dst;$/;"	d
-ret	obj/user/faultreadkernel.asm	/^	ret = dst;$/;"	d
-ret	obj/user/faultwrite.asm	/^	ret = dst;$/;"	d
-ret	obj/user/faultwritekernel.asm	/^	ret = dst;$/;"	d
-ret	obj/user/hello.asm	/^	ret = dst;$/;"	d
-ret	obj/user/softint.asm	/^	ret = dst;$/;"	d
-ret	obj/user/testbss.asm	/^	ret = dst;$/;"	d
 rfile	obj/kern/kernel.asm	/^	rfile = (stab_end - stabs) - 1;$/;"	d
 rfun	obj/kern/kernel.asm	/^	rfun = rfile;$/;"	d
 rline	obj/kern/kernel.asm	/^		rline = rfile;$/;"	d
 rline	obj/kern/kernel.asm	/^		rline = rfun;$/;"	d
-rpos	kern/console.c	/^	uint32_t rpos;$/;"	m	struct:__anon1	file:
-run_qemu	gradelib.py	/^    def run_qemu(self, *monitors, **kw):$/;"	m	class:Runner
-run_qemu_kw	gradelib.py	/^        def run_qemu_kw(target_base="qemu", make_args=[], timeout=30):$/;"	f	function:Runner.run_qemu
-run_test	gradelib.py	/^        def run_test():$/;"	f	function:test.register_test
-run_tests	gradelib.py	/^def run_tests():$/;"	f
-runcmd	kern/monitor.c	/^runcmd(char *buf, struct Trapframe *tf)$/;"	f	file:
 s	obj/kern/kernel.asm	/^	s = src;$/;"	d
-s	obj/user/badsegment.asm	/^	s = src;$/;"	d
-s	obj/user/breakpoint.asm	/^	s = src;$/;"	d
-s	obj/user/buggyhello.asm	/^	s = src;$/;"	d
-s	obj/user/buggyhello2.asm	/^	s = src;$/;"	d
-s	obj/user/divzero.asm	/^	s = src;$/;"	d
-s	obj/user/evilhello.asm	/^	s = src;$/;"	d
-s	obj/user/faultread.asm	/^	s = src;$/;"	d
-s	obj/user/faultreadkernel.asm	/^	s = src;$/;"	d
-s	obj/user/faultwrite.asm	/^	s = src;$/;"	d
-s	obj/user/faultwritekernel.asm	/^	s = src;$/;"	d
-s	obj/user/hello.asm	/^	s = src;$/;"	d
-s	obj/user/softint.asm	/^	s = src;$/;"	d
-s	obj/user/testbss.asm	/^	s = src;$/;"	d
-save	gradelib.py	/^def save(path):$/;"	f
-save_on_finish	gradelib.py	/^    def save_on_finish(fail):$/;"	f	function:save
-sd_avl	inc/mmu.h	/^	unsigned sd_avl : 1;        \/\/ Unused (available for software use)$/;"	m	struct:Segdesc
-sd_base_15_0	inc/mmu.h	/^	unsigned sd_base_15_0 : 16; \/\/ Low bits of segment base address$/;"	m	struct:Segdesc
-sd_base_23_16	inc/mmu.h	/^	unsigned sd_base_23_16 : 8; \/\/ Middle bits of segment base address$/;"	m	struct:Segdesc
-sd_base_31_24	inc/mmu.h	/^	unsigned sd_base_31_24 : 8; \/\/ High bits of segment base address$/;"	m	struct:Segdesc
-sd_db	inc/mmu.h	/^	unsigned sd_db : 1;         \/\/ 0 = 16-bit segment, 1 = 32-bit segment$/;"	m	struct:Segdesc
-sd_dpl	inc/mmu.h	/^	unsigned sd_dpl : 2;        \/\/ Descriptor Privilege Level$/;"	m	struct:Segdesc
-sd_g	inc/mmu.h	/^	unsigned sd_g : 1;          \/\/ Granularity: limit scaled by 4K when set$/;"	m	struct:Segdesc
-sd_lim_15_0	inc/mmu.h	/^	unsigned sd_lim_15_0 : 16;  \/\/ Low bits of segment limit$/;"	m	struct:Segdesc
-sd_lim_19_16	inc/mmu.h	/^	unsigned sd_lim_19_16 : 4;  \/\/ High bits of segment limit$/;"	m	struct:Segdesc
-sd_p	inc/mmu.h	/^	unsigned sd_p : 1;          \/\/ Present$/;"	m	struct:Segdesc
-sd_rsv1	inc/mmu.h	/^	unsigned sd_rsv1 : 1;       \/\/ Reserved$/;"	m	struct:Segdesc
-sd_s	inc/mmu.h	/^	unsigned sd_s : 1;          \/\/ 0 = system, 1 = application$/;"	m	struct:Segdesc
-sd_type	inc/mmu.h	/^	unsigned sd_type : 4;       \/\/ Segment type (see STS_ constants)$/;"	m	struct:Segdesc
-serial_exists	kern/console.c	/^static bool serial_exists;$/;"	v	file:
 serial_exists	obj/kern/kernel.asm	/^	serial_exists = (inb(COM1+COM_LSR) != 0xFF);$/;"	d
-serial_init	kern/console.c	/^serial_init(void)$/;"	f	file:
-serial_intr	kern/console.c	/^serial_intr(void)$/;"	f
-serial_proc_data	kern/console.c	/^serial_proc_data(void)$/;"	f	file:
-serial_putc	kern/console.c	/^serial_putc(int c)$/;"	f	file:
-setup_breakpoint	gradelib.py	/^    def setup_breakpoint(runner):$/;"	f	function:stop_breakpoint
-setup_call_on_line	gradelib.py	/^    def setup_call_on_line(runner):$/;"	f	function:call_on_line
-setup_save	gradelib.py	/^    def setup_save(runner):$/;"	f	function:save
-sh_addr	inc/elf.h	/^	uint32_t sh_addr;$/;"	m	struct:Secthdr
-sh_addralign	inc/elf.h	/^	uint32_t sh_addralign;$/;"	m	struct:Secthdr
-sh_entsize	inc/elf.h	/^	uint32_t sh_entsize;$/;"	m	struct:Secthdr
-sh_flags	inc/elf.h	/^	uint32_t sh_flags;$/;"	m	struct:Secthdr
-sh_info	inc/elf.h	/^	uint32_t sh_info;$/;"	m	struct:Secthdr
-sh_link	inc/elf.h	/^	uint32_t sh_link;$/;"	m	struct:Secthdr
-sh_name	inc/elf.h	/^	uint32_t sh_name;$/;"	m	struct:Secthdr
-sh_offset	inc/elf.h	/^	uint32_t sh_offset;$/;"	m	struct:Secthdr
-sh_size	inc/elf.h	/^	uint32_t sh_size;$/;"	m	struct:Secthdr
-sh_type	inc/elf.h	/^	uint32_t sh_type;$/;"	m	struct:Secthdr
-shiftcode	kern/console.c	/^static uint8_t shiftcode[256] =$/;"	v	file:
-shiftmap	kern/console.c	/^static uint8_t shiftmap[256] =$/;"	v	file:
-show_command	gradelib.py	/^def show_command(cmd):$/;"	f
-show_part	gradelib.py	/^    def show_part():$/;"	f	function:end_part
-size_t	inc/types.h	/^typedef uint32_t size_t;$/;"	t
 size_t	obj/kern/kernel.asm	/^size_t$/;"	l
-size_t	obj/user/badsegment.asm	/^size_t$/;"	l
-size_t	obj/user/breakpoint.asm	/^size_t$/;"	l
-size_t	obj/user/buggyhello.asm	/^size_t$/;"	l
-size_t	obj/user/buggyhello2.asm	/^size_t$/;"	l
-size_t	obj/user/divzero.asm	/^size_t$/;"	l
-size_t	obj/user/evilhello.asm	/^size_t$/;"	l
-size_t	obj/user/faultread.asm	/^size_t$/;"	l
-size_t	obj/user/faultreadkernel.asm	/^size_t$/;"	l
-size_t	obj/user/faultwrite.asm	/^size_t$/;"	l
-size_t	obj/user/faultwritekernel.asm	/^size_t$/;"	l
-size_t	obj/user/hello.asm	/^size_t$/;"	l
-size_t	obj/user/softint.asm	/^size_t$/;"	l
-size_t	obj/user/testbss.asm	/^size_t$/;"	l
-snprintf	lib/printfmt.c	/^snprintf(char *buf, int n, const char *fmt, ...)$/;"	f
-spin	boot/boot.S	/^spin:$/;"	l
-spin	kern/entry.S	/^spin:	jmp	spin$/;"	l
-spin	obj/boot/boot.asm	/^spin:$/;"	l
 spin	obj/kern/kernel.asm	/^spin:	jmp	spin$/;"	l
-sprintbuf	lib/printfmt.c	/^struct sprintbuf {$/;"	s	file:
-sprintputch	lib/printfmt.c	/^sprintputch(int ch, struct sprintbuf *b)$/;"	f	file:
-ssize_t	inc/types.h	/^typedef int32_t ssize_t;$/;"	t
-stab_binsearch	kern/kdebug.c	/^stab_binsearch(const struct Stab *stabs, int *region_left, int *region_right,$/;"	f	file:
-stab_end	kern/kdebug.c	/^	const struct Stab *stab_end;$/;"	m	struct:UserStabData	typeref:struct:UserStabData::Stab	file:
 stab_end	obj/kern/kernel.asm	/^		stab_end = __STAB_END__;$/;"	d
 stab_end	obj/kern/kernel.asm	/^		stab_end = usd->stab_end;$/;"	d
-stabs	kern/kdebug.c	/^	const struct Stab *stabs;$/;"	m	struct:UserStabData	typeref:struct:UserStabData::Stab	file:
 stabs	obj/kern/kernel.asm	/^		stabs = __STAB_BEGIN__;$/;"	d
 stabs	obj/kern/kernel.asm	/^		stabs = usd->stabs;$/;"	d
-stabstr	kern/kdebug.c	/^	const char *stabstr;$/;"	m	struct:UserStabData	file:
 stabstr	obj/kern/kernel.asm	/^		stabstr = __STABSTR_BEGIN__;$/;"	d
 stabstr	obj/kern/kernel.asm	/^		stabstr = usd->stabstr;$/;"	d
-stabstr_end	kern/kdebug.c	/^	const char *stabstr_end;$/;"	m	struct:UserStabData	file:
 stabstr_end	obj/kern/kernel.asm	/^		stabstr_end = __STABSTR_END__;$/;"	d
 stabstr_end	obj/kern/kernel.asm	/^		stabstr_end = usd->stabstr_end;$/;"	d
-start	boot/boot.S	/^start:$/;"	l
-start	obj/boot/boot.asm	/^start:$/;"	l
 start	obj/kern/kernel.asm	/^	start = PGNUM(ROUNDDOWN(IOPHYSMEM, PGSIZE));$/;"	d
-static	obj/boot/boot.asm	/^static __inline uint8_t$/;"	l
-static	obj/boot/boot.asm	/^static __inline void$/;"	l
 static	obj/kern/kernel.asm	/^static __inline uint32_t$/;"	l
 static	obj/kern/kernel.asm	/^static __inline uint8_t$/;"	l
 static	obj/kern/kernel.asm	/^static __inline void$/;"	l
@@ -7072,288 +6554,806 @@ static	obj/kern/kernel.asm	/^static physaddr_t$/;"	l
 static	obj/kern/kernel.asm	/^static unsigned long long$/;"	l
 static	obj/kern/kernel.asm	/^static void *$/;"	l
 static	obj/kern/kernel.asm	/^static void$/;"	l
+tf	obj/kern/kernel.asm	/^		tf = &curenv->env_tf;$/;"	d
+unsigned	obj/kern/kernel.asm	/^unsigned$/;"	l
+va	obj/kern/kernel.asm	/^	va = (void*)(PGSIZE * NPDENTRIES + PGSIZE);$/;"	d
+void	obj/kern/kernel.asm	/^void	user_mem_assert(struct Env *env, const void *va, size_t len, int perm);$/;"	l
+void	obj/kern/kernel.asm	/^void *$/;"	l
+void	obj/kern/kernel.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/kern/kernel.asm	/^void$/;"	l
+was	obj/kern/kernel.asm	/^	was = *cp;$/;"	d
+width	obj/kern/kernel.asm	/^				width = 0;$/;"	d
+width	obj/kern/kernel.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/badsegment.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/badsegment.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/badsegment.asm	/^_start:$/;"	l
+altflag	obj/user/badsegment.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/badsegment.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/badsegment.asm	/^args_exist:$/;"	l
+base	obj/user/badsegment.asm	/^			base = 10;$/;"	d
+base	obj/user/badsegment.asm	/^			base = 16;$/;"	d
+base	obj/user/badsegment.asm	/^			base = 8;$/;"	d
+base	obj/user/badsegment.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/badsegment.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/badsegment.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/badsegment.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/badsegment.asm	/^char *$/;"	l
+clrflag	obj/user/badsegment.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/badsegment.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/badsegment.asm	/^				color = 0;$/;"	d
+color	obj/user/badsegment.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/badsegment.asm	/^	colorswitch:$/;"	l
+const	obj/user/badsegment.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/badsegment.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/badsegment.asm	/^	d = dst;$/;"	d
+default	obj/user/badsegment.asm	/^		default:$/;"	l
+dig	obj/user/badsegment.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/badsegment.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/badsegment.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/badsegment.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/badsegment.asm	/^envid_t$/;"	l
+err	obj/user/badsegment.asm	/^				err = -err;$/;"	d
+err	obj/user/badsegment.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/badsegment.asm	/^int color;$/;"	l
+int	obj/user/badsegment.asm	/^int$/;"	l
+lflag	obj/user/badsegment.asm	/^		lflag = 0;$/;"	d
+long	obj/user/badsegment.asm	/^long$/;"	l
+num	obj/user/badsegment.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/badsegment.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/badsegment.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/badsegment.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/badsegment.asm	/^		number:$/;"	l
+p	obj/user/badsegment.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/badsegment.asm	/^			padc = '-';$/;"	d
+padc	obj/user/badsegment.asm	/^			padc = '0';$/;"	d
+precision	obj/user/badsegment.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/badsegment.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/badsegment.asm	/^		process_precision:$/;"	l
+rc	obj/user/badsegment.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/badsegment.asm	/^	reswitch:$/;"	l
+ret	obj/user/badsegment.asm	/^	ret = dst;$/;"	d
+s	obj/user/badsegment.asm	/^	s = src;$/;"	d
+size_t	obj/user/badsegment.asm	/^size_t$/;"	l
 static	obj/user/badsegment.asm	/^static long long$/;"	l
 static	obj/user/badsegment.asm	/^static unsigned long long$/;"	l
 static	obj/user/badsegment.asm	/^static void$/;"	l
+thisenv	obj/user/badsegment.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/badsegment.asm	/^void *$/;"	l
+void	obj/user/badsegment.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/badsegment.asm	/^void$/;"	l
+width	obj/user/badsegment.asm	/^				width = 0;$/;"	d
+width	obj/user/badsegment.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/breakpoint.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/breakpoint.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/breakpoint.asm	/^_start:$/;"	l
+altflag	obj/user/breakpoint.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/breakpoint.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/breakpoint.asm	/^args_exist:$/;"	l
+base	obj/user/breakpoint.asm	/^			base = 10;$/;"	d
+base	obj/user/breakpoint.asm	/^			base = 16;$/;"	d
+base	obj/user/breakpoint.asm	/^			base = 8;$/;"	d
+base	obj/user/breakpoint.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/breakpoint.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/breakpoint.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/breakpoint.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/breakpoint.asm	/^char *$/;"	l
+clrflag	obj/user/breakpoint.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/breakpoint.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/breakpoint.asm	/^				color = 0;$/;"	d
+color	obj/user/breakpoint.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/breakpoint.asm	/^	colorswitch:$/;"	l
+const	obj/user/breakpoint.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/breakpoint.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/breakpoint.asm	/^	d = dst;$/;"	d
+default	obj/user/breakpoint.asm	/^		default:$/;"	l
+dig	obj/user/breakpoint.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/breakpoint.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/breakpoint.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/breakpoint.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/breakpoint.asm	/^envid_t$/;"	l
+err	obj/user/breakpoint.asm	/^				err = -err;$/;"	d
+err	obj/user/breakpoint.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/breakpoint.asm	/^int color;$/;"	l
+int	obj/user/breakpoint.asm	/^int$/;"	l
+lflag	obj/user/breakpoint.asm	/^		lflag = 0;$/;"	d
+long	obj/user/breakpoint.asm	/^long$/;"	l
+num	obj/user/breakpoint.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/breakpoint.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/breakpoint.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/breakpoint.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/breakpoint.asm	/^		number:$/;"	l
+p	obj/user/breakpoint.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/breakpoint.asm	/^			padc = '-';$/;"	d
+padc	obj/user/breakpoint.asm	/^			padc = '0';$/;"	d
+precision	obj/user/breakpoint.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/breakpoint.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/breakpoint.asm	/^		process_precision:$/;"	l
+rc	obj/user/breakpoint.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/breakpoint.asm	/^	reswitch:$/;"	l
+ret	obj/user/breakpoint.asm	/^	ret = dst;$/;"	d
+s	obj/user/breakpoint.asm	/^	s = src;$/;"	d
+size_t	obj/user/breakpoint.asm	/^size_t$/;"	l
 static	obj/user/breakpoint.asm	/^static long long$/;"	l
 static	obj/user/breakpoint.asm	/^static unsigned long long$/;"	l
 static	obj/user/breakpoint.asm	/^static void$/;"	l
+thisenv	obj/user/breakpoint.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/breakpoint.asm	/^void *$/;"	l
+void	obj/user/breakpoint.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/breakpoint.asm	/^void$/;"	l
+width	obj/user/breakpoint.asm	/^				width = 0;$/;"	d
+width	obj/user/breakpoint.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/buggyhello.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/buggyhello.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/buggyhello.asm	/^_start:$/;"	l
+altflag	obj/user/buggyhello.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/buggyhello.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/buggyhello.asm	/^args_exist:$/;"	l
+base	obj/user/buggyhello.asm	/^			base = 10;$/;"	d
+base	obj/user/buggyhello.asm	/^			base = 16;$/;"	d
+base	obj/user/buggyhello.asm	/^			base = 8;$/;"	d
+base	obj/user/buggyhello.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/buggyhello.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/buggyhello.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/buggyhello.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/buggyhello.asm	/^char *$/;"	l
+clrflag	obj/user/buggyhello.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/buggyhello.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/buggyhello.asm	/^				color = 0;$/;"	d
+color	obj/user/buggyhello.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/buggyhello.asm	/^	colorswitch:$/;"	l
+const	obj/user/buggyhello.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/buggyhello.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/buggyhello.asm	/^	d = dst;$/;"	d
+default	obj/user/buggyhello.asm	/^		default:$/;"	l
+dig	obj/user/buggyhello.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/buggyhello.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/buggyhello.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/buggyhello.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/buggyhello.asm	/^envid_t$/;"	l
+err	obj/user/buggyhello.asm	/^				err = -err;$/;"	d
+err	obj/user/buggyhello.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/buggyhello.asm	/^int color;$/;"	l
+int	obj/user/buggyhello.asm	/^int$/;"	l
+lflag	obj/user/buggyhello.asm	/^		lflag = 0;$/;"	d
+long	obj/user/buggyhello.asm	/^long$/;"	l
+num	obj/user/buggyhello.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/buggyhello.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/buggyhello.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/buggyhello.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/buggyhello.asm	/^		number:$/;"	l
+p	obj/user/buggyhello.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/buggyhello.asm	/^			padc = '-';$/;"	d
+padc	obj/user/buggyhello.asm	/^			padc = '0';$/;"	d
+precision	obj/user/buggyhello.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/buggyhello.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/buggyhello.asm	/^		process_precision:$/;"	l
+rc	obj/user/buggyhello.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/buggyhello.asm	/^	reswitch:$/;"	l
+ret	obj/user/buggyhello.asm	/^	ret = dst;$/;"	d
+s	obj/user/buggyhello.asm	/^	s = src;$/;"	d
+size_t	obj/user/buggyhello.asm	/^size_t$/;"	l
 static	obj/user/buggyhello.asm	/^static long long$/;"	l
 static	obj/user/buggyhello.asm	/^static unsigned long long$/;"	l
 static	obj/user/buggyhello.asm	/^static void$/;"	l
+thisenv	obj/user/buggyhello.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/buggyhello.asm	/^void *$/;"	l
+void	obj/user/buggyhello.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/buggyhello.asm	/^void$/;"	l
+width	obj/user/buggyhello.asm	/^				width = 0;$/;"	d
+width	obj/user/buggyhello.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/buggyhello2.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/buggyhello2.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/buggyhello2.asm	/^_start:$/;"	l
+altflag	obj/user/buggyhello2.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/buggyhello2.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/buggyhello2.asm	/^args_exist:$/;"	l
+base	obj/user/buggyhello2.asm	/^			base = 10;$/;"	d
+base	obj/user/buggyhello2.asm	/^			base = 16;$/;"	d
+base	obj/user/buggyhello2.asm	/^			base = 8;$/;"	d
+base	obj/user/buggyhello2.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/buggyhello2.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/buggyhello2.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/buggyhello2.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/buggyhello2.asm	/^char *$/;"	l
+clrflag	obj/user/buggyhello2.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/buggyhello2.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/buggyhello2.asm	/^				color = 0;$/;"	d
+color	obj/user/buggyhello2.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/buggyhello2.asm	/^	colorswitch:$/;"	l
+const	obj/user/buggyhello2.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/buggyhello2.asm	/^const char *hello = "hello, world\\n";$/;"	l
+const	obj/user/buggyhello2.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/buggyhello2.asm	/^	d = dst;$/;"	d
+default	obj/user/buggyhello2.asm	/^		default:$/;"	l
+dig	obj/user/buggyhello2.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/buggyhello2.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/buggyhello2.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/buggyhello2.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/buggyhello2.asm	/^envid_t$/;"	l
+err	obj/user/buggyhello2.asm	/^				err = -err;$/;"	d
+err	obj/user/buggyhello2.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/buggyhello2.asm	/^int color;$/;"	l
+int	obj/user/buggyhello2.asm	/^int$/;"	l
+lflag	obj/user/buggyhello2.asm	/^		lflag = 0;$/;"	d
+long	obj/user/buggyhello2.asm	/^long$/;"	l
+num	obj/user/buggyhello2.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/buggyhello2.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/buggyhello2.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/buggyhello2.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/buggyhello2.asm	/^		number:$/;"	l
+p	obj/user/buggyhello2.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/buggyhello2.asm	/^			padc = '-';$/;"	d
+padc	obj/user/buggyhello2.asm	/^			padc = '0';$/;"	d
+precision	obj/user/buggyhello2.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/buggyhello2.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/buggyhello2.asm	/^		process_precision:$/;"	l
+rc	obj/user/buggyhello2.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/buggyhello2.asm	/^	reswitch:$/;"	l
+ret	obj/user/buggyhello2.asm	/^	ret = dst;$/;"	d
+s	obj/user/buggyhello2.asm	/^	s = src;$/;"	d
+size_t	obj/user/buggyhello2.asm	/^size_t$/;"	l
 static	obj/user/buggyhello2.asm	/^static long long$/;"	l
 static	obj/user/buggyhello2.asm	/^static unsigned long long$/;"	l
 static	obj/user/buggyhello2.asm	/^static void$/;"	l
+thisenv	obj/user/buggyhello2.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/buggyhello2.asm	/^void *$/;"	l
+void	obj/user/buggyhello2.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/buggyhello2.asm	/^void$/;"	l
+width	obj/user/buggyhello2.asm	/^				width = 0;$/;"	d
+width	obj/user/buggyhello2.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/divzero.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/divzero.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/divzero.asm	/^_start:$/;"	l
+altflag	obj/user/divzero.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/divzero.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/divzero.asm	/^args_exist:$/;"	l
+base	obj/user/divzero.asm	/^			base = 10;$/;"	d
+base	obj/user/divzero.asm	/^			base = 16;$/;"	d
+base	obj/user/divzero.asm	/^			base = 8;$/;"	d
+base	obj/user/divzero.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/divzero.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/divzero.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/divzero.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/divzero.asm	/^char *$/;"	l
+clrflag	obj/user/divzero.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/divzero.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/divzero.asm	/^				color = 0;$/;"	d
+color	obj/user/divzero.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/divzero.asm	/^	colorswitch:$/;"	l
+const	obj/user/divzero.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/divzero.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/divzero.asm	/^	d = dst;$/;"	d
+default	obj/user/divzero.asm	/^		default:$/;"	l
+dig	obj/user/divzero.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/divzero.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/divzero.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/divzero.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/divzero.asm	/^envid_t$/;"	l
+err	obj/user/divzero.asm	/^				err = -err;$/;"	d
+err	obj/user/divzero.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/divzero.asm	/^int color;$/;"	l
+int	obj/user/divzero.asm	/^int zero;$/;"	l
+int	obj/user/divzero.asm	/^int$/;"	l
+lflag	obj/user/divzero.asm	/^		lflag = 0;$/;"	d
+long	obj/user/divzero.asm	/^long$/;"	l
+num	obj/user/divzero.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/divzero.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/divzero.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/divzero.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/divzero.asm	/^		number:$/;"	l
+p	obj/user/divzero.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/divzero.asm	/^			padc = '-';$/;"	d
+padc	obj/user/divzero.asm	/^			padc = '0';$/;"	d
+precision	obj/user/divzero.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/divzero.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/divzero.asm	/^		process_precision:$/;"	l
+rc	obj/user/divzero.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/divzero.asm	/^	reswitch:$/;"	l
+ret	obj/user/divzero.asm	/^	ret = dst;$/;"	d
+s	obj/user/divzero.asm	/^	s = src;$/;"	d
+size_t	obj/user/divzero.asm	/^size_t$/;"	l
 static	obj/user/divzero.asm	/^static long long$/;"	l
 static	obj/user/divzero.asm	/^static unsigned long long$/;"	l
 static	obj/user/divzero.asm	/^static void$/;"	l
+thisenv	obj/user/divzero.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/divzero.asm	/^void *$/;"	l
+void	obj/user/divzero.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/divzero.asm	/^void$/;"	l
+width	obj/user/divzero.asm	/^				width = 0;$/;"	d
+width	obj/user/divzero.asm	/^				width = precision, precision = -1;$/;"	d
+zero	obj/user/divzero.asm	/^	zero = 0;$/;"	d
+ASM	obj/user/evilhello.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/evilhello.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/evilhello.asm	/^_start:$/;"	l
+altflag	obj/user/evilhello.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/evilhello.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/evilhello.asm	/^args_exist:$/;"	l
+base	obj/user/evilhello.asm	/^			base = 10;$/;"	d
+base	obj/user/evilhello.asm	/^			base = 16;$/;"	d
+base	obj/user/evilhello.asm	/^			base = 8;$/;"	d
+base	obj/user/evilhello.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/evilhello.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/evilhello.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/evilhello.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/evilhello.asm	/^char *$/;"	l
+clrflag	obj/user/evilhello.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/evilhello.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/evilhello.asm	/^				color = 0;$/;"	d
+color	obj/user/evilhello.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/evilhello.asm	/^	colorswitch:$/;"	l
+const	obj/user/evilhello.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/evilhello.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/evilhello.asm	/^	d = dst;$/;"	d
+default	obj/user/evilhello.asm	/^		default:$/;"	l
+dig	obj/user/evilhello.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/evilhello.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/evilhello.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/evilhello.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/evilhello.asm	/^envid_t$/;"	l
+err	obj/user/evilhello.asm	/^				err = -err;$/;"	d
+err	obj/user/evilhello.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/evilhello.asm	/^int color;$/;"	l
+int	obj/user/evilhello.asm	/^int$/;"	l
+lflag	obj/user/evilhello.asm	/^		lflag = 0;$/;"	d
+long	obj/user/evilhello.asm	/^long$/;"	l
+num	obj/user/evilhello.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/evilhello.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/evilhello.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/evilhello.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/evilhello.asm	/^		number:$/;"	l
+p	obj/user/evilhello.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/evilhello.asm	/^			padc = '-';$/;"	d
+padc	obj/user/evilhello.asm	/^			padc = '0';$/;"	d
+precision	obj/user/evilhello.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/evilhello.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/evilhello.asm	/^		process_precision:$/;"	l
+rc	obj/user/evilhello.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/evilhello.asm	/^	reswitch:$/;"	l
+ret	obj/user/evilhello.asm	/^	ret = dst;$/;"	d
+s	obj/user/evilhello.asm	/^	s = src;$/;"	d
+size_t	obj/user/evilhello.asm	/^size_t$/;"	l
 static	obj/user/evilhello.asm	/^static long long$/;"	l
 static	obj/user/evilhello.asm	/^static unsigned long long$/;"	l
 static	obj/user/evilhello.asm	/^static void$/;"	l
+thisenv	obj/user/evilhello.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/evilhello.asm	/^void *$/;"	l
+void	obj/user/evilhello.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/evilhello.asm	/^void$/;"	l
+width	obj/user/evilhello.asm	/^				width = 0;$/;"	d
+width	obj/user/evilhello.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/faultread.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/faultread.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/faultread.asm	/^_start:$/;"	l
+altflag	obj/user/faultread.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/faultread.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/faultread.asm	/^args_exist:$/;"	l
+base	obj/user/faultread.asm	/^			base = 10;$/;"	d
+base	obj/user/faultread.asm	/^			base = 16;$/;"	d
+base	obj/user/faultread.asm	/^			base = 8;$/;"	d
+base	obj/user/faultread.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/faultread.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/faultread.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/faultread.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/faultread.asm	/^char *$/;"	l
+clrflag	obj/user/faultread.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/faultread.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/faultread.asm	/^				color = 0;$/;"	d
+color	obj/user/faultread.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/faultread.asm	/^	colorswitch:$/;"	l
+const	obj/user/faultread.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/faultread.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/faultread.asm	/^	d = dst;$/;"	d
+default	obj/user/faultread.asm	/^		default:$/;"	l
+dig	obj/user/faultread.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/faultread.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/faultread.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/faultread.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/faultread.asm	/^envid_t$/;"	l
+err	obj/user/faultread.asm	/^				err = -err;$/;"	d
+err	obj/user/faultread.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/faultread.asm	/^int color;$/;"	l
+int	obj/user/faultread.asm	/^int$/;"	l
+lflag	obj/user/faultread.asm	/^		lflag = 0;$/;"	d
+long	obj/user/faultread.asm	/^long$/;"	l
+num	obj/user/faultread.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/faultread.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/faultread.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/faultread.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/faultread.asm	/^		number:$/;"	l
+p	obj/user/faultread.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/faultread.asm	/^			padc = '-';$/;"	d
+padc	obj/user/faultread.asm	/^			padc = '0';$/;"	d
+precision	obj/user/faultread.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/faultread.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/faultread.asm	/^		process_precision:$/;"	l
+rc	obj/user/faultread.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/faultread.asm	/^	reswitch:$/;"	l
+ret	obj/user/faultread.asm	/^	ret = dst;$/;"	d
+s	obj/user/faultread.asm	/^	s = src;$/;"	d
+size_t	obj/user/faultread.asm	/^size_t$/;"	l
 static	obj/user/faultread.asm	/^static long long$/;"	l
 static	obj/user/faultread.asm	/^static unsigned long long$/;"	l
 static	obj/user/faultread.asm	/^static void$/;"	l
+thisenv	obj/user/faultread.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/faultread.asm	/^void *$/;"	l
+void	obj/user/faultread.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/faultread.asm	/^void$/;"	l
+width	obj/user/faultread.asm	/^				width = 0;$/;"	d
+width	obj/user/faultread.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/faultreadkernel.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/faultreadkernel.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/faultreadkernel.asm	/^_start:$/;"	l
+altflag	obj/user/faultreadkernel.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/faultreadkernel.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/faultreadkernel.asm	/^args_exist:$/;"	l
+base	obj/user/faultreadkernel.asm	/^			base = 10;$/;"	d
+base	obj/user/faultreadkernel.asm	/^			base = 16;$/;"	d
+base	obj/user/faultreadkernel.asm	/^			base = 8;$/;"	d
+base	obj/user/faultreadkernel.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/faultreadkernel.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/faultreadkernel.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/faultreadkernel.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/faultreadkernel.asm	/^char *$/;"	l
+clrflag	obj/user/faultreadkernel.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/faultreadkernel.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/faultreadkernel.asm	/^				color = 0;$/;"	d
+color	obj/user/faultreadkernel.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/faultreadkernel.asm	/^	colorswitch:$/;"	l
+const	obj/user/faultreadkernel.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/faultreadkernel.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/faultreadkernel.asm	/^	d = dst;$/;"	d
+default	obj/user/faultreadkernel.asm	/^		default:$/;"	l
+dig	obj/user/faultreadkernel.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/faultreadkernel.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/faultreadkernel.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/faultreadkernel.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/faultreadkernel.asm	/^envid_t$/;"	l
+err	obj/user/faultreadkernel.asm	/^				err = -err;$/;"	d
+err	obj/user/faultreadkernel.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/faultreadkernel.asm	/^int color;$/;"	l
+int	obj/user/faultreadkernel.asm	/^int$/;"	l
+lflag	obj/user/faultreadkernel.asm	/^		lflag = 0;$/;"	d
+long	obj/user/faultreadkernel.asm	/^long$/;"	l
+num	obj/user/faultreadkernel.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/faultreadkernel.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/faultreadkernel.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/faultreadkernel.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/faultreadkernel.asm	/^		number:$/;"	l
+p	obj/user/faultreadkernel.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/faultreadkernel.asm	/^			padc = '-';$/;"	d
+padc	obj/user/faultreadkernel.asm	/^			padc = '0';$/;"	d
+precision	obj/user/faultreadkernel.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/faultreadkernel.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/faultreadkernel.asm	/^		process_precision:$/;"	l
+rc	obj/user/faultreadkernel.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/faultreadkernel.asm	/^	reswitch:$/;"	l
+ret	obj/user/faultreadkernel.asm	/^	ret = dst;$/;"	d
+s	obj/user/faultreadkernel.asm	/^	s = src;$/;"	d
+size_t	obj/user/faultreadkernel.asm	/^size_t$/;"	l
 static	obj/user/faultreadkernel.asm	/^static long long$/;"	l
 static	obj/user/faultreadkernel.asm	/^static unsigned long long$/;"	l
 static	obj/user/faultreadkernel.asm	/^static void$/;"	l
+thisenv	obj/user/faultreadkernel.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/faultreadkernel.asm	/^void *$/;"	l
+void	obj/user/faultreadkernel.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/faultreadkernel.asm	/^void$/;"	l
+width	obj/user/faultreadkernel.asm	/^				width = 0;$/;"	d
+width	obj/user/faultreadkernel.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/faultwrite.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/faultwrite.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/faultwrite.asm	/^_start:$/;"	l
+altflag	obj/user/faultwrite.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/faultwrite.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/faultwrite.asm	/^args_exist:$/;"	l
+base	obj/user/faultwrite.asm	/^			base = 10;$/;"	d
+base	obj/user/faultwrite.asm	/^			base = 16;$/;"	d
+base	obj/user/faultwrite.asm	/^			base = 8;$/;"	d
+base	obj/user/faultwrite.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/faultwrite.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/faultwrite.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/faultwrite.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/faultwrite.asm	/^char *$/;"	l
+clrflag	obj/user/faultwrite.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/faultwrite.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/faultwrite.asm	/^				color = 0;$/;"	d
+color	obj/user/faultwrite.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/faultwrite.asm	/^	colorswitch:$/;"	l
+const	obj/user/faultwrite.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/faultwrite.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/faultwrite.asm	/^	d = dst;$/;"	d
+default	obj/user/faultwrite.asm	/^		default:$/;"	l
+dig	obj/user/faultwrite.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/faultwrite.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/faultwrite.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/faultwrite.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/faultwrite.asm	/^envid_t$/;"	l
+err	obj/user/faultwrite.asm	/^				err = -err;$/;"	d
+err	obj/user/faultwrite.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/faultwrite.asm	/^int color;$/;"	l
+int	obj/user/faultwrite.asm	/^int$/;"	l
+lflag	obj/user/faultwrite.asm	/^		lflag = 0;$/;"	d
+long	obj/user/faultwrite.asm	/^long$/;"	l
+num	obj/user/faultwrite.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/faultwrite.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/faultwrite.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/faultwrite.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/faultwrite.asm	/^		number:$/;"	l
+p	obj/user/faultwrite.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/faultwrite.asm	/^			padc = '-';$/;"	d
+padc	obj/user/faultwrite.asm	/^			padc = '0';$/;"	d
+precision	obj/user/faultwrite.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/faultwrite.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/faultwrite.asm	/^		process_precision:$/;"	l
+rc	obj/user/faultwrite.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/faultwrite.asm	/^	reswitch:$/;"	l
+ret	obj/user/faultwrite.asm	/^	ret = dst;$/;"	d
+s	obj/user/faultwrite.asm	/^	s = src;$/;"	d
+size_t	obj/user/faultwrite.asm	/^size_t$/;"	l
 static	obj/user/faultwrite.asm	/^static long long$/;"	l
 static	obj/user/faultwrite.asm	/^static unsigned long long$/;"	l
 static	obj/user/faultwrite.asm	/^static void$/;"	l
+thisenv	obj/user/faultwrite.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/faultwrite.asm	/^void *$/;"	l
+void	obj/user/faultwrite.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/faultwrite.asm	/^void$/;"	l
+width	obj/user/faultwrite.asm	/^				width = 0;$/;"	d
+width	obj/user/faultwrite.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/faultwritekernel.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/faultwritekernel.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/faultwritekernel.asm	/^_start:$/;"	l
+altflag	obj/user/faultwritekernel.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/faultwritekernel.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/faultwritekernel.asm	/^args_exist:$/;"	l
+base	obj/user/faultwritekernel.asm	/^			base = 10;$/;"	d
+base	obj/user/faultwritekernel.asm	/^			base = 16;$/;"	d
+base	obj/user/faultwritekernel.asm	/^			base = 8;$/;"	d
+base	obj/user/faultwritekernel.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/faultwritekernel.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/faultwritekernel.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/faultwritekernel.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/faultwritekernel.asm	/^char *$/;"	l
+clrflag	obj/user/faultwritekernel.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/faultwritekernel.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/faultwritekernel.asm	/^				color = 0;$/;"	d
+color	obj/user/faultwritekernel.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/faultwritekernel.asm	/^	colorswitch:$/;"	l
+const	obj/user/faultwritekernel.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/faultwritekernel.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/faultwritekernel.asm	/^	d = dst;$/;"	d
+default	obj/user/faultwritekernel.asm	/^		default:$/;"	l
+dig	obj/user/faultwritekernel.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/faultwritekernel.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/faultwritekernel.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/faultwritekernel.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/faultwritekernel.asm	/^envid_t$/;"	l
+err	obj/user/faultwritekernel.asm	/^				err = -err;$/;"	d
+err	obj/user/faultwritekernel.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/faultwritekernel.asm	/^int color;$/;"	l
+int	obj/user/faultwritekernel.asm	/^int$/;"	l
+lflag	obj/user/faultwritekernel.asm	/^		lflag = 0;$/;"	d
+long	obj/user/faultwritekernel.asm	/^long$/;"	l
+num	obj/user/faultwritekernel.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/faultwritekernel.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/faultwritekernel.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/faultwritekernel.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/faultwritekernel.asm	/^		number:$/;"	l
+p	obj/user/faultwritekernel.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/faultwritekernel.asm	/^			padc = '-';$/;"	d
+padc	obj/user/faultwritekernel.asm	/^			padc = '0';$/;"	d
+precision	obj/user/faultwritekernel.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/faultwritekernel.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/faultwritekernel.asm	/^		process_precision:$/;"	l
+rc	obj/user/faultwritekernel.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/faultwritekernel.asm	/^	reswitch:$/;"	l
+ret	obj/user/faultwritekernel.asm	/^	ret = dst;$/;"	d
+s	obj/user/faultwritekernel.asm	/^	s = src;$/;"	d
+size_t	obj/user/faultwritekernel.asm	/^size_t$/;"	l
 static	obj/user/faultwritekernel.asm	/^static long long$/;"	l
 static	obj/user/faultwritekernel.asm	/^static unsigned long long$/;"	l
 static	obj/user/faultwritekernel.asm	/^static void$/;"	l
+thisenv	obj/user/faultwritekernel.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/faultwritekernel.asm	/^void *$/;"	l
+void	obj/user/faultwritekernel.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/faultwritekernel.asm	/^void$/;"	l
+width	obj/user/faultwritekernel.asm	/^				width = 0;$/;"	d
+width	obj/user/faultwritekernel.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/hello.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/hello.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/hello.asm	/^_start:$/;"	l
+altflag	obj/user/hello.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/hello.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/hello.asm	/^args_exist:$/;"	l
+base	obj/user/hello.asm	/^			base = 10;$/;"	d
+base	obj/user/hello.asm	/^			base = 16;$/;"	d
+base	obj/user/hello.asm	/^			base = 8;$/;"	d
+base	obj/user/hello.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/hello.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/hello.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/hello.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/hello.asm	/^char *$/;"	l
+clrflag	obj/user/hello.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/hello.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/hello.asm	/^				color = 0;$/;"	d
+color	obj/user/hello.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/hello.asm	/^	colorswitch:$/;"	l
+const	obj/user/hello.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/hello.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/hello.asm	/^	d = dst;$/;"	d
+default	obj/user/hello.asm	/^		default:$/;"	l
+dig	obj/user/hello.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/hello.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/hello.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/hello.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/hello.asm	/^envid_t$/;"	l
+err	obj/user/hello.asm	/^				err = -err;$/;"	d
+err	obj/user/hello.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/hello.asm	/^int color;$/;"	l
+int	obj/user/hello.asm	/^int$/;"	l
+lflag	obj/user/hello.asm	/^		lflag = 0;$/;"	d
+long	obj/user/hello.asm	/^long$/;"	l
+num	obj/user/hello.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/hello.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/hello.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/hello.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/hello.asm	/^		number:$/;"	l
+p	obj/user/hello.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/hello.asm	/^			padc = '-';$/;"	d
+padc	obj/user/hello.asm	/^			padc = '0';$/;"	d
+precision	obj/user/hello.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/hello.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/hello.asm	/^		process_precision:$/;"	l
+rc	obj/user/hello.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/hello.asm	/^	reswitch:$/;"	l
+ret	obj/user/hello.asm	/^	ret = dst;$/;"	d
+s	obj/user/hello.asm	/^	s = src;$/;"	d
+size_t	obj/user/hello.asm	/^size_t$/;"	l
 static	obj/user/hello.asm	/^static long long$/;"	l
 static	obj/user/hello.asm	/^static unsigned long long$/;"	l
 static	obj/user/hello.asm	/^static void$/;"	l
+thisenv	obj/user/hello.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/hello.asm	/^void *$/;"	l
+void	obj/user/hello.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/hello.asm	/^void$/;"	l
+width	obj/user/hello.asm	/^				width = 0;$/;"	d
+width	obj/user/hello.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/softint.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/softint.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/softint.asm	/^_start:$/;"	l
+altflag	obj/user/softint.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/softint.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/softint.asm	/^args_exist:$/;"	l
+base	obj/user/softint.asm	/^			base = 10;$/;"	d
+base	obj/user/softint.asm	/^			base = 16;$/;"	d
+base	obj/user/softint.asm	/^			base = 8;$/;"	d
+base	obj/user/softint.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/softint.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/softint.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/softint.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/softint.asm	/^char *$/;"	l
+clrflag	obj/user/softint.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/softint.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/softint.asm	/^				color = 0;$/;"	d
+color	obj/user/softint.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/softint.asm	/^	colorswitch:$/;"	l
+const	obj/user/softint.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/softint.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/softint.asm	/^	d = dst;$/;"	d
+default	obj/user/softint.asm	/^		default:$/;"	l
+dig	obj/user/softint.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/softint.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/softint.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/softint.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/softint.asm	/^envid_t$/;"	l
+err	obj/user/softint.asm	/^				err = -err;$/;"	d
+err	obj/user/softint.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/softint.asm	/^int color;$/;"	l
+int	obj/user/softint.asm	/^int$/;"	l
+lflag	obj/user/softint.asm	/^		lflag = 0;$/;"	d
+long	obj/user/softint.asm	/^long$/;"	l
+num	obj/user/softint.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/softint.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/softint.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/softint.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/softint.asm	/^		number:$/;"	l
+p	obj/user/softint.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/softint.asm	/^			padc = '-';$/;"	d
+padc	obj/user/softint.asm	/^			padc = '0';$/;"	d
+precision	obj/user/softint.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/softint.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/softint.asm	/^		process_precision:$/;"	l
+rc	obj/user/softint.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/softint.asm	/^	reswitch:$/;"	l
+ret	obj/user/softint.asm	/^	ret = dst;$/;"	d
+s	obj/user/softint.asm	/^	s = src;$/;"	d
+size_t	obj/user/softint.asm	/^size_t$/;"	l
 static	obj/user/softint.asm	/^static long long$/;"	l
 static	obj/user/softint.asm	/^static unsigned long long$/;"	l
 static	obj/user/softint.asm	/^static void$/;"	l
+thisenv	obj/user/softint.asm	/^	thisenv = 0;$/;"	d
+void	obj/user/softint.asm	/^void *$/;"	l
+void	obj/user/softint.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/softint.asm	/^void$/;"	l
+width	obj/user/softint.asm	/^				width = 0;$/;"	d
+width	obj/user/softint.asm	/^				width = precision, precision = -1;$/;"	d
+ASM	obj/user/testbss.asm	/^#define ASM 1$/;"	d
+Disassembly	obj/user/testbss.asm	/^Disassembly of section .text:$/;"	l
+_start	obj/user/testbss.asm	/^_start:$/;"	l
+altflag	obj/user/testbss.asm	/^			altflag = 1;$/;"	d
+altflag	obj/user/testbss.asm	/^		altflag = 0;$/;"	d
+args_exist	obj/user/testbss.asm	/^args_exist:$/;"	l
+base	obj/user/testbss.asm	/^			base = 10;$/;"	d
+base	obj/user/testbss.asm	/^			base = 16;$/;"	d
+base	obj/user/testbss.asm	/^			base = 8;$/;"	d
+base	obj/user/testbss.asm	/^		base = 10;$/;"	d
+binaryname	obj/user/testbss.asm	/^		binaryname = argv[0];$/;"	d
+c	obj/user/testbss.asm	/^		c = (c<<24)|(c<<16)|(c<<8)|c;$/;"	d
+ch	obj/user/testbss.asm	/^				ch = *fmt;$/;"	d
+char	obj/user/testbss.asm	/^char *$/;"	l
+clrflag	obj/user/testbss.asm	/^		clrflag = 0;$/;"	d
+cnt	obj/user/testbss.asm	/^	cnt = vcprintf(fmt, ap);$/;"	d
+color	obj/user/testbss.asm	/^				color = 0;$/;"	d
+color	obj/user/testbss.asm	/^			color = 0;$/;"	d
+colorswitch	obj/user/testbss.asm	/^	colorswitch:$/;"	l
+const	obj/user/testbss.asm	/^const char *binaryname = "<unknown>";$/;"	l
+const	obj/user/testbss.asm	/^const volatile struct Env *thisenv;$/;"	l
+d	obj/user/testbss.asm	/^	d = dst;$/;"	d
+default	obj/user/testbss.asm	/^		default:$/;"	l
+dig	obj/user/testbss.asm	/^			dig = *s - '0';$/;"	d
+dig	obj/user/testbss.asm	/^			dig = *s - 'A' + 10;$/;"	d
+dig	obj/user/testbss.asm	/^			dig = *s - 'a' + 10;$/;"	d
+dst_in	obj/user/testbss.asm	/^	dst_in = dst;$/;"	d
+envid_t	obj/user/testbss.asm	/^envid_t$/;"	l
+err	obj/user/testbss.asm	/^				err = -err;$/;"	d
+err	obj/user/testbss.asm	/^			err = va_arg(ap, int);$/;"	d
+int	obj/user/testbss.asm	/^int color;$/;"	l
+int	obj/user/testbss.asm	/^int$/;"	l
+lflag	obj/user/testbss.asm	/^		lflag = 0;$/;"	d
+long	obj/user/testbss.asm	/^long$/;"	l
+num	obj/user/testbss.asm	/^				num = -(long long) num;$/;"	d
+num	obj/user/testbss.asm	/^			num = (unsigned long long)$/;"	d
+num	obj/user/testbss.asm	/^			num = getint(&ap, lflag);$/;"	d
+num	obj/user/testbss.asm	/^			num = getuint(&ap, lflag);$/;"	d
+number	obj/user/testbss.asm	/^		number:$/;"	l
+p	obj/user/testbss.asm	/^				p = "(null)";$/;"	d
+padc	obj/user/testbss.asm	/^			padc = '-';$/;"	d
+padc	obj/user/testbss.asm	/^			padc = '0';$/;"	d
+precision	obj/user/testbss.asm	/^				precision = precision * 10 + ch - '0';$/;"	d
+precision	obj/user/testbss.asm	/^			precision = va_arg(ap, int);$/;"	d
+process_precision	obj/user/testbss.asm	/^		process_precision:$/;"	l
+rc	obj/user/testbss.asm	/^	rc = vsnprintf(buf, n, fmt, ap);$/;"	d
+reswitch	obj/user/testbss.asm	/^	reswitch:$/;"	l
+ret	obj/user/testbss.asm	/^	ret = dst;$/;"	d
+s	obj/user/testbss.asm	/^	s = src;$/;"	d
+size_t	obj/user/testbss.asm	/^size_t$/;"	l
 static	obj/user/testbss.asm	/^static long long$/;"	l
 static	obj/user/testbss.asm	/^static unsigned long long$/;"	l
 static	obj/user/testbss.asm	/^static void$/;"	l
-static_assert	inc/assert.h	18;"	d
-stop	gradelib.py	/^    def stop(line):$/;"	f	function:stop_on_line
-stop_breakpoint	gradelib.py	/^def stop_breakpoint(addr):$/;"	f
-stop_on_line	gradelib.py	/^def stop_on_line(regexp):$/;"	f
-str1	user/sendpage.c	/^const char *str1 = "hello child environment! how are you?";$/;"	v
-str2	user/sendpage.c	/^const char *str2 = "hello parent environment! I'm good.";$/;"	v
-strcat	lib/string.c	/^strcat(char *dst, const char *src)$/;"	f
-strchr	lib/string.c	/^strchr(const char *s, char c)$/;"	f
-strcmp	lib/string.c	/^strcmp(const char *p, const char *q)$/;"	f
-strcpy	lib/string.c	/^strcpy(char *dst, const char *src)$/;"	f
-strfind	lib/string.c	/^strfind(const char *s, char c)$/;"	f
-strlcpy	lib/string.c	/^strlcpy(char *dst, const char *src, size_t size)$/;"	f
-strlen	lib/string.c	/^strlen(const char *s)$/;"	f
-strncmp	lib/string.c	/^strncmp(const char *p, const char *q, size_t n)$/;"	f
-strncpy	lib/string.c	/^strncpy(char *dst, const char *src, size_t size) {$/;"	f
-strnlen	lib/string.c	/^strnlen(const char *s, size_t size)$/;"	f
-strtol	lib/string.c	/^strtol(const char *s, char **endptr, int base)$/;"	f
-sys_cgetc	kern/syscall.c	/^sys_cgetc(void)$/;"	f	file:
-sys_cgetc	lib/syscall.c	/^sys_cgetc(void)$/;"	f
-sys_cputs	kern/syscall.c	/^sys_cputs(const char *s, size_t len)$/;"	f	file:
-sys_cputs	lib/syscall.c	/^sys_cputs(const char *s, size_t len)$/;"	f
-sys_env_destroy	kern/syscall.c	/^sys_env_destroy(envid_t envid)$/;"	f	file:
-sys_env_destroy	lib/syscall.c	/^sys_env_destroy(envid_t envid)$/;"	f
-sys_getenvid	kern/syscall.c	/^sys_getenvid(void)$/;"	f	file:
-sys_getenvid	lib/syscall.c	/^sys_getenvid(void)$/;"	f
-syscall	kern/syscall.c	/^syscall(uint32_t syscallno, uint32_t a1, uint32_t a2, uint32_t a3, uint32_t a4, uint32_t a5)$/;"	f
-syscall	lib/syscall.c	/^syscall(int num, int check, uint32_t a1, uint32_t a2, uint32_t a3, uint32_t a4, uint32_t a5)$/;"	f	file:
-test	gradelib.py	/^def test(points, title=None, parent=None):$/;"	f
-test_backtrace	init.s	/^test_backtrace:$/;"	l
-test_backtrace_arguments	grade-lab1	/^def test_backtrace_arguments():$/;"	f
-test_backtrace_count	grade-lab1	/^def test_backtrace_count():$/;"	f
-test_backtrace_lines	grade-lab1	/^def test_backtrace_lines():$/;"	f
-test_backtrace_symbols	grade-lab1	/^def test_backtrace_symbols():$/;"	f
-test_badsegment	grade-lab3	/^def test_badsegment():$/;"	f
-test_breakpoint	grade-lab3	/^def test_breakpoint():$/;"	f
-test_buggyhello	grade-lab3	/^def test_buggyhello():$/;"	f
-test_buggyhello2	grade-lab3	/^def test_buggyhello2():$/;"	f
-test_check_kern_pgdir	grade-lab2	/^def test_check_kern_pgdir():$/;"	f
-test_check_page	grade-lab2	/^def test_check_page():$/;"	f
-test_check_page_alloc	grade-lab2	/^def test_check_page_alloc():$/;"	f
-test_check_page_installed_pgdir	grade-lab2	/^def test_check_page_installed_pgdir():$/;"	f
-test_divzero	grade-lab3	/^def test_divzero():$/;"	f
-test_evilhello	grade-lab3	/^def test_evilhello():$/;"	f
-test_faultread	grade-lab3	/^def test_faultread():$/;"	f
-test_faultreadkernel	grade-lab3	/^def test_faultreadkernel():$/;"	f
-test_faultwrite	grade-lab3	/^def test_faultwrite():$/;"	f
-test_faultwritekernel	grade-lab3	/^def test_faultwritekernel():$/;"	f
-test_hello	grade-lab3	/^def test_hello():$/;"	f
-test_jos	grade-lab1	/^def test_jos():$/;"	f
-test_jos	grade-lab2	/^def test_jos():$/;"	f
-test_printf	grade-lab1	/^def test_printf():$/;"	f
-test_softint	grade-lab3	/^def test_softint():$/;"	f
-test_testbss	grade-lab3	/^def test_testbss():$/;"	f
-tf	obj/kern/kernel.asm	/^		tf = &curenv->env_tf;$/;"	d
-tf_cs	inc/trap.h	/^	uint16_t tf_cs;$/;"	m	struct:Trapframe
-tf_ds	inc/trap.h	/^	uint16_t tf_ds;$/;"	m	struct:Trapframe
-tf_eflags	inc/trap.h	/^	uint32_t tf_eflags;$/;"	m	struct:Trapframe
-tf_eip	inc/trap.h	/^	uintptr_t tf_eip;$/;"	m	struct:Trapframe
-tf_err	inc/trap.h	/^	uint32_t tf_err;$/;"	m	struct:Trapframe
-tf_es	inc/trap.h	/^	uint16_t tf_es;$/;"	m	struct:Trapframe
-tf_esp	inc/trap.h	/^	uintptr_t tf_esp;$/;"	m	struct:Trapframe
-tf_padding1	inc/trap.h	/^	uint16_t tf_padding1;$/;"	m	struct:Trapframe
-tf_padding2	inc/trap.h	/^	uint16_t tf_padding2;$/;"	m	struct:Trapframe
-tf_padding3	inc/trap.h	/^	uint16_t tf_padding3;$/;"	m	struct:Trapframe
-tf_padding4	inc/trap.h	/^	uint16_t tf_padding4;$/;"	m	struct:Trapframe
-tf_regs	inc/trap.h	/^	struct PushRegs tf_regs;$/;"	m	struct:Trapframe	typeref:struct:Trapframe::PushRegs
-tf_ss	inc/trap.h	/^	uint16_t tf_ss;$/;"	m	struct:Trapframe
-tf_trapno	inc/trap.h	/^	uint32_t tf_trapno;$/;"	m	struct:Trapframe
-thisenv	lib/libmain.c	/^const volatile struct Env *thisenv;$/;"	v	typeref:struct:Env
-thisenv	obj/user/badsegment.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/breakpoint.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/buggyhello.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/buggyhello2.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/divzero.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/evilhello.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/faultread.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/faultreadkernel.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/faultwrite.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/faultwritekernel.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/hello.asm	/^	thisenv = 0;$/;"	d
-thisenv	obj/user/softint.asm	/^	thisenv = 0;$/;"	d
 thisenv	obj/user/testbss.asm	/^	thisenv = 0;$/;"	d
-tlb_invalidate	kern/pmap.c	/^tlb_invalidate(pde_t *pgdir, void *va)$/;"	f
-tlbflush	inc/x86.h	/^tlbflush(void)$/;"	f
-togglecode	kern/console.c	/^static uint8_t togglecode[256] =$/;"	v	file:
-trap	kern/trap.c	/^trap(struct Trapframe *tf)$/;"	f
-trap_dispatch	kern/trap.c	/^trap_dispatch(struct Trapframe *tf)$/;"	f	file:
-trap_init	kern/trap.c	/^trap_init(void)$/;"	f
-trap_init_percpu	kern/trap.c	/^trap_init_percpu(void)$/;"	f
-trapname	kern/trap.c	/^static const char *trapname(int trapno)$/;"	f	file:
-true	inc/types.h	/^enum { false, true };$/;"	e	enum:__anon6
-ts	kern/trap.c	/^static struct Taskstate ts;$/;"	v	typeref:struct:Taskstate	file:
-ts_cr3	inc/mmu.h	/^	physaddr_t ts_cr3;	\/\/ Page directory base$/;"	m	struct:Taskstate
-ts_cs	inc/mmu.h	/^	uint16_t ts_cs;$/;"	m	struct:Taskstate
-ts_ds	inc/mmu.h	/^	uint16_t ts_ds;$/;"	m	struct:Taskstate
-ts_eax	inc/mmu.h	/^	uint32_t ts_eax;	\/\/ More saved state (registers)$/;"	m	struct:Taskstate
-ts_ebp	inc/mmu.h	/^	uintptr_t ts_ebp;$/;"	m	struct:Taskstate
-ts_ebx	inc/mmu.h	/^	uint32_t ts_ebx;$/;"	m	struct:Taskstate
-ts_ecx	inc/mmu.h	/^	uint32_t ts_ecx;$/;"	m	struct:Taskstate
-ts_edi	inc/mmu.h	/^	uint32_t ts_edi;$/;"	m	struct:Taskstate
-ts_edx	inc/mmu.h	/^	uint32_t ts_edx;$/;"	m	struct:Taskstate
-ts_eflags	inc/mmu.h	/^	uint32_t ts_eflags;$/;"	m	struct:Taskstate
-ts_eip	inc/mmu.h	/^	uintptr_t ts_eip;	\/\/ Saved state from last task switch$/;"	m	struct:Taskstate
-ts_es	inc/mmu.h	/^	uint16_t ts_es;		\/\/ Even more saved state (segment selectors)$/;"	m	struct:Taskstate
-ts_esi	inc/mmu.h	/^	uint32_t ts_esi;$/;"	m	struct:Taskstate
-ts_esp	inc/mmu.h	/^	uintptr_t ts_esp;$/;"	m	struct:Taskstate
-ts_esp0	inc/mmu.h	/^	uintptr_t ts_esp0;	\/\/ Stack pointers and segment selectors$/;"	m	struct:Taskstate
-ts_esp1	inc/mmu.h	/^	uintptr_t ts_esp1;$/;"	m	struct:Taskstate
-ts_esp2	inc/mmu.h	/^	uintptr_t ts_esp2;$/;"	m	struct:Taskstate
-ts_fs	inc/mmu.h	/^	uint16_t ts_fs;$/;"	m	struct:Taskstate
-ts_gs	inc/mmu.h	/^	uint16_t ts_gs;$/;"	m	struct:Taskstate
-ts_iomb	inc/mmu.h	/^	uint16_t ts_iomb;	\/\/ I\/O map base address$/;"	m	struct:Taskstate
-ts_ldt	inc/mmu.h	/^	uint16_t ts_ldt;$/;"	m	struct:Taskstate
-ts_link	inc/mmu.h	/^	uint32_t ts_link;	\/\/ Old ts selector$/;"	m	struct:Taskstate
-ts_padding1	inc/mmu.h	/^	uint16_t ts_padding1;$/;"	m	struct:Taskstate
-ts_padding10	inc/mmu.h	/^	uint16_t ts_padding10;$/;"	m	struct:Taskstate
-ts_padding2	inc/mmu.h	/^	uint16_t ts_padding2;$/;"	m	struct:Taskstate
-ts_padding3	inc/mmu.h	/^	uint16_t ts_padding3;$/;"	m	struct:Taskstate
-ts_padding4	inc/mmu.h	/^	uint16_t ts_padding4;$/;"	m	struct:Taskstate
-ts_padding5	inc/mmu.h	/^	uint16_t ts_padding5;$/;"	m	struct:Taskstate
-ts_padding6	inc/mmu.h	/^	uint16_t ts_padding6;$/;"	m	struct:Taskstate
-ts_padding7	inc/mmu.h	/^	uint16_t ts_padding7;$/;"	m	struct:Taskstate
-ts_padding8	inc/mmu.h	/^	uint16_t ts_padding8;$/;"	m	struct:Taskstate
-ts_padding9	inc/mmu.h	/^	uint16_t ts_padding9;$/;"	m	struct:Taskstate
-ts_ss	inc/mmu.h	/^	uint16_t ts_ss;$/;"	m	struct:Taskstate
-ts_ss0	inc/mmu.h	/^	uint16_t ts_ss0;	\/\/   after an increase in privilege level$/;"	m	struct:Taskstate
-ts_ss1	inc/mmu.h	/^	uint16_t ts_ss1;$/;"	m	struct:Taskstate
-ts_ss2	inc/mmu.h	/^	uint16_t ts_ss2;$/;"	m	struct:Taskstate
-ts_t	inc/mmu.h	/^	uint16_t ts_t;		\/\/ Trap on task switch$/;"	m	struct:Taskstate
-uint16_t	inc/types.h	/^typedef unsigned short uint16_t;$/;"	t
-uint32_t	inc/types.h	/^typedef unsigned int uint32_t;$/;"	t
 uint32_t	obj/user/testbss.asm	/^uint32_t bigarray[ARRAYSIZE];$/;"	l
-uint64_t	inc/types.h	/^typedef unsigned long long uint64_t;$/;"	t
-uint8_t	inc/types.h	/^typedef unsigned char uint8_t;$/;"	t
-uintptr_t	inc/types.h	/^typedef uint32_t uintptr_t;$/;"	t
+void	obj/user/testbss.asm	/^void *$/;"	l
+void	obj/user/testbss.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
+void	obj/user/testbss.asm	/^void$/;"	l
+width	obj/user/testbss.asm	/^				width = 0;$/;"	d
+width	obj/user/testbss.asm	/^				width = precision, precision = -1;$/;"	d
 umain	user/badsegment.c	/^umain(int argc, char **argv)$/;"	f
 umain	user/breakpoint.c	/^umain(int argc, char **argv)$/;"	f
 umain	user/buggyhello.c	/^umain(int argc, char **argv)$/;"	f
+hello	user/buggyhello2.c	/^const char *hello = "hello, world\\n";$/;"	v
 umain	user/buggyhello2.c	/^umain(int argc, char **argv)$/;"	f
 umain	user/divzero.c	/^umain(int argc, char **argv)$/;"	f
+zero	user/divzero.c	/^int zero;$/;"	v
 umain	user/evilhello.c	/^umain(int argc, char **argv)$/;"	f
 umain	user/faultread.c	/^umain(int argc, char **argv)$/;"	f
 umain	user/faultreadkernel.c	/^umain(int argc, char **argv)$/;"	f
 umain	user/faultwrite.c	/^umain(int argc, char **argv)$/;"	f
 umain	user/faultwritekernel.c	/^umain(int argc, char **argv)$/;"	f
 umain	user/hello.c	/^umain(int argc, char **argv)$/;"	f
+TEMP_ADDR	user/sendpage.c	9;"	d	file:
+TEMP_ADDR_CHILD	user/sendpage.c	10;"	d	file:
+str1	user/sendpage.c	/^const char *str1 = "hello child environment! how are you?";$/;"	v
+str2	user/sendpage.c	/^const char *str2 = "hello parent environment! I'm good.";$/;"	v
 umain	user/sendpage.c	/^umain(int argc, char **argv)$/;"	f
 umain	user/softint.c	/^umain(int argc, char **argv)$/;"	f
+ARRAYSIZE	user/testbss.c	5;"	d	file:
+bigarray	user/testbss.c	/^uint32_t bigarray[ARRAYSIZE];$/;"	v
 umain	user/testbss.c	/^umain(int argc, char **argv)$/;"	f
-unsigned	obj/kern/kernel.asm	/^unsigned$/;"	l
-user_mem_assert	kern/pmap.c	/^user_mem_assert(struct Env *env, const void *va, size_t len, int perm)$/;"	f
-user_mem_check	kern/pmap.c	/^user_mem_check(struct Env *env, const void *va, size_t len, int perm)$/;"	f
-user_mem_check_addr	kern/pmap.c	/^static uintptr_t user_mem_check_addr;$/;"	v	file:
-user_test	gradelib.py	/^    def user_test(self, binary, *monitors, **kw):$/;"	m	class:Runner
-va	obj/kern/kernel.asm	/^	va = (void*)(PGSIZE * NPDENTRIES + PGSIZE);$/;"	d
-va_arg	inc/stdarg.h	10;"	d
-va_end	inc/stdarg.h	12;"	d
-va_list	inc/stdarg.h	/^typedef __builtin_va_list va_list;$/;"	t
-va_start	inc/stdarg.h	8;"	d
-vcprintf	kern/printf.c	/^vcprintf(const char *fmt, va_list ap)$/;"	f
-vcprintf	lib/printf.c	/^vcprintf(const char *fmt, va_list ap)$/;"	f
-void	obj/boot/boot.asm	/^void readsect(void*, uint32_t);$/;"	l
-void	obj/boot/boot.asm	/^void readseg(uint32_t, uint32_t, uint32_t);$/;"	l
-void	obj/boot/boot.asm	/^void$/;"	l
-void	obj/kern/kernel.asm	/^void	user_mem_assert(struct Env *env, const void *va, size_t len, int perm);$/;"	l
-void	obj/kern/kernel.asm	/^void *$/;"	l
-void	obj/kern/kernel.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/kern/kernel.asm	/^void$/;"	l
-void	obj/user/badsegment.asm	/^void *$/;"	l
-void	obj/user/badsegment.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/badsegment.asm	/^void$/;"	l
-void	obj/user/breakpoint.asm	/^void *$/;"	l
-void	obj/user/breakpoint.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/breakpoint.asm	/^void$/;"	l
-void	obj/user/buggyhello.asm	/^void *$/;"	l
-void	obj/user/buggyhello.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/buggyhello.asm	/^void$/;"	l
-void	obj/user/buggyhello2.asm	/^void *$/;"	l
-void	obj/user/buggyhello2.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/buggyhello2.asm	/^void$/;"	l
-void	obj/user/divzero.asm	/^void *$/;"	l
-void	obj/user/divzero.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/divzero.asm	/^void$/;"	l
-void	obj/user/evilhello.asm	/^void *$/;"	l
-void	obj/user/evilhello.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/evilhello.asm	/^void$/;"	l
-void	obj/user/faultread.asm	/^void *$/;"	l
-void	obj/user/faultread.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/faultread.asm	/^void$/;"	l
-void	obj/user/faultreadkernel.asm	/^void *$/;"	l
-void	obj/user/faultreadkernel.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/faultreadkernel.asm	/^void$/;"	l
-void	obj/user/faultwrite.asm	/^void *$/;"	l
-void	obj/user/faultwrite.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/faultwrite.asm	/^void$/;"	l
-void	obj/user/faultwritekernel.asm	/^void *$/;"	l
-void	obj/user/faultwritekernel.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/faultwritekernel.asm	/^void$/;"	l
-void	obj/user/hello.asm	/^void *$/;"	l
-void	obj/user/hello.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/hello.asm	/^void$/;"	l
-void	obj/user/softint.asm	/^void *$/;"	l
-void	obj/user/softint.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/softint.asm	/^void$/;"	l
-void	obj/user/testbss.asm	/^void *$/;"	l
-void	obj/user/testbss.asm	/^void printfmt(void (*putch)(int, void*), void *putdat, const char *fmt, ...);$/;"	l
-void	obj/user/testbss.asm	/^void$/;"	l
-vprintfmt	lib/printfmt.c	/^vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)$/;"	f
-vsnprintf	lib/printfmt.c	/^vsnprintf(char *buf, int n, const char *fmt, va_list ap)$/;"	f
-wait	gradelib.py	/^    def wait(self):$/;"	f
-waitdisk	boot/main.c	/^waitdisk(void)$/;"	f
-warn	inc/assert.h	11;"	d
-was	obj/kern/kernel.asm	/^	was = *cp;$/;"	d
-width	obj/kern/kernel.asm	/^				width = 0;$/;"	d
-width	obj/kern/kernel.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/badsegment.asm	/^				width = 0;$/;"	d
-width	obj/user/badsegment.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/breakpoint.asm	/^				width = 0;$/;"	d
-width	obj/user/breakpoint.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/buggyhello.asm	/^				width = 0;$/;"	d
-width	obj/user/buggyhello.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/buggyhello2.asm	/^				width = 0;$/;"	d
-width	obj/user/buggyhello2.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/divzero.asm	/^				width = 0;$/;"	d
-width	obj/user/divzero.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/evilhello.asm	/^				width = 0;$/;"	d
-width	obj/user/evilhello.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/faultread.asm	/^				width = 0;$/;"	d
-width	obj/user/faultread.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/faultreadkernel.asm	/^				width = 0;$/;"	d
-width	obj/user/faultreadkernel.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/faultwrite.asm	/^				width = 0;$/;"	d
-width	obj/user/faultwrite.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/faultwritekernel.asm	/^				width = 0;$/;"	d
-width	obj/user/faultwritekernel.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/hello.asm	/^				width = 0;$/;"	d
-width	obj/user/hello.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/softint.asm	/^				width = 0;$/;"	d
-width	obj/user/softint.asm	/^				width = precision, precision = -1;$/;"	d
-width	obj/user/testbss.asm	/^				width = 0;$/;"	d
-width	obj/user/testbss.asm	/^				width = precision, precision = -1;$/;"	d
-wpos	kern/console.c	/^	uint32_t wpos;$/;"	m	struct:__anon1	file:
-write_eflags	inc/x86.h	/^write_eflags(uint32_t eflags)$/;"	f
-xchg	inc/x86.h	/^xchg(volatile uint32_t *addr, uint32_t newval)$/;"	f
-zero	obj/user/divzero.asm	/^	zero = 0;$/;"	d
-zero	user/divzero.c	/^int zero;$/;"	v
