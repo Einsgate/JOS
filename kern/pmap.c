@@ -275,12 +275,12 @@ page_init(void)
 	// Change the code to reflect this.
 	// NB: DO NOT actually touch the physical memory corresponding to
 	// free pages!
-	size_t i;
-	size_t start, end;
+	int i;
+	int start, end;
 	start = PGNUM(ROUNDDOWN(IOPHYSMEM, PGSIZE));
 	end = PGNUM(PADDR(boot_alloc(0)));
 
-	for (i = 0; i < npages; i++) {
+	for (i = npages-1; i >= 0; i--) {
 			pages[i].pp_ref = 0;
 		if(i == 0 || (i >= start && i < end)){
 			pages[i].pp_link = NULL;
