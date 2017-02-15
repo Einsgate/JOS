@@ -161,11 +161,12 @@ cga_init(void)
 	crt_pos = pos;
 }
 
-
+extern int color;
 
 static void
 cga_putc(int c)
 {
+	c |= color;
 	// if no attribute given, then use black on white
 	if (!(c & ~0xFF))
 		c |= 0x0700;
