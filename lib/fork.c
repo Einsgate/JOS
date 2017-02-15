@@ -124,10 +124,8 @@ fork(void)
 		}
 	}
 	//map exception stack
-//cprintf("%Ca5before sys_page_alloc\n");
 	if((r = sys_page_alloc(pid, (void *)(UXSTACKTOP - PGSIZE), PTE_P|PTE_U|PTE_W)) < 0)
 		panic("fork failed: %e", r);
-//cprintf("%Ca5after sys_page_alloc\n");
 
 	extern void _pgfault_upcall(void);
 	if((r = sys_env_set_pgfault_upcall(pid, _pgfault_upcall)))
