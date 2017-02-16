@@ -69,18 +69,21 @@ duppage(envid_t envid, unsigned pn)
 	uint32_t va = PGSIZE * pn;
 	pte_t pte = uvpt[pn];
 
-	if((pte & PTE_W) || (pte & PTE_COW)){
+	if(pte & PTE_SHARE){
+		if((r = sys_page_map(0, (void *)va, envid, (void *)va, PTE_SYSCALL & pte)) < 0)
+			return r;
+	}
+	else if((pte & PTE_W) || (pte & PTE_COW)){
 		if((r = sys_page_map(0, (void *)va, envid, (void *)va, PTE_P|PTE_U|PTE_COW)) < 0)
-			panic("duppage failed: %e\n", r);
+			return r;
 		if((r = sys_page_map(0, (void *)va, 0, (void *)va, PTE_P|PTE_U|PTE_COW)) < 0)
-			panic("duppage failed: %e\n", r);
+			return r;
 	}
 	else{
 		if((r = sys_page_map(0, (void *)va, envid, (void *)va, PTE_P|PTE_U)) < 0)
-			panic("duppage failed: %e\n", r);
+			return r;
 	}
 
-	//panic("duppage not implemented");
 	return 0;
 }
 
@@ -120,7 +123,8 @@ fork(void)
 	uint32_t va;
 	for(va = 0; va < UXSTACKTOP - PGSIZE; va +=PGSIZE){
 		if((uvpd[PDX(va)] & PTE_P) && (uvpt[PGNUM(va)] & PTE_P) && (uvpt[PGNUM(va)] & PTE_U)){
-			duppage(pid, PGNUM(va));
+			if((r = duppage(pid, PGNUM(va))) < 0)
+				panic("fork failed: %e", r);
 		}
 	}
 	//map exception stack
