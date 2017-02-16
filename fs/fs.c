@@ -409,7 +409,6 @@ file_write(struct File *f, const void *buf, size_t count, off_t offset)
 			return r;
 
 	for (pos = offset; pos < offset + count; ) {
-//cprintf("f = %x, %x, %x\n", f, pos / BLKSIZE, &blk);
 		if ((r = file_get_block(f, pos / BLKSIZE, &blk)) < 0)
 			return r;
 		bn = MIN(BLKSIZE - pos % BLKSIZE, offset + count - pos);
@@ -485,18 +484,14 @@ file_flush(struct File *f)
 {
 	int i;
 	uint32_t *pdiskbno;
-//cprintf("1111111111111111111111111111\n");
+
 	for (i = 0; i < (f->f_size + BLKSIZE - 1) / BLKSIZE; i++) {
 		if (file_block_walk(f, i, &pdiskbno, 0) < 0 ||
 		    pdiskbno == NULL || *pdiskbno == 0)
 			continue;
-//cprintf("222222222222222222222222222222\n");
-		//cprintf("*pdiskbno = %d\n", *pdiskbno);
 		flush_block(diskaddr(*pdiskbno));
-//cprintf("333333333333333333333333333333\n");
 	}
 	flush_block(f);
-//cprintf("44444444444444444444444444\n");
 	if (f->f_indirect)
 		flush_block(diskaddr(f->f_indirect));
 
