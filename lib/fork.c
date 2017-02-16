@@ -25,6 +25,11 @@ pgfault(struct UTrapframe *utf)
 	//   (see <inc/memlayout.h>).
 
 	// LAB 4: Your code here.
+	addr = (void *)ROUNDDOWN(addr, PGSIZE);
+	pte_t pte = uvpt[PGNUM(addr)];
+
+	if((err & FEC_WR) == 0 || (pte & PTE_COW) == 0 || (pte & PTE_P) == 0)
+		panic("pafault failed: Faulting access was not a write to a copy-on-write page\n");
 
 	// Allocate a new page, map it at a temporary location (PFTEMP),
 	// copy the data from the old page to the new page, then move the new
@@ -33,8 +38,15 @@ pgfault(struct UTrapframe *utf)
 	//   You should make three system calls.
 
 	// LAB 4: Your code here.
+	if((r = sys_page_alloc(0, (void *)PFTEMP, PTE_P|PTE_U|PTE_W)) < 0)
+		panic("pafault failed: %e", r);
+	memmove((void *)PFTEMP, addr, PGSIZE);
+	if((r = sys_page_map(0, (void *)PFTEMP, 0, addr, PTE_P|PTE_U|PTE_W)) < 0)
+		panic("pafault failed: %e", r);
+	if((r = sys_page_unmap(0, (void *)PFTEMP)) < 0)
+		panic("pafault failed: %e", r);
 
-	panic("pgfault not implemented");
+	//panic("pgfault not implemented");
 }
 
 //
@@ -54,7 +66,24 @@ duppage(envid_t envid, unsigned pn)
 	int r;
 
 	// LAB 4: Your code here.
-	panic("duppage not implemented");
+	uint32_t va = PGSIZE * pn;
+	pte_t pte = uvpt[pn];
+
+	if(pte & PTE_SHARE){
+		if((r = sys_page_map(0, (void *)va, envid, (void *)va, PTE_SYSCALL & pte)) < 0)
+			return r;
+	}
+	else if((pte & PTE_W) || (pte & PTE_COW)){
+		if((r = sys_page_map(0, (void *)va, envid, (void *)va, PTE_P|PTE_U|PTE_COW)) < 0)
+			return r;
+		if((r = sys_page_map(0, (void *)va, 0, (void *)va, PTE_P|PTE_U|PTE_COW)) < 0)
+			return r;
+	}
+	else{
+		if((r = sys_page_map(0, (void *)va, envid, (void *)va, PTE_P|PTE_U)) < 0)
+			return r;
+	}
+
 	return 0;
 }
 
@@ -78,6 +107,37 @@ envid_t
 fork(void)
 {
 	// LAB 4: Your code here.
+	set_pgfault_handler(pgfault);
+	envid_t pid;
+
+	//child 
+	if((pid = sys_exofork()) == 0){
+		thisenv = &envs[ENVX(sys_getenvid())];
+		return 0;
+	}
+	//error
+	if(pid < 0)
+		panic("fork failed: %e\n", pid);
+	//parent
+	int r;
+	uint32_t va;
+	for(va = 0; va < UXSTACKTOP - PGSIZE; va +=PGSIZE){
+		if((uvpd[PDX(va)] & PTE_P) && (uvpt[PGNUM(va)] & PTE_P) && (uvpt[PGNUM(va)] & PTE_U)){
+			if((r = duppage(pid, PGNUM(va))) < 0)
+				panic("fork failed: %e", r);
+		}
+	}
+	//map exception stack
+	if((r = sys_page_alloc(pid, (void *)(UXSTACKTOP - PGSIZE), PTE_P|PTE_U|PTE_W)) < 0)
+		panic("fork failed: %e", r);
+
+	extern void _pgfault_upcall(void);
+	if((r = sys_env_set_pgfault_upcall(pid, _pgfault_upcall)))
+		panic("fork failed: %e\n", r);
+	if((r = sys_env_set_status(pid, ENV_RUNNABLE)) < 0)
+		panic("fork failed: %e", r);
+	return pid;
+
 	panic("fork not implemented");
 }
 
