@@ -26,6 +26,10 @@ enum {
 	E_NOT_EXEC	,	// File not a valid executable
 	E_NOT_SUPP	,	// Operation not supported
 
+	// E1000 card error codes
+	E_TX_QUEUE_FULL,	//transmit queue is full
+	E_TX_BAD_LEN,		//transmit packet's length is out of range
+
 	MAXERROR
 };
 

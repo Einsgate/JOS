@@ -19,7 +19,6 @@
 
 static void boot_aps(void);
 
-
 void
 i386_init(void)
 {
