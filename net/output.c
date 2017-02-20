@@ -1,7 +1,7 @@
 #include "ns.h"
 
 extern union Nsipc nsipcbuf;
-union Nsipc *nsoutreq = (union Nsipc *)0x0fffe000;
+union Nsipc *nsoutreq = (union Nsipc *)0x0ffff000;
 
 void
 output(envid_t ns_envid)
@@ -40,7 +40,7 @@ output(envid_t ns_envid)
 			}
 			else {
 				va = nsoutreq->pkt.jp_data;
-				cprintf("va = %x\n", (int32_t)va);
+				//cprintf("va = %x\n", (int32_t)va);
 				while((r = sys_transmit_packet(va, len)) == -E_TX_QUEUE_FULL)
 					sys_yield();
 			}
@@ -49,7 +49,7 @@ output(envid_t ns_envid)
 			cprintf("Invalid request code %d from %08x\n", req, whom);
 			r = -E_INVAL;
 		}
-		ipc_send(ns_envid, r, pg, perm);
+		//ipc_send(ns_envid, r, pg, perm);
 		sys_page_unmap(0, nsoutreq);
 	}
 }

@@ -29,6 +29,8 @@ enum {
 	// E1000 card error codes
 	E_TX_QUEUE_FULL,	//transmit queue is full
 	E_TX_BAD_LEN,		//transmit packet's length is out of range
+	E_RX_QUEUE_FULL,	//receive queue is full
+	E_RX_BAD_LEN,		//receive packet's length is out of range
 
 	MAXERROR
 };

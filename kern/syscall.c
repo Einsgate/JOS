@@ -281,7 +281,7 @@ sys_page_map(envid_t srcenvid, void *srcva,
 	if((perm & PTE_W) != 0 && (*pte & PTE_W) == 0)
 		return -E_INVAL;
 	if((ret = page_insert(de->env_pgdir, pp, dstva, perm)) < 0)
-		return -ret;
+		return ret;
 	
 	return 0;
 	panic("sys_page_map not implemented");
@@ -455,17 +455,37 @@ sys_transmit_packet(void *va, size_t len)
 	int r;
 	uint32_t pa;
 	pte_t *pte;
-
+//cprintf("1va = %x, len = %x\n", (int32_t)va, len);
 	user_mem_assert(curenv, va, len, PTE_P|PTE_U);
-	
+//cprintf("2va = %x\n", (int32_t)va);
 	page_lookup((pde_t *)(curenv->env_pgdir), va, &pte);
 	pa = PTE_ADDR(*pte) | PGOFF(va);
-	if((r = transmit_packet(pa, len)) < 0)
+//cprintf("*pte = %x, offset = %x\n", (int32_t)(*pte), (uint32_t)va & 0xfff);
+	if((r = transmit_packet(pa, len)) < 0){
+		//cprintf("sys_transmit_packet failed: %d\n", r);
+		return r;
+	}
+//cprintf("sys_transmit_packet succeed\n");
+	return 0;
+}
+
+static int
+sys_receive_packet(void *va, uint32_t *len)
+{
+	int r;
+	uint32_t pa;
+
+	if((uint32_t)va >= UTOP)
+		return -E_INVAL;
+	if((uint32_t)va != ROUNDUP((uint32_t)va, PGSIZE))
+		return -E_INVAL;
+	if((r = receive_packet(&pa, len)) < 0)
+		return r;
+	if((r = page_insert(curenv->env_pgdir, pa2page(pa), va, PTE_P|PTE_U|PTE_W)) < 0)
 		return r;
 
 	return 0;
 }
-
 
 // Dispatches to the correct kernel function, passing the arguments.
 int32_t
@@ -512,6 +532,8 @@ syscall(uint32_t syscallno, uint32_t a1, uint32_t a2, uint32_t a3, uint32_t a4, 
 			return sys_time_msec();
 		case SYS_transmit_packet:
 			return sys_transmit_packet((void *)a1, a2);
+		case SYS_receive_packet:
+			return sys_receive_packet((void *)a1, (uint32_t *)a2);
 		default:
 			return -E_INVAL;
 	}
