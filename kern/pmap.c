@@ -58,6 +58,7 @@ i386_detect_memory(void)
 // --------------------------------------------------------------
 
 static void boot_map_region(pde_t *pgdir, uintptr_t va, size_t size, physaddr_t pa, int perm);
+static void boot_map_region_bigpg(pde_t *pgdir, uintptr_t va, size_t size, physaddr_t pa, int perm);
 static void check_page_free_list(bool only_low_memory);
 static void check_page_alloc(void);
 static void check_kern_pgdir(void);
@@ -199,8 +200,14 @@ mem_init(void)
 	// we just set up the mapping anyway.
 	// Permissions: kernel RW, user NONE
 	// Your code goes here:
-	boot_map_region(kern_pgdir, KERNBASE, ~KERNBASE, 0, PTE_W);	
-	
+	//boot_map_region(kern_pgdir, KERNBASE, -KERNBASE, 0, PTE_W);	
+	lcr4(rcr4() | CR4_PSE);
+	boot_map_region_bigpg(kern_pgdir, KERNBASE, -KERNBASE, 0, PTE_W);
+
+	/*int i;
+	for(i = 0; i < PDX(-KERNBASE); i++){
+		cprintf("%d: %x\n", i, kern_pgdir[PDX(KERNBASE)+i]);
+	}*/
 	// Check that the initial page directory has been set up correctly.
 	check_kern_pgdir();
 
@@ -387,6 +394,7 @@ static void
 boot_map_region(pde_t *pgdir, uintptr_t va, size_t size, physaddr_t pa, int perm)
 {
 	// Fill this function in
+	assert(size % PGSIZE == 0);
 	pte_t *pte;
 	int i;
 	int n = PGNUM(size);
@@ -396,6 +404,19 @@ boot_map_region(pde_t *pgdir, uintptr_t va, size_t size, physaddr_t pa, int perm
 	}
 }
 
+
+static void
+boot_map_region_bigpg(pde_t *pgdir, uintptr_t va, size_t size, physaddr_t pa, int perm)
+{
+	// Fill this function in
+	assert(size % PTSIZE == 0);
+	pde_t *pde;
+	int i;
+	int n = PDX(size);
+	for(i = 0; i < n; i++){
+		pgdir[PDX(va)+i] = (pa + (uint32_t)PGADDR(i, 0, 0)) | perm | PTE_P | PTE_PS;
+	}
+}
 //
 // Map the physical page 'pp' at virtual address 'va'.
 // The permissions (the low 12 bits) of the page table entry
