@@ -255,12 +255,7 @@ vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)
 
 	colorswitch:
 		switch(ch = *(unsigned char *) fmt++){
-			case 'a':
-			case 'b':
-			case 'c':
-			case 'd':
-			case 'e':
-			case 'f':
+			case 'a':case 'b':case 'c':case 'd':case 'e':case 'f':
 				if(clrflag == 0)
 					color |= (ch - 'a' + 10) << 12;
 				else if(clrflag == 1){
@@ -270,12 +265,7 @@ vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)
 				clrflag++;
 				goto colorswitch;
 
-			case 'A':
-			case 'B':
-			case 'C':
-			case 'D':
-			case 'E':
-			case 'F':
+			case 'A':case 'B':case 'C':case 'D':case 'E':case 'F':
 				if(clrflag == 0)
 					color |= (ch - 'A' + 10) << 12;
 				else if(clrflag == 1){
@@ -285,16 +275,7 @@ vprintfmt(void (*putch)(int, void*), void *putdat, const char *fmt, va_list ap)
 				clrflag++;
 				goto colorswitch;
 
-			case '0':
-			case '1':
-			case '2':
-			case '3':
-			case '4':
-			case '5':
-			case '6':
-			case '7':
-			case '8':
-			case '9':
+			case '0':case '1':case '2':case '3':case '4':case '5':case '6':case '7':case '8':case '9':
 				if(clrflag == 0)
 					color |= (ch - '0') << 12;
 				else if(clrflag == 1){
