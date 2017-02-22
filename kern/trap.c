@@ -88,9 +88,7 @@ trap_init(void)
 	extern void handler48();
 
 	// LAB 3: Your code here.
-	//cprintf("%Ca5handler0 = %x, fuck = %x, idt[0] = %08x%08x\n", handler0, fuck, *((uint32_t *)idt + 1), *(uint32_t *)idt);
 	SETGATE(idt[T_DIVIDE], 1, GD_KT, handler0, 0);
-	//cprintf("%Ca5SETGATE:handler0 = %x, idt[0] = %08x%08x\n", handler0, *((uint32_t *)idt + 1), *(uint32_t *)idt);
 	SETGATE(idt[T_DEBUG], 1, GD_KT, handler1, 0);
 	SETGATE(idt[T_NMI], 1, GD_KT, handler2, 0);
 	SETGATE(idt[T_BRKPT], 1, GD_KT, handler3, 3);
