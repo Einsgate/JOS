@@ -356,10 +356,6 @@ load_icode(struct Env *e, uint8_t *binary)
 	// LAB 3: Your code here.
 	struct Elf *elfhdr = (struct Elf *)binary;
 	struct Proghdr *ph, *eph;
-/****************************************************/
-//	cprintf("%Ca5elfhdr->e_entry = %x\n", elfhdr->e_entry);
-//	extern void _start();
-//	cprintf("%Ca5_start = %x\n", _start);
 
 	if (elfhdr->e_magic != ELF_MAGIC){
 		panic("load_icode failed:binary is not elf.");
@@ -368,12 +364,9 @@ load_icode(struct Env *e, uint8_t *binary)
 	ph = (struct Proghdr *) ((char *)elfhdr + elfhdr->e_phoff);
 	eph = ph + elfhdr->e_phnum;
 	lcr3(PADDR(e->env_pgdir));
-/***************************************************/
-//	cprintf("%Ca5page change:ph = %x, eph = %x\n", ph, eph);
+
 	for (; ph < eph; ph++){
-//		cprintf("%Ca5ph->p_type = %x, ELF_PROG_LOAD = %x\n", ph->p_type, ELF_PROG_LOAD);
 		if(ph->p_type == ELF_PROG_LOAD){
-//			cprintf("%Ca5va = %x, size = %x\n", ph->p_va, ph->p_memsz);
 			region_alloc(e, (void *)(ph->p_va), ph->p_memsz);
 			memmove((void *)(ph->p_va), (void *)(binary+ph->p_offset), ph->p_filesz);
 			if(ph->p_filesz < ph->p_memsz)
