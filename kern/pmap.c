@@ -218,7 +218,7 @@ mem_init(void)
 	// we just set up the mapping anyway.
 	// Permissions: kernel RW, user NONE
 	// Your code goes here:
-	boot_map_region(kern_pgdir, KERNBASE, ~KERNBASE, 0, PTE_W);	
+	boot_map_region(kern_pgdir, KERNBASE, -KERNBASE, 0, PTE_W);	
 
 	// Initialize the SMP-related parts of the memory map
 	mem_init_mp();
